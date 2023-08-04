@@ -14,6 +14,13 @@ const UiUx = new mongoose.Schema({
     views: {
         type: Number,
         required: [true, "Views are required"]
+    },
+    selected: {
+        type: Boolean,
+        default: false
+    },
+    portfolioType: {
+        type: String,
     }
 
 })

@@ -18,6 +18,13 @@ const Presentation = new mongoose.Schema({
     type: {
         type: String,
         required: [true, "Type is required"]
+    },
+    selected: {
+        type: Boolean,
+        default: false
+    },
+    portfolioType: {
+        type: String,
     }
 
 })

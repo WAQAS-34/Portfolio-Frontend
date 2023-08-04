@@ -18,8 +18,14 @@ const MobileAppDev = new mongoose.Schema({
     allScreenImages: {
         type: [String],
         required: [true, "Screen images are required"]
+    },
+    selected: {
+        type: Boolean,
+        default: false
+    },
+    portfolioType: {
+        type: String,
     }
-
 })
 
 module.exports = mongoose.model("MobileAppDev", MobileAppDev);

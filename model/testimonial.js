@@ -27,6 +27,13 @@ const Testimonial = new mongoose.Schema({
         type: [Boolean],
         required: [true, "Star array Picture is required"]
     },
+    selected: {
+        type: Boolean,
+        default: false
+    },
+    portfolioType: {
+        type: String,
+    }
 
 })
 
