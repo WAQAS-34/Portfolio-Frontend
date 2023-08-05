@@ -74,7 +74,7 @@ app.post("/api/v1/upload", upload.single("image"), (req, res) => {
     if (req.file) {
         res.json({
             message: "Image uploaded successfully",
-            link: "/images/" + req.file.filename
+            link: req.protocol + '://' + req.get('host') + "/images/" + req.file.filename
         });
     } else {
         res.status(400).json({
