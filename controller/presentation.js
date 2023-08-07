@@ -39,7 +39,9 @@ const CreatePresentation = async (req, res) => {
             webImage: data.webImage,
             likeCount: data.likeCount,
             views: data.views,
-            type: data.type
+            type: data.type,
+            selected:data.selected,
+            portfolioType:data.portfolioType,
         })
 
         res.status(201).json({

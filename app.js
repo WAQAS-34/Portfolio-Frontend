@@ -11,6 +11,7 @@ const webdev = require('./routes/webdev')
 const uiux = require('./routes/uiux')
 const presentation = require('./routes/presentation')
 const contact = require('./routes/contact')
+const selected = require('./routes/selected')
 
 // const upload = require('./routes/upload')
 const multer = require("multer")
@@ -28,6 +29,7 @@ app.use("/api/v1/webdev", webdev)
 app.use("/api/v1/uiux", uiux)
 app.use("/api/v1/presentation", presentation)
 app.use("/api/v1/contact", contact)
+app.use("/api/v1/selected", selected)
 
 
 
@@ -63,18 +65,15 @@ const upload = multer({
     },
 });
 
-app.post("/api/v1/upload", upload.single("image"), (req, res) => {
-    // const allowedMimeTypes = ['image/jpeg', 'image/png', 'image/jpg']
-    // if (!allowedMimeTypes.includes(req.file.mimetype)) {
-    //     return res.status(400).json({
-    //         message: "Please upload a valid image"
-    //     });
-    // }
+app.post("/api/v1/upload", upload.array("image"), (req, res) => {
 
-    if (req.file) {
+
+    const uploadedLinks = req.files.map(file => req.protocol + '://' + req.get('host') + "/images/" + file.filename,);
+    if (req.files) {
         res.json({
             message: "Image uploaded successfully",
-            link: req.protocol + '://' + req.get('host') + "/images/" + req.file.filename
+            link: req.protocol + '://' + req.get('host') + "/images/" + req.files[0].filename,
+            urls: uploadedLinks
         });
     } else {
         res.status(400).json({
@@ -85,8 +84,10 @@ app.post("/api/v1/upload", upload.single("image"), (req, res) => {
 
 
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
     res.send({ message: 'welcome my portfolio' })
+
+
 })
 
 ConnectMongoDB(process.env.MONGO_URI).then(() => {

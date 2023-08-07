@@ -27,7 +27,9 @@ const CreateUiUx = async (req, res) => {
         const uiUx = await UiUx.create({
             webImage: data.webImage,
             likeCount: data.likeCount,
-            views: data.views
+            views: data.views,
+            selected:data.selected,
+            portfolioType:data.portfolioType,
         })
 
         res.status(201).json({

@@ -27,7 +27,9 @@ const CreateWebDev = async (req, res) => {
         const webDev = await WebDev.create({
             webImage: data.webImage,
             likeCount: data.likeCount,
-            views: data.views
+            views: data.views,
+            selected:data.selected,
+            portfolioType:data.portfolioType,
         })
 
         res.status(201).json({

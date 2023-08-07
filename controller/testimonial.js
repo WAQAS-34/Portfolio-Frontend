@@ -38,7 +38,7 @@ const CreateTestimonial = async (req, res) => {
         })
     }
 
-    if (!data.star || !data.star.length) {
+    if (!data.star) {
         return res.status(400).json({
             message: 'star array is required',
             success: false

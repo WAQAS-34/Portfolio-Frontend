@@ -9,6 +9,12 @@ const CreateMobileAppDev = async (req, res) => {
             success: false
         })
     }
+    if (!data.appDecs) {
+        return res.status(400).json({
+            message: 'app Decsription is required',
+            success: false
+        })
+    }
 
     if (!data.appImage) {
         return res.status(400).json({
@@ -34,9 +40,12 @@ const CreateMobileAppDev = async (req, res) => {
     try {
         const mobileAppDev = await MobileAppDev.create({
             appName: data.appName,
+            appDecs:data.appDecs,
             appImage: data.appImage,
             appSkills: data.appSkills,
-            allScreenImages: data.allScreenImages
+            allScreenImages: data.allScreenImages,
+            selected: data.selected,
+            portfolioType: data.portfolioType,
         })
 
         res.status(201).json({

@@ -17,7 +17,7 @@ const WebDev = new mongoose.Schema({
     },
     selected: {
         type: Boolean,
-        default: false
+        // default: false
     },
     portfolioType: {
         type: String,

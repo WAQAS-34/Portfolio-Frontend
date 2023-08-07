@@ -24,7 +24,7 @@ const Testimonial = new mongoose.Schema({
         required: [true, "Review  Picture is required"]
     },
     star: {
-        type: [Boolean],
+        type: Number,
         required: [true, "Star array Picture is required"]
     },
     selected: {

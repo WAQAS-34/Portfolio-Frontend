@@ -7,12 +7,18 @@ const MobileAppDev = new mongoose.Schema({
         type: String,
         required: [true, "App name is required"]
     },
+    appDecs: {
+        type: String,
+        required: [true, "App Decsription is required"]
+    },
     appImage: {
         type: String,
         required: [true, "App image is required"]
     },
     appSkills: {
-        type: [String],
+        type: [{
+            value: String, label:String
+        }],
         required: [true, "App skills are required"]
     },
     allScreenImages: {

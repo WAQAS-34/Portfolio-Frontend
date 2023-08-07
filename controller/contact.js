@@ -62,6 +62,7 @@ const SendInfo = async (req, res) => {
             success: true
         })
     } catch (error) {
+        console.log(error)
 
     }
 
