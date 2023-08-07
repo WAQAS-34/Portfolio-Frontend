@@ -47,7 +47,7 @@ const SendInfo = async (req, res) => {
     try {
         let info = await transporter.sendMail({
             from: process.env.EMAIL, // sender address
-            to: process.env.EMAIL, // list of receivers 
+            to: "info@devpixelsolutions.com", // list of receivers 
             subject: data.subject, // Subject line
             html: `<div>
                         <p>Name: ${data.name}</p>
