@@ -85,7 +85,7 @@ app.post("/api/v1/upload", upload.array("image"), (req, res) => {
 
 
 app.get('/', async (req, res) => {
-    res.send({ message: 'welcome my portfolio' })
+    res.send({ message: 'welcome ' })
 
 
 })
