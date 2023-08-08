@@ -1,0 +1,423 @@
+@import "~bootstrap/scss/bootstrap";
+@import "header";
+@import "colorpalette";
+@import "mediaquery";
+@import "heroSection";
+@import "servicesSlides";
+@import "services";
+@import "portfolio";
+@import "experties";
+@import "contactFrom";
+@import "mobiledevelopment";
+@import "admin";
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+//top heading cmponent css
+
+.top-heading-box {
+  h3 {
+    margin-top: 20px;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container-padding {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  @include largeScreen {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  @include laptops {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+.full-hig{
+  height: 100vh;
+}
+body {
+  overflow-x: hidden !important;
+  background-color: $darkblue;
+}
+p {
+  margin-bottom: 0px !important;
+}
+.bg-blue {
+  background-color: $blue !important;
+}
+.bg-darkblue {
+  background-color: $darkblue !important;
+}
+.red-color {
+  color: $red;
+}
+.text-white {
+  color: $white !important;
+}
+.sora-font {
+  font-family: "Sora", sans-serif !important;
+}
+.header-link {
+  text-transform: uppercase;
+  // font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $white;
+  text-decoration: none !important;
+  font-weight: 400;
+  padding: 5px 14px  !important;
+  cursor: pointer ;
+  position: relative;
+}
+.header-link:hover {
+  color: $white;
+}
+
+.header-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  border-radius: 5px;
+  top: 41px;
+
+  left: 0;
+  background-color: $red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  @include tablet {
+    width: 20%;
+  }
+}
+// .active-nav-link{
+//   color: red !important;
+
+// }
+.active-nav-link::after {
+  
+  transform: scaleX(1);
+}
+
+.header-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: $white !important;
+}
+@mixin btn($radius, $width, $height, $bg-color) {
+  border: none;
+  outline: none;
+  border-radius: $radius;
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+}
+.outlinebtn1 {
+  @include btn(12px, 100%, 54px, transparent);
+  font-family: "Sora", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid $borderColor2 !important;
+  color: $white;
+  transition: 0.5s;
+}
+.outlinebtn1:hover {
+  background-color: $red;
+}
+.hoverglow:hover {
+  box-shadow: 0 0 20px rgba(255, 66, 55, 0.5);
+}
+.btn4 {
+  @include btn(12px, 301px, 54px, $red);
+  color: $white;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  transition: 0.4s ease-in-out;
+}
+// .btn3{
+//   @include btn(100px, auto, 38px, transparent);
+
+// }
+
+.btn3 {
+  position: relative;
+  // margin: auto;
+  color: $white;
+  font-family: "Sora", sans-serif;
+
+  padding: 19px 55px;
+  padding-left: 30px;
+  transition: all 0.2s ease;
+
+  background-color: transparent;
+  border: none;
+
+  .btntext {
+    color: #fff !important;
+    position: relative;
+    left: 18px;
+    top: 8px;
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    word-spacing: 3px;
+  }
+  img {
+    width: 26px;
+  }
+
+  @include tablet {
+    .btntext {
+      font-size: 16px;
+      top: 6px;
+    }
+    img {
+      width: 19px;
+    }
+  }
+  @include mobile {
+    padding: 15px 27px 15px 35px;
+    .btntext {
+      left: 0px;
+    }
+  }
+}
+.btn3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 100px;
+  background: $lightBlue;
+  // padding: 0px 100px;
+  width: 83px;
+  height: 83px;
+  transition: all 0.3s ease;
+  color: $white;
+  @include tablet {
+    width: 73px;
+    height: 73px;
+  }
+  @include mobile {
+    width: 66px;
+    height: 66px;
+  }
+}
+
+.btn3:hover:before {
+  width: 100%;
+  background: $darkblue;
+
+  color: $white !important;
+}
+.btn3:hover {
+  color: $white !important;
+}
+.btn3:active {
+  transform: scale(0.96);
+  color: $white !important;
+}
+.outlinebtn {
+  @include btn(100px, auto, 38px, transparent);
+  border: 1px solid $lightgary;
+  padding: 9px 31px 7px 31px;
+
+  letter-spacing: 1px;
+  font-family: "Sora", sans-serif;
+
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  color: $white;
+  @include laptops {
+    padding: 9px 26px 7px 26px;
+    height: 34px;
+    font-size: 9px;
+  }
+  @include mobile {
+    padding: 7px 20px 7px 20px;
+    height: 33px;
+    font-size: 8px;
+  }
+}
+@mixin heading($weight, $color) {
+  font-family: "Poppins", sans-serif;
+  font-weight: $weight;
+  color: $color;
+}
+@mixin heading2($weight, $color) {
+  font-family: "Sora", sans-serif;
+  font-weight: $weight;
+  color: $color;
+}
+.heading2 {
+  @include heading(400, $white);
+  font-size: 28px;
+  line-height: 28px;
+  @include mobile {
+    font-size: 20px;
+  }
+}
+.heading3 {
+  @include heading2(600, $white);
+  font-size: 50px;
+  line-height: 65px;
+  @include laptops {
+    font-size: 40px;
+    line-height: 53px;
+  }
+  @include tablet {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  @include mobile {
+    font-size: 31px;
+    line-height: 38px;
+  }
+}
+.heading4 {
+  @include heading2(600, $white);
+  font-size: 20px;
+  line-height: 25px;
+  @include mobile {
+    font-size: 16px;
+  }
+}
+.heading5 {
+  @include heading(600, $red);
+  font-size: 32px;
+  line-height: 24px;
+  @include tablet {
+    font-size: 28px;
+    line-height: 39px;
+  }
+  @include mobile {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+.heading1 {
+  @include heading(700, $white);
+  font-size: 40px;
+  line-height: 62px;
+  @include laptops {
+    font-size: 31px;
+    line-height: 44px;
+  }
+  @include mobile {
+    font-size: 25px;
+    line-height: 37px;
+  }
+}
+.heading6 {
+  @include heading2(700, $textColor);
+  font-size: 36px;
+  line-height: 36px;
+  @include laptops {
+    font-size: 30px;
+  }
+  @include mobile {
+    font-size: 24px;
+  }
+}
+.searchbtn {
+  @include btn(100px, 47px, 47px, transparent);
+  // transition: .1s;
+  // :hover {
+  //   @include btn(100px, 47px, 47px, $red);
+  // }
+}
+.searchbtn:hover {
+  border: 6px solid $darkRed;
+  background-color: $red;
+}
+.btn1 {
+  transition: 0.4s ease-in-out;
+  @include btn(12px, 111px, 37px, $red);
+  color: $white;
+  font-size: 15px;
+  @include mobile {
+    @include btn(10px, 102px, 35px, $red);
+    font-size: 13px;
+  }
+}
+.p1 {
+  @include heading(400, $lightgary);
+  font-size: 16px;
+  line-height: 28px;
+  @include laptops {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  @include mobile {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+.p2 {
+  @include heading2(400, $lightgary);
+  line-height: 17px;
+  @include mobile {
+    font-size: 13px;
+  }
+}
+.p3 {
+  @include heading(400, $white);
+  line-height: 36px;
+  font-size: 24px;
+  @include mobile {
+    font-size: 18px;
+  }
+}
+.smalltext {
+  @include heading(300, $red);
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 300 !important;
+  transition: 0.2s ease-in-out;
+  a{
+    text-decoration: none;
+    color: $red;
+  }
+}
+
+.inputStyle {
+  border: 1px solid $borderColor;
+  border-radius: 12px;
+  font-family: "Sora", sans-serif;
+  color: $lightgary;
+
+  height: 54px;
+  outline: none;
+  padding: 10px 19px 10px 17px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.website-development {
+  margin-bottom: 50px;
+}
+.googleSlides {
+  margin-top: 20px;
+  @include medium {
+    margin-top: 40px;
+  }
+}
+
+.elisp-text{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

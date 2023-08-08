@@ -1,0 +1,238 @@
+@import "colorpalette";
+@import "mediaquery";
+.expertiesContainer {
+  padding: 100px 0px 100px 0px;
+  @include mobile {
+    padding: 97px 0px 78px 0px;
+  }
+}
+
+.skillTabs {
+  justify-content: flex-end !important;
+  border: none !important;
+  position: relative;
+  top: -77px;
+  @include medium {
+    top: 20px;
+    justify-content: flex-start !important;
+  }
+  @include mobile {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .nav-link {
+    background-color: $darkColor;
+    color: $white;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border-radius: 12px;
+    margin-left: 20px;
+
+    padding: 8px 24px;
+    border: none;
+  }
+  .nav-link.active {
+    color: $white !important;
+    background-color: $red;
+    font-weight: 300;
+  }
+
+  @include medium {
+    .nav-link {
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  }
+}
+.SkillBox {
+  width: 115px;
+
+  height: 198px;
+  //   padding:53px 29px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 100px;
+  .icon-wrapper {
+    width: 62px;
+    height: 63px;
+    position: relative;
+    // border: 1px solid red;
+    
+    img {
+      position: absolute;
+      left: 0px ;
+      bottom: 0px;
+      width: 100%;
+    }
+  }
+  img {
+    width: 60px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-top: 22px;
+    text-transform: capitalize !important;
+  }
+
+  @include medium {
+    width: 109px;
+    height: 171px;
+    img {
+      width: 48px;
+    }
+    p {
+      font-size: 12px;
+      margin-top: 11px;
+    }
+  }
+}
+.skills-row {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  padding: 53px 0px 139px 0px;
+  @include mobile {
+    justify-content: center;
+    padding: 53px 0px 79px 0px;
+  }
+  flex-wrap: wrap;
+}
+.reviewCard {
+  .clientreview {
+    max-width: 350px;
+    font-weight: 300;
+    margin-top: 40px;
+    font-family: "Sora", sans-serif;
+  }
+  border: 1px solid $borderColor;
+  padding: 35px 31px 35px 31px;
+  //   width: max-content;
+  border-radius: 20px !important;
+  min-height: 327px;
+  .userPic {
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    object-fit: cover;
+  }
+  .reviewCardHeader {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    gap: 16px;
+    @include largeScreen {
+      gap: 13px;
+    }
+  }
+  .flagName {
+    img {
+      width: 16px;
+      height: 13px;
+      object-fit: cover;
+    }
+    p {
+      letter-spacing: 2px;
+      font-size: 14px;
+      font-weight: 300;
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    gap: 15px;
+  }
+  p {
+    color: $white;
+  }
+  .starBox {
+    display: flex;
+    gap: 6px;
+    @include largeScreen {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    gap: 3px;
+    @include mobile {
+      svg {
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 25px 8px 25px 14px;
+    .reviewCardHeader {
+      gap: 7px;
+    }
+  }
+}
+.slide-gap {
+  padding: 0px 19px;
+  @include largeScreen {
+    padding: 0px 12px;
+  }
+}
+.sliderBox {
+  padding: 54px 0px 30px 0px;
+  @include mobile {
+    padding: 31px 0px 6px 0px;
+  }
+  .arrowBox {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    margin-top: 47px;
+    margin-left: 10px;
+    button {
+      width: 56px;
+      height: 56px;
+      border-radius: 100px;
+    }
+    @include mobile {
+      gap: 11px;
+      margin-top: 28px;
+      img {
+        width: 45px;
+      }
+    }
+  }
+}
+.trustedbyBox {
+  text-align: center;
+  padding: 44px 0px 0px 0px;
+}
+.trustedtCompany {
+  border: 1px solid $borderColor;
+  width: 276px;
+  height: 154px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  img {
+    width: 194px;
+  }
+}
+.company-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  @include tablet {
+    margin-top: 34px;
+  }
+}

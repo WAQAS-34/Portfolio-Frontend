@@ -1,0 +1,42 @@
+@import "colorpalette";
+@import "mediaquery";
+.logo {
+  width: 100px;
+  height: auto;
+  @include tablet {
+    margin-left: 15px;
+  }
+}
+
+.header-search-box {
+  border-left: 1px solid $lightgary;
+  border-right: 1px solid $lightgary;
+  padding: 0px 20px;
+
+  display: flex;
+  align-items: center;
+  @include tablet {
+    border: none;
+  }
+}
+.nav-link-wrapper {
+  gap: 5px;
+  padding: 27px 0px;
+  .active {
+    color: $white !important;
+  }
+  .active::after {
+    transform: scaleX(1) !important;
+  }
+}
+.headdercontainer {
+  border-bottom: 1px solid $lightgary;
+
+  @include tablet {
+    padding: 15px 0px !important;
+    //  border: 1px solid red;
+  }
+}
+.btn-close {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8XbyIs-DPWxgV2S4PamrkdA4vdtzlpvt9HMq8tc&s") !important;
+}

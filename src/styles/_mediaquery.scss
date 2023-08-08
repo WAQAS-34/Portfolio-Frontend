@@ -1,0 +1,32 @@
+@import "breakpoints";
+
+@mixin largeScreen {
+  @media (max-width: $largerScren) {
+    @content;
+  }
+}
+@mixin laptops {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (max-width: $md) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+@mixin exteraSmall {
+  @media (max-width: $exteraSmall) {
+    @content;
+  }
+}

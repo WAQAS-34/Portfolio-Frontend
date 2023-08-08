@@ -1,0 +1,31 @@
+@import "colorpalette";
+.sliding-border {
+  border-top: 1px solid $borderColor2;
+  border-bottom: 1px solid $borderColor2;
+}
+
+.slidingContaibner {
+  background-color: $darkblue;
+  padding-bottom: 40px;
+}
+.slides {
+  background-color: $blue;
+  overflow-x: hidden;
+  height: 98px;
+  padding: 35px 20px;
+  // transform: rotate(-1.242deg);
+  width: 100%;
+  .sliderWapper {
+    display: flex;
+    align-items: center;
+
+    gap: 148px;
+    @include mobile {
+      gap: 85px;
+
+    }
+  }
+  h1 {
+    white-space: nowrap;
+  }
+}

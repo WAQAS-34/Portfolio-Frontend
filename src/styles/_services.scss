@@ -1,0 +1,98 @@
+@import "colorpalette";
+.serviceswrapper {
+  padding: 94px 0px 169px 0px;
+  @include mobile {
+    padding: 45px  20px 69px 20px !important;
+  }
+}
+.services-card {
+  border: 1px solid $darkgray;
+  width: max-content;
+  padding: 40px 53px 40px 44px;
+  border-radius: 10px;
+  display: flex;
+  transition: 0.5s;
+
+  cursor: pointer;
+  height: 276px;
+  //   align-items: center;
+  gap: 38px;
+  img {
+    margin-top: 2px;
+  }
+  h3 {
+    max-width: 287px;
+    line-height: 44px;
+  }
+  p {
+    max-width: 400px;
+    margin-top: 17px;
+  }
+  @include largeScreen {
+    padding: 40px 20px 40px 20px;
+    height: 269px;
+    h3 {
+      font-size: 23px;
+      line-height: 35px;
+      max-width: 235px;
+    }
+  }
+  @include mobile {
+    height: auto;
+    width: 100%;
+    gap: 20px;
+    img {
+      width: 47px;
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 28px;
+      max-width: 205px;
+    }
+  }
+  @include exteraSmall {
+    padding: 30px 17px 30px 20px;
+  }
+}
+.services-card:hover {
+  background-color: $red;
+}
+
+.services-cardrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 39px;
+  @include laptops {
+    // flex-wrap: wrap;
+    gap: 18px;
+  }
+  @include medium {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  @include mobile {
+    gap: 27px;
+    justify-content: center;
+  }
+}
+.servicesWrapper {
+  margin: 108px 0px 0px 0px;
+  @include laptops {
+    margin-top: 50px;
+  }
+  @include mobile {
+    // margin-top: 39px;
+    margin: 38px 0px 0px 0px;
+  }
+}
+.services-cardrow2 {
+  margin-top: 39px;
+  @include laptops {
+    // flex-wrap: wrap;
+    margin-top: 18px;
+  }
+  @include mobile {
+    margin-top: 27px;
+  }
+}

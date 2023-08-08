@@ -1,0 +1,138 @@
+@import "colorpalette";
+@import "mediaquery";
+
+.mobiledevelopment {
+  padding: 60px 0px 30px 0px;
+  .developmentWrapper {
+    margin-bottom: 87px;
+    @include mobile {
+      margin-bottom: 13px;
+    }
+  }
+}
+.mobileprotoflio {
+  padding-bottom: 87px;
+  .accordion,
+  .card,
+  .card-header {
+    background-color: $darkblue !important;
+    border: none;
+  }
+  .card-body {
+    padding: 0px !important;
+  }
+  .card-header {
+    padding: 0px !important;
+    border-bottom: 1px solid $borderColor2 !important;
+    @include laptops {
+      .arrowbtnAccordian {
+        // margin-bottom: 10px !important;
+      }
+    }
+  }
+  .card {
+    position: relative;
+  }
+  .all-mobilesceens {
+    h3 {
+      margin-left: 50px;
+    }
+
+    width: 100%;
+    padding: 90px 0px 20px 0px;
+    // background-image: url(../assets/images/porfolioBg.svg);
+    background-color: $blue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .all-screen-row {
+      margin: 63px 0px 82px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      cursor: pointer;
+      justify-content: center;
+      gap: 54px;
+      img {
+        width: 257px;
+        height: 528px;
+        // border: 1px solid red;
+        object-fit: cover;
+      }
+    }
+
+    @include mobile {
+      h3 {
+        margin-left: 0px;
+      }
+      .all-mobilesceens {
+        margin: 36px 0px 37px 0px;
+        padding: 45px 0px 20px 0px;
+      }
+      .all-screen-row {
+        gap: 22px;
+      }
+    }
+  }
+  .portfilio-accordian {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // align-items: center;
+    // padding: 42px 0px 3px 0px;
+    padding: 42px 14px 70px 14px;
+    // gap: 106px;
+    .decs {
+      margin-top: 25px;
+    }
+    @include laptops {
+      justify-content: center;
+      gap: 28px;
+    }
+    @include mobile {
+      padding: 42px 16px 70px 16px;
+    }
+    .mobileImage {
+      width: 533px;
+      // 440px
+    }
+
+    p {
+      max-width: 572px;
+    }
+    .skilssBox {
+      display: flex;
+      align-items: center;
+      gap: 31px;
+      flex-wrap: wrap;
+      margin-top: 46px;
+      max-width: 600px;
+    }
+    @include largeScreen {
+      .mobileImage {
+        width: 456px !important;
+      }
+    }
+    @include mobile {
+      .mobileImage {
+        width: 100% !important;
+      }
+      .skilssBox {
+        justify-content: center;
+      }
+    }
+  }
+}
+.accordian-haedwer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  @include mobile {
+    .arrowbtnAccordian{
+      margin-bottom: 10px !important;
+      width: 40px !important;
+      height: 40px !important;
+      img{
+        width: 16px !important;
+      }
+    }
+  }
+}
