@@ -70,19 +70,22 @@
     }
   }
   .portfolioImg {
-    width: 541px;
-
-    height: 392px;
-    border-radius: 10px;
-    object-fit: cover;
+    max-width: 695px;
+    
+    @include mdLarge {
+      width: 570px;
+    }
+    // height: 392px;
+    // object-fit: cover;
+    border-radius: 14px;
     cursor: pointer;
     @include largeScreen {
-      width: 438px;
-      height: 326px;
+      width: 475px;
+      // height: 326px;
     }
     @include mobile {
       width: 100%;
-      height: 326px;
+      // height: 326px;
     }
   }
 }

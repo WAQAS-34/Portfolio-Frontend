@@ -54,23 +54,23 @@ function Header({ admin }) {
   const adminNavigation = [
     {
       name: "website",
-      path: "/admin/web-dev/view",
+      path: "/admin/web-dev/view.html",
     },
     {
       name: "Mobile",
-      path: "/admin/mob-dev/view",
+      path: "/admin/mob-dev/view.html",
     },
     {
       name: "UiUx",
-      path: "/admin/ui-ux/view",
+      path: "/admin/ui-ux/view.html",
     },
     {
       name: "Presentation",
-      path: "/admin/presentation/view",
+      path: "/admin/presentation/view.html",
     },
     {
       name: "Client",
-      path: "/admin/testimonial/view",
+      path: "/admin/testimonial/view.html",
     },
   ];
  

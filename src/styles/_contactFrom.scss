@@ -23,9 +23,13 @@
   }
   .contact-form {
     display: flex;
+  @include exteraLarge {
+    justify-content: space-around;
+
+  }
     justify-content: space-between;
     // align-items: center;
-    margin: 47px 50px 0px 50px;
+    margin: 47px 0px 62px 0px;
 
     @include laptops {
       flex-wrap: wrap-reverse;
@@ -41,7 +45,8 @@
       }
     }
     .input-wrapper {
-      width: 586px;
+      width: 568px;
+   
       textarea {
         margin: 31px 0px 71px 0px;
         @include laptops {
@@ -76,17 +81,26 @@
   // border: 1px solid red;
   justify-content: space-between;
   align-items: center;
-  padding: 33px 110px 27px 110px;
-  margin-top: 62px;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 33px 0px 27px 0px;
+  // margin-top: 62px;
   @include mobile {
     margin-top: 13px !important;
-    padding: 22px 15px 21px 15px !important;
+    justify-content: center;
+    // padding: 22px 0px 21px 0px !important;
   }
 
-  border-top: 1px solid $borderColor2;
+  // border-top: 1px solid ;
   img {
     width: 109px;
   }
+}
+.horizontal-line{
+  width: 100%;
+  height: 3px ;
+  background-color:$borderColor2 ;
 }
 .dot{
   width: 13px  !important;
@@ -99,7 +113,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
-  // margin-top: 18px;
+  margin-top: 18px;
 }
 .locationIcon{
   path{

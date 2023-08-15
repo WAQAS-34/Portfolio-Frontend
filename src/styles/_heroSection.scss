@@ -2,9 +2,13 @@
 
 .herocontainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 90px 50px 147px 50px;
+  @include largeScreen {
+    justify-content: center;
+
+}
   @include laptops {
     padding: 90px 0px 147px 0px;
   }

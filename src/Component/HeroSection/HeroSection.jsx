@@ -6,7 +6,11 @@ import { motion } from "framer-motion";
 import profile2 from "../../assets/images/profile2.svg";
 import realProjects from "../../assets/images/realProjects.svg";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 const HeroSection = () => {
+  const testimonialState = useSelector(
+    (state) => state && state.testmonialReducer.testimonial
+  );
   return (
     <>
       <div className="bg-darkblue">
@@ -61,9 +65,12 @@ const HeroSection = () => {
               className="more-projects"
             >
               <div className="client-profile-box">
-                <img src={profile1.src} alt="" />
-                <img className="prfile2" src={profile3.src} alt="" />
+                {testimonialState&&testimonialState.slice(0,3).map((item , ind)=>{
+                  return <img key={ind} className={ ind==1?"prfile2" :ind==2?`prfile3`:''} src={item.clientPic} alt="" />
+                })}
+                {/* <img  src={profile3.src} alt="" />
                 <img className="prfile3" src={profile2.src} alt="" />
+                 */}
               </div>
               <div className="position-relative ">
                 <p className="p1 text-white">200+ Projects</p>

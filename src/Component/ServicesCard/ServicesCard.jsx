@@ -9,7 +9,7 @@ const ServicesCard = ({ name, content, icon }) => {
 
   return (
     <motion.div
-    onClick={()=>router.push(`/#portfolio`)}
+    
       ref={elementRef}
       variants={{
         hidden: { opacity: 0 },

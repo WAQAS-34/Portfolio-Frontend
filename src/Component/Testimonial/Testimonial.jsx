@@ -29,14 +29,27 @@ const Testimonial = () => {
     infinite: false,
     arrows: false,
     speed: 1500,
+    centerMode:false,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     afterChange: (currentSlide) => {
       setActiveSlide(currentSlide); // Update the active slide index
     },
     autoplay: false,
     autoplaySpeed: 3000,
     responsive: [
+      // {
+      //   breakpoint: 1700,
+      //   settings: {
+      //     slidesToShow: 3,
+      //   },
+      // },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
       {
         breakpoint: 1200,
         settings: {
@@ -142,7 +155,8 @@ const Testimonial = () => {
             <img src={leftArrow.src} alt="" />
           </button>
           <p className="p3">
-            { Math.abs( remainingSlides) ?? ""}/{testimonialState?.length}
+            {/* { Math.abs( remainingSlides) ?? ""}  */}
+            {activeSlide}/{testimonialState?.length}
           </p>
           <button onClick={handleNext} className="outlinebtn1">
             <img src={rightArrow.src} alt="" />

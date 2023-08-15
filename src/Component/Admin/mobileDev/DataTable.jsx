@@ -79,7 +79,7 @@ function DataTable() {
       <br />
       <div className="container">
         <button
-          onClick={() => router.push(`/admin/mob-dev/create`)}
+          onClick={() => router.push(`/admin/mob-dev/create.html`)}
           className="btn1 mb-3"
         >
           Create
@@ -95,6 +95,7 @@ function DataTable() {
               <th>Seleted</th>
               <th>all screen Image</th>
               <th>Image</th>
+              <th>Thumbnail</th>
               <th>skills</th>
               <th>Action</th>
             </tr>
@@ -127,6 +128,14 @@ function DataTable() {
                         <img
                           key={ind}
                           src={item.appImage}
+                          className="tableImage"
+                          alt=""
+                        />
+                      </td>
+                      <td>
+                        <img
+                          key={ind}
+                          src={item.thumbnailImage}
                           className="tableImage"
                           alt=""
                         />

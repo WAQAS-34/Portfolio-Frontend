@@ -18,7 +18,7 @@ export default function Home() {
         <HeroSection />
       </Element>
 
-      <ServicesSlides />
+      {/* <ServicesSlides /> */}
 
       <Element name="services">
         <Services />

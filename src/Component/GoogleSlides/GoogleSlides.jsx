@@ -8,8 +8,8 @@ import useInViewAnimation from "@/Hooks/useInViewAnimation";
 import { presentationDispatch } from "@/store/action";
 import { useDispatch, useSelector } from "react-redux";
 
-const GoogleSlides = ({type}) => {
-  console.log("type", type)
+const GoogleSlides = ({ type }) => {
+  console.log("type", type);
   const ref = useRef();
   const cardRef = useRef();
   const PresetationState = useSelector(
@@ -53,10 +53,13 @@ const GoogleSlides = ({type}) => {
             ).map((item, ind) => (
               <div key={ind} className="portfolio-card">
                 <PortfolioCard
+                      fullImage={item.fullImage}
+
+                  id={item._id}
                   likeCount={item.likeCount}
                   views={item.views}
                   bluecolor={"bg-blue"}
-                  tittle={item.tittle}
+                  tittle={item.portfolioType}
                   year={item.year}
                   image={item.webImage}
                 />

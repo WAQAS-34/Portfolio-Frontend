@@ -2,6 +2,10 @@
 const path = require('path')
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    loader: "imgix",
+    path: "https://noop/",
+  },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   }

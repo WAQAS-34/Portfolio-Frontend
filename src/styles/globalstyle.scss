@@ -1,3 +1,4 @@
+@import 'baguettebox.js/dist/baguetteBox.min.css';
 @import "~bootstrap/scss/bootstrap";
 @import "header";
 @import "colorpalette";
@@ -10,7 +11,6 @@
 @import "contactFrom";
 @import "mobiledevelopment";
 @import "admin";
-
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
@@ -288,7 +288,7 @@ p {
 }
 .heading4 {
   @include heading2(600, $white);
-  font-size: 20px;
+  font-size: 18px;
   line-height: 25px;
   @include mobile {
     font-size: 16px;
@@ -420,4 +420,10 @@ p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.container{
+  @include exteraLarge {
+    max-width: 1800px ;
+    // border: 1px solid red ;
+  }
 }

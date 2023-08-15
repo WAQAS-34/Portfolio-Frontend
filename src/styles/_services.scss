@@ -7,7 +7,12 @@
 }
 .services-card {
   border: 1px solid $darkgray;
-  width: max-content;
+  
+  width: 700px;
+
+  @include mdLarge {
+    width: max-content;
+  }
   padding: 40px 53px 40px 44px;
   border-radius: 10px;
   display: flex;

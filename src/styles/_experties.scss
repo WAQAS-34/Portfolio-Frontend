@@ -117,7 +117,7 @@
   padding: 35px 31px 35px 31px;
   //   width: max-content;
   border-radius: 20px !important;
-  min-height: 327px;
+  // min-height: 327px;
   .userPic {
     width: 52px;
     height: 52px;
@@ -235,4 +235,14 @@
   @include tablet {
     margin-top: 34px;
   }
+}
+
+.likeIcon{
+  color: $white;
+  font-size: 20px !important;
+  transition: .5s ease;
+  cursor: pointer;
+}
+.likeIcon:hover{
+  color: $red ;
 }

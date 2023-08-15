@@ -1,7 +1,18 @@
 @import "breakpoints";
 
+@mixin mdLarge {
+  @media (max-width: $mdLarge) {
+    @content;
+  }
+}
+
 @mixin largeScreen {
   @media (max-width: $largerScren) {
+    @content;
+  }
+}
+@mixin exteraLarge {
+  @media (min-width: $largerScren) {
     @content;
   }
 }

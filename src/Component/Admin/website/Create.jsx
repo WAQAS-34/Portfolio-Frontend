@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
 import { websiteDev } from "@/store/action";
 import { Form } from "react-bootstrap";
+import { PORTFOLIO_TYPE } from "@/utils/utils";
 const CreateWebsite = () => {
   const [loading, setloading] = useState(false);
   const router = useRouter();
@@ -25,6 +26,7 @@ const CreateWebsite = () => {
     imageUrl: false,
     imageFile: "",
     selected: false,
+    fullImage: false,
   });
   console.log("State.selected", State.selected);
 
@@ -103,8 +105,8 @@ const CreateWebsite = () => {
         likeCount: State.likeCount,
         views: State.views,
         selected: State.selected,
-        portfolioType:'Website Development '
-
+        portfolioType: PORTFOLIO_TYPE.Website_Development,
+        fullImage: State.fullImage,
       },
     })
       .then((res) => {
@@ -117,7 +119,7 @@ const CreateWebsite = () => {
           imageFile: "",
         });
 
-        router.push(`/admin/web-dev/view`)
+        router.push(`/admin/web-dev/view`);
         if (res.data) {
           toast.success(`website Create successfully`, {
             position: "top-right",
@@ -170,6 +172,7 @@ const CreateWebsite = () => {
         likeCount: State.likeCount,
         views: State.views,
         selected: State.selected,
+        fullImage: State.fullImage,
       },
     })
       .then((res) => {
@@ -239,10 +242,33 @@ const CreateWebsite = () => {
         imageUrl: webDevState.webImage,
         imageFile: false,
         selected: webDevState.selected,
+        fullImage: webDevState.fullImage,
       });
     }
   }, [webDevState]);
+  const handleimages = (e) => {
+    const file = e.target.files;
+    const formData = new FormData();
+    Array.from(file).forEach((image, index) => {
+      formData.append(`image`, image);
+    });
 
+    axios({
+      url: `${BASE_URL}${upload}`,
+      method: "post",
+      data: formData,
+    })
+      .then((res) => {
+        console.log("res", res);
+        setState((prev) => {
+          return {
+            ...prev,
+            fullImage: res.data.link,
+          };
+        });
+      })
+      .catch((err) => {});
+  };
   return (
     <div className="bg-darkblue">
       <br />
@@ -287,20 +313,7 @@ const CreateWebsite = () => {
           className="inputStyle"
         />
 
-        {/* <input
-            type="checkbox"
-            onChange={(e) =>
-              setState((prev) => {
-                return {
-                  ...prev,
-                  selected: e.target.checked,
-                };
-              })
-            }
-            value={State.selected}
-            name="option"
-          />{" "} */}
-        <div style={{ display: "flex", alignItems: "center" , gap:"10px"}}>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <Form.Check // prettier-ignore
             onChange={(e) =>
               setState((prev) => {
@@ -319,7 +332,17 @@ const CreateWebsite = () => {
           />
           <p className="p1">Select</p>
         </div>
+        <label className="btn4">
+          <input type="file" name="image" onChange={handleimages} hidden />
+          Upload Full Image
+        </label>
 
+        {State.fullImage ? (
+          <img src={State.fullImage} className="previwImag" alt="" />
+        ) : //   <img src={"/images/1691193413725--wallpaperflare.com_wallpaper-(4).jpg"} className="previwImag" alt="" />
+        null}
+        <br />
+        <br />
         {router.query.id ? (
           <button className="outlinebtn1" onClick={handleUplod}>
             {loading ? <Loader /> : "Update"}

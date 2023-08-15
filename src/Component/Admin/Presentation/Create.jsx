@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
 import { presentationDispatch, uiuxDispatch, websiteDev } from "@/store/action";
 import { Form } from "react-bootstrap";
+import { PORTFOLIO_TYPE } from "@/utils/utils";
 
 const CreateWebsite = () => {
   const [loading, setloading] = useState(false);
@@ -26,6 +27,7 @@ const CreateWebsite = () => {
     imageFile: "",
     type: "",
     selected: false,
+    fullImage: false,
   });
   console.log("State.selected", State.type);
 
@@ -104,8 +106,9 @@ const CreateWebsite = () => {
         likeCount: State.likeCount,
         views: State.views,
         selected: State.selected,
-        portfolioType: "Presentations Design",
+        portfolioType: PORTFOLIO_TYPE.Presentations_Design,
         type: State.type,
+        fullImage: State.fullImage,
       },
     })
       .then((res) => {
@@ -172,7 +175,7 @@ const CreateWebsite = () => {
         views: State.views,
         selected: State.selected,
         type: State.type,
-
+        fullImage: State.fullImage,
       },
     })
       .then((res) => {
@@ -245,10 +248,33 @@ const CreateWebsite = () => {
         imageFile: false,
         selected: presentationState.selected,
         type: presentationState.type,
+        fullImage: presentationState.fullImage,
       });
     }
   }, [presentationState]);
+  const handleimages = (e) => {
+    const file = e.target.files;
+    const formData = new FormData();
+    Array.from(file).forEach((image, index) => {
+      formData.append(`image`, image);
+    });
 
+    axios({
+      url: `${BASE_URL}${upload}`,
+      method: "post",
+      data: formData,
+    })
+      .then((res) => {
+        console.log("res", res);
+        setState((prev) => {
+          return {
+            ...prev,
+            fullImage: res.data.link,
+          };
+        });
+      })
+      .catch((err) => {});
+  };
   return (
     <div className="bg-darkblue">
       <br />
@@ -329,6 +355,17 @@ const CreateWebsite = () => {
           />
           <p className="p1">Select</p>
         </div>
+
+        <label className="btn4">
+          <input type="file" name="image" onChange={handleimages} hidden />
+          Upload Full Image
+        </label>
+
+        {State.fullImage ? (
+          <img src={State.fullImage} className="previwImag" alt="" />
+        ) : null}
+        <br />
+        <br />
 
         {router.query.id ? (
           <button className="outlinebtn1" onClick={handleUplod}>

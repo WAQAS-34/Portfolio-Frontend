@@ -9,15 +9,14 @@ import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
 import { uiuxDispatch, websiteDev } from "@/store/action";
 import { Form } from "react-bootstrap";
+import { PORTFOLIO_TYPE } from "@/utils/utils";
 const CreateWebsite = () => {
   const [loading, setloading] = useState(false);
   const router = useRouter();
   const dispatch = useDispatch();
   const { id } = router.query;
   console.log(id);
-  const webDevState = useSelector(
-    (state) => state && state.uiuxDesign.uiux
-  );
+  const webDevState = useSelector((state) => state && state.uiuxDesign.uiux);
   const [State, setState] = useState({
     views: "",
     likeCount: "",
@@ -25,6 +24,7 @@ const CreateWebsite = () => {
     imageUrl: false,
     imageFile: "",
     selected: false,
+    fullImage: false,
   });
   console.log("State.selected", State.selected);
 
@@ -103,7 +103,8 @@ const CreateWebsite = () => {
         likeCount: State.likeCount,
         views: State.views,
         selected: State.selected,
-        portfolioType:'UI/UX Design'
+        portfolioType: PORTFOLIO_TYPE.UI_Design,
+        fullImage: State.fullImage,
       },
     })
       .then((res) => {
@@ -116,7 +117,7 @@ const CreateWebsite = () => {
           imageFile: "",
         });
 
-        router.push(`/admin/ui-ux/view`)
+        router.push(`/admin/ui-ux/view`);
         if (res.data) {
           toast.success(`website Create successfully`, {
             position: "top-right",
@@ -238,10 +239,33 @@ const CreateWebsite = () => {
         imageUrl: webDevState.webImage,
         imageFile: false,
         selected: webDevState.selected,
+        fullImage: webDevState.fullImage,
       });
     }
   }, [webDevState]);
+  const handleimages = (e) => {
+    const file = e.target.files;
+    const formData = new FormData();
+    Array.from(file).forEach((image, index) => {
+      formData.append(`image`, image);
+    });
 
+    axios({
+      url: `${BASE_URL}${upload}`,
+      method: "post",
+      data: formData,
+    })
+      .then((res) => {
+        console.log("res", res);
+        setState((prev) => {
+          return {
+            ...prev,
+            fullImage: res.data.link,
+          };
+        });
+      })
+      .catch((err) => {});
+  };
   return (
     <div className="bg-darkblue">
       <br />
@@ -286,20 +310,18 @@ const CreateWebsite = () => {
           className="inputStyle"
         />
 
-        {/* <input
-            type="checkbox"
-            onChange={(e) =>
-              setState((prev) => {
-                return {
-                  ...prev,
-                  selected: e.target.checked,
-                };
-              })
-            }
-            value={State.selected}
-            name="option"
-          />{" "} */}
-        <div style={{ display: "flex", alignItems: "center" , gap:"10px"}}>
+        <label className="btn4">
+          <input type="file" name="image" onChange={handleimages} hidden />
+          Upload Full Image
+        </label>
+
+        {State.fullImage ? (
+          <img src={State.fullImage} className="previwImag" alt="" />
+        ) : 
+        null}
+        <br />
+        <br />
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <Form.Check // prettier-ignore
             onChange={(e) =>
               setState((prev) => {

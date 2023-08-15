@@ -17,6 +17,7 @@ import {
   uiuxDispatch,
   websiteDev,
 } from "@/store/action";
+import { PORTFOLIO_TYPE } from "@/utils/utils";
 
 const Portfolio = () => {
   const uiuxState = useSelector((state) => state && state.uiuxDesign.uiux);
@@ -52,15 +53,15 @@ const Portfolio = () => {
     },
   ];
   const handlePortfolio = (ind) => {
-    if (ind == "Mobile app development") {
-      router.push(`/mobile-development`);
-    } else if (ind == "UI/UX Design") {
-      router.push(`/ui-ux`);
-    } else if (ind == "Website Development ") {
-      router.push(`/website-development`);
-    } else if (ind == "Presentations Design") {
-      router.push(`/presentation-design`);
-    }
+    // if (ind == PORTFOLIO_TYPE.Mobile_app_development) {
+    //   router.push(`/mobile-development`);
+    // } else if (ind == PORTFOLIO_TYPE.UI_Design) {
+    //   router.push(`/ui-ux`);
+    // } else if (ind == PORTFOLIO_TYPE.Website_Development) {
+    //   router.push(`/website-development`);
+    // } else if (ind == PORTFOLIO_TYPE.Presentations_Design) {
+    //   router.push(`/presentation-design`);
+    // }
   };
 
   useEffect(() => {
@@ -94,18 +95,20 @@ const Portfolio = () => {
                   .slice(rowIndex * itemsPerRow, (rowIndex + 1) * itemsPerRow)
                   .map((item, ind) => (
                     <div
-                      onClick={() => handlePortfolio(item.portfolioType)}
+                  
                       key={ind}
                       className="portfolio-card"
                     >
                       <PortfolioCard
+                      fullImage={item.fullImage}
+                        id={item._id}
                         showtittle
                         likeCount={item.likeCount ?? 0}
                         views={item.views ?? 0}
-                        bluecolor={"bg-blue"}
+                        bluecolor={"bg-darkblue"}
                         tittle={item.portfolioType}
                         year={item.year}
-                        image={item.webImage ? item.webImage : item.appImage}
+                        image={item.webImage ? item.webImage : item.thumbnailImage}
                       />
                     </div>
                   ))}

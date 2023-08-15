@@ -21,6 +21,7 @@ import {
 } from "@/store/action";
 import { Form } from "react-bootstrap";
 import MultiSelect from "@/Component/MultiSelect/MultiSelect";
+import { PORTFOLIO_TYPE } from "@/utils/utils";
 
 const CreateWebsite = () => {
   const options = [
@@ -58,8 +59,10 @@ const CreateWebsite = () => {
     allScreenImages: [],
     imageUrl: false,
     imageFile: "",
-
+    likeCount: 0,
+    views: 0,
     selected: false,
+    thumbnailImage: false,
   });
 
   const handleimage = (e) => {
@@ -92,6 +95,29 @@ const CreateWebsite = () => {
           return {
             ...prev,
             allScreenImages: [...State.allScreenImages, ...res.data.urls],
+          };
+        });
+      })
+      .catch((err) => {});
+  };
+  const handleThumbnail = (e) => {
+    const file = e.target.files;
+    const formData = new FormData();
+    Array.from(file).forEach((image, index) => {
+      formData.append(`image`, image);
+    });
+
+    axios({
+      url: `${BASE_URL}${upload}`,
+      method: "post",
+      data: formData,
+    })
+      .then((res) => {
+        console.log("res", res);
+        setState((prev) => {
+          return {
+            ...prev,
+            thumbnailImage: res.data.link,
           };
         });
       })
@@ -166,9 +192,12 @@ const CreateWebsite = () => {
         appName: State.appName,
         appDecs: State.appDecs,
         appSkills: multiSelect,
-        portfolioType: "Mobile app development",
+        portfolioType: PORTFOLIO_TYPE.Mobile_app_development,
         selected: State.selected,
         allScreenImages: State.allScreenImages,
+        likeCount: State.likeCount,
+        views: State.views,
+        thumbnailImage: State.thumbnailImage,
       },
     })
       .then((res) => {
@@ -240,6 +269,9 @@ const CreateWebsite = () => {
         appSkills: multiSelect,
         selected: State.selected,
         allScreenImages: State.allScreenImages,
+        likeCount: State.likeCount,
+        views: State.views,
+        thumbnailImage: State.thumbnailImage,
       },
     })
       .then((res) => {
@@ -320,6 +352,9 @@ const CreateWebsite = () => {
         appSkills: mobileAppState.appSkills,
         allScreenImages: mobileAppState.allScreenImages,
         selected: mobileAppState.selected,
+        likeCount: mobileAppState.likeCount,
+        views: mobileAppState.views,
+        thumbnailImage: mobileAppState.thumbnailImage,
       });
     }
   }, [mobileAppState]);
@@ -339,6 +374,35 @@ const CreateWebsite = () => {
           <input type="file" name="image" onChange={handleimage} hidden />
           Upload Image
         </label>
+
+        <input
+          type="number"
+          value={State.views}
+          onChange={(e) =>
+            setState((prev) => {
+              return {
+                ...prev,
+                views: e.target.value,
+              };
+            })
+          }
+          placeholder="Enter Views"
+          className="inputStyle"
+        />
+        <input
+          value={State.likeCount}
+          onChange={(e) =>
+            setState((prev) => {
+              return {
+                ...prev,
+                likeCount: e.target.value,
+              };
+            })
+          }
+          type="number"
+          placeholder="Enter Likes"
+          className="inputStyle"
+        />
         <input
           type="text"
           value={State.appName}
@@ -424,7 +488,24 @@ const CreateWebsite = () => {
         </label>
         <br />
         <br />
+        <label className="btn4">
+          <input
+            type="file"
+            multiple
+            name="image"
+            onChange={handleThumbnail}
+            hidden
+          />
+          Upload Thumbnail
+        </label>
+        <br />
+        <br />
 
+        {State.thumbnailImage ? (
+          <img src={State.thumbnailImage} className="previwImag" alt="" />
+        ) : null}
+       <br />
+       <br />
         {router.query.id ? (
           <button className="outlinebtn1" onClick={handleUplod}>
             {loading ? <Loader /> : "Update"}

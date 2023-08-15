@@ -139,19 +139,19 @@ const ContactForm = () => {
           <div>
             <img src={waqas.src} alt="" />
             <h6 className="heading5 text-white profile-text">Waqas Abbas</h6>
-            <div className="dot-container">
-              {/* <div className="dot"></div> */}
+            {/* <div className="dot-container">
+              
               <MdOutlineEmail style={{ color: "#fff", fontSize: "16px" }} />
               <p className="p1">info@devpixelsolutions.com</p>
             </div>
             <div className="dot-container">
-              {/* <div className="dot"></div> */}
+              
               <GrMapLocation
                 className="locationIcon"
                 style={{ color: "#fff !important", fontSize: "16px" }}
               />
               <p className="p1">Sialkot, Pakistan.51310</p>
-            </div>
+            </div> */}
             <div className="dot-container">
               <div className="dot"></div>
               <p className="p1"> connect with our lead today</p>
@@ -163,13 +163,22 @@ const ContactForm = () => {
               <Link target="_blank" href={whatsappURL}>
                 <img src={whatsapp.src} alt="" />
               </Link>
-              <Link href={"/"}>
+              <Link
+                href={"https://www.instagram.com/devpixelsolutions/"}
+                target="_blank"
+              >
                 <img src={instagram.src} alt="" />
               </Link>
-              <Link href={"/"}>
+              <Link
+                href={"https://www.linkedin.com/company/dev-pixel-solutions/"}
+                target="_blank"
+              >
                 <img src={linkdin.src} alt="" />
               </Link>
-              <Link href={"/"}>
+              <Link
+                href={"https://www.facebook.com/profile.php?id=100095281465278"}
+                target="_blank"
+              >
                 <img src={facebook.src} alt="" />
               </Link>
             </div>
@@ -241,12 +250,21 @@ const ContactForm = () => {
           </div>
         </motion.div>
       </div>
-
-      <div className="footer ">
-        <img src={logo.src} />
-        <p className="p1">
-          © 2023 Copyright The Presentation Company. All rights reserved.
-        </p>
+      <div className="horizontal-line"></div>
+      <div className="container container-padding">
+        <div className="footer ">
+          <img src={logo.src} />
+          <p className="p1" style={{textAlign:"center"}}>
+            info@devpixelsolutions.com
+            </p>
+          <div>
+            <p className="p1">
+            @2023 The Devpixelsolutions. All rights reserved.
+            </p>
+   
+     
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -60,11 +60,13 @@ const WebsiteDevelopmet = () => {
                 .map((item, ind) => (
                   <div key={ind} className="portfolio-card">
                     <PortfolioCard
-                      
+                      fullImage={item.fullImage}
+
+                      id={item._id}
                       likeCount={item.likeCount}
                       views={item.views}
                       bluecolor={"bg-blue"}
-                      tittle={item.tittle}
+                      tittle={item.portfolioType}
                       year={item.year}
                       image={item.webImage}
                     />
