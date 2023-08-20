@@ -67,6 +67,7 @@
     margin-top: 23px;
     h4{
       margin-bottom: 0px !important;
+      text-transform: capitalize ;
     }
   }
   .portfolioImg {
@@ -79,7 +80,7 @@
     // object-fit: cover;
     border-radius: 14px;
     cursor: pointer;
-    @include largeScreen {
+    @include laptops {
       width: 475px;
       // height: 326px;
     }

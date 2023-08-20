@@ -18,14 +18,17 @@ import Loader from "../Loader/Loader";
 import { MdOutlineEmail } from "react-icons/md";
 
 import { GrMapLocation } from "react-icons/gr";
+import { useRouter } from "next/router";
+import { whatsappURL } from "@/utils/whatsAppurl";
 
 const ContactForm = () => {
-  const phoneNumber = "+923056256473";
-  const message = "Hello";
-  // Construct  the WhatsApp URL
-  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message
-  )}`;
+  const router = useRouter()
+  // const phoneNumber = "+923056256473";
+  // const message = "Hello";
+  // // Construct  the WhatsApp URL
+  // const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+  //   message
+  // )}`;
   const ref = useRef();
   const { elementRef, mainControls } = useInViewAnimation();
   const [loading, setloading] = useState(false);
@@ -182,7 +185,7 @@ const ContactForm = () => {
                 <img src={facebook.src} alt="" />
               </Link>
             </div>
-            <button className="btn4 hoverglow">
+            <button  onClick={()=>router.push(whatsappURL)} className="btn4 hoverglow">
               Book a free call <img src={arrowright.src} alt="" />{" "}
             </button>
           </div>
@@ -259,7 +262,7 @@ const ContactForm = () => {
             </p>
           <div>
             <p className="p1">
-            @2023 The Devpixelsolutions. All rights reserved.
+            &copy; {new Date().getFullYear()} The Devpixelsolutions. All rights reserved.
             </p>
    
      

@@ -17,6 +17,7 @@
   align-items: center;
   @include tablet {
     border: none;
+    justify-content: center;
   }
 }
 .nav-link-wrapper {
@@ -34,7 +35,7 @@
 
   @include tablet {
     padding: 15px 0px !important;
-    //  border: 1px solid red;
+
   }
 }
 .btn-close {

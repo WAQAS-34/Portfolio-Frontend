@@ -14,8 +14,8 @@ const MobileDevelopment = () => {
     dispatch(mobileDispatch());
   }, []);
   return (
-    <div className="bg-darkblue">
-      <div className="container mobiledevelopment  ">
+    <div className="bg-darkblue mobile-development-box">
+      <div className="container mobiledevelopment  container-padding">
         <div className="developmentWrapper">
           <TopHeading
             elementRef={ref}

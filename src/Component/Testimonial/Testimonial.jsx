@@ -113,7 +113,7 @@ const Testimonial = () => {
       <TopHeading
         elementRef={ref}
         tittle={"Trusted by    "}
-        colorTitle={"Hundred Clients"}
+        colorTitle={"Clients"}
         btnText={"WHAT CLIENTS SAYS?"}
       />
       <div className="sliderBox">

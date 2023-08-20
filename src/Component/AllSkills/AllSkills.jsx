@@ -42,7 +42,7 @@ const AllSkills = ({ development, presentation, uiux }) => {
           <SkillBox title={"JavaScript"} icon={js} />
           {/* <SkillBox title={"JavaScript"} icon={html} /> */}
           <SkillBox title={"react js"} icon={reactjs} />
-          <SkillBox title={"react "} icon={react} />
+          <SkillBox title={"react Native "} icon={react} />
           <SkillBox title={"Redux"} icon={redux} />
           <SkillBox title={"typescript"} icon={ts} />
           <SkillBox title={"Firebase"} icon={firebase} />

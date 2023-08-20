@@ -52,16 +52,16 @@ const Portfolio = () => {
       image: presentation,
     },
   ];
-  const handlePortfolio = (ind) => {
-    // if (ind == PORTFOLIO_TYPE.Mobile_app_development) {
-    //   router.push(`/mobile-development`);
-    // } else if (ind == PORTFOLIO_TYPE.UI_Design) {
-    //   router.push(`/ui-ux`);
-    // } else if (ind == PORTFOLIO_TYPE.Website_Development) {
-    //   router.push(`/website-development`);
-    // } else if (ind == PORTFOLIO_TYPE.Presentations_Design) {
-    //   router.push(`/presentation-design`);
-    // }
+  const handlePortfolio = (type) => {
+    if (type == PORTFOLIO_TYPE.Mobile_app_development) {
+      router.push(`/mobile-development.html`);
+    } else if (type == PORTFOLIO_TYPE.UI_Design) {
+      router.push(`/ui-ux.html`);
+    } else if (type == PORTFOLIO_TYPE.Website_Development) {
+      router.push(`/website-development.html`);
+    } else if (type == PORTFOLIO_TYPE.Presentations_Design) {
+      router.push(`/presentation-design.html`);
+    }
   };
 
   useEffect(() => {
@@ -94,13 +94,11 @@ const Portfolio = () => {
                 selecteSate
                   .slice(rowIndex * itemsPerRow, (rowIndex + 1) * itemsPerRow)
                   .map((item, ind) => (
-                    <div
-                  
-                      key={ind}
-                      className="portfolio-card"
-                    >
+                    <div key={ind} className="portfolio-card">
                       <PortfolioCard
-                      fullImage={item.fullImage}
+                        event={() => handlePortfolio(item.portfolioType)}
+                        diableFullImage
+                        fullImage={item.fullImage}
                         id={item._id}
                         showtittle
                         likeCount={item.likeCount ?? 0}
@@ -108,7 +106,9 @@ const Portfolio = () => {
                         bluecolor={"bg-darkblue"}
                         tittle={item.portfolioType}
                         year={item.year}
-                        image={item.webImage ? item.webImage : item.thumbnailImage}
+                        image={
+                          item.webImage ? item.webImage : item.thumbnailImage
+                        }
                       />
                     </div>
                   ))}

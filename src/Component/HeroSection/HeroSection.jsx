@@ -7,7 +7,11 @@ import profile2 from "../../assets/images/profile2.svg";
 import realProjects from "../../assets/images/realProjects.svg";
 import Link from "next/link";
 import { useSelector } from "react-redux";
+import { whatsappURL } from "@/utils/whatsAppurl";
+import { useRouter } from "next/router";
+
 const HeroSection = () => {
+  const router = useRouter()
   const testimonialState = useSelector(
     (state) => state && state.testmonialReducer.testimonial
   );
@@ -51,6 +55,7 @@ const HeroSection = () => {
                 delay: 0.7,
               }}
               className="btn1 hoverglow"
+              onClick={()=>router.push(whatsappURL)}
             >
               Lets Talk
             </motion.button>

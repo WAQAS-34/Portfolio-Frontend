@@ -45,8 +45,12 @@
       }
     }
     .input-wrapper {
+      // width: 568px;
+      width: 652px;
+      @include largeScreen {
       width: 568px;
-   
+        
+      }
       textarea {
         margin: 31px 0px 71px 0px;
         @include laptops {
@@ -89,7 +93,8 @@
   @include mobile {
     margin-top: 13px !important;
     justify-content: center;
-    // padding: 22px 0px 21px 0px !important;
+    flex-direction: column;
+    padding: 11px 0px 27px 0px !important;
   }
 
   // border-top: 1px solid ;

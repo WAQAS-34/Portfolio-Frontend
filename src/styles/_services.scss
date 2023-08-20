@@ -34,7 +34,6 @@
     margin-top: 17px;
   }
   @include largeScreen {
-    padding: 40px 20px 40px 20px;
     height: 269px;
     h3 {
       font-size: 23px;
@@ -43,6 +42,8 @@
     }
   }
   @include mobile {
+    padding: 40px 20px 40px 20px;
+
     height: auto;
     width: 100%;
     gap: 20px;

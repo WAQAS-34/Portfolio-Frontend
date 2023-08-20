@@ -20,18 +20,18 @@ export default function Home() {
 
       {/* <ServicesSlides /> */}
 
-      <Element name="services">
+      <Element name="services" id='services'>
         <Services />
       </Element>
-      <Element name="portfolio">
+      <Element name="portfolio" id='portfolio'>
 
         <Portfolio />
       </Element>
-      <Element name="Expertise">
+      <Element name="Expertise" id='Expertise'>
 
         <Experties />
       </Element>
-      <Element name="contact">
+      <Element name="contact" id='contact'>
 
         <ContactForm />
       </Element>

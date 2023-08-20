@@ -9,7 +9,7 @@ function App({ Component, pageProps }) {
     <>
     <Provider store={store}>
       <Head>
-        <title>TECH SOLUTIONS</title>
+        <title>Dev Pixel Solutions</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="icon" href="/favicon.ico" />

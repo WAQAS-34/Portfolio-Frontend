@@ -12,7 +12,9 @@ import axios from "axios";
 import portfolio1 from "@/assets/images/portfolio1.svg";
 import baguetteBox from "baguettebox.js";
 const PortfolioCard = ({
+  event,
   views,
+  diableFullImage,
   likeCount,
   showtittle,
   bluecolor,
@@ -58,35 +60,9 @@ const PortfolioCard = ({
     buttons: false,
     fullScreen: false,
   });
-  // useEffect(() => {
-  //   const isLike = localStorage.getItem("islike");
-  //   const likeid = localStorage.getItem("likeid");
-  //   if (isLike && likeid == id) {
-  //     setisLike(true);
-  //   }
-  // }, []);
 
   return (
     <>
-      {/* <div className="images">
-           <a
-          href={`https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg`}
-          data-at-450={image}
-          data-at-800={image}
-          data-at-1366={image}
-          data-at-1920={image}
-        >
-
-          <motion.img
-            className="portfolioImg"
-            whileHover={{ scale: 1.1 }} // Scale to 1.2 on hover
-            transition={{ duration: 0.3, ease: "easeInOut" }} // Animation duration and easing
-            src={image}
-            alt=""
-          />
-        </a>
-    </div> */}
-
       <motion.div
         ref={elementRef}
         variants={{
@@ -108,30 +84,33 @@ const PortfolioCard = ({
           className="images"
           style={{ overflow: "hidden", borderRadius: "14px" }}
         >
-          <a
-            href={ fullImage??image}
-            data-at-450={
-              fullImage??image
-            }
-            data-at-800={
-              fullImage??image
-            }
-            data-at-1366={
-              fullImage??image
-            }
-            data-at-1920={
-              fullImage??image
-            }
-          >
+          {diableFullImage ? (
             <motion.img
-            onClick={(e)=>e.stopPropagation()}
+              onClick={event}
               className="portfolioImg"
               whileHover={{ scale: 1.1 }} // Scale to 1.2 on hover
               transition={{ duration: 0.3, ease: "easeInOut" }} // Animation duration and easing
               src={image}
               alt=""
             />
-          </a>
+          ) : (
+            <a
+              href={fullImage ?? image}
+              data-at-450={fullImage ?? image}
+              data-at-800={fullImage ?? image}
+              data-at-1366={fullImage ?? image}
+              data-at-1920={fullImage ?? image}
+            >
+              <motion.img
+                onClick={(e) => e.stopPropagation()}
+                className="portfolioImg"
+                whileHover={{ scale: 1.1 }} // Scale to 1.2 on hover
+                transition={{ duration: 0.3, ease: "easeInOut" }} // Animation duration and easing
+                src={image}
+                alt=""
+              />
+            </a>
+          )}
         </div>
         <div className="portfolioCardWrapper">
           {showtittle ? (

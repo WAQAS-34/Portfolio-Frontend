@@ -23,6 +23,7 @@ import Figma from "@/assets/images/Figma.svg";
 import AdobeXD from "@/assets/images/Adobe XD.svg";
 import keynote from "@/assets/images/keynote.svg";
 import { motion } from "framer-motion";
+import reactNative from "@/assets/images/react.svg";
 
 function ContextAwareToggle({ appName, children, eventKey, callback }) {
   const { activeEventKey } = useContext(AccordionContext);
@@ -69,6 +70,7 @@ function MobilePortfolio({
   const iconMapping = {
     typescript: ts,
     html5: html5,
+    reactNative:reactNative,
     css3: css3,
     JavaScript: js,
     reactjs: reactjs,
@@ -90,7 +92,7 @@ function MobilePortfolio({
     <div className="mobileprotoflio">
       <Accordion defaultActiveKey="0">
         <Card>
-          <div className="container">
+          <div className="container container-padding">
             <Card.Header className="">
               {/* <div className="container"></div> */}
               <ContextAwareToggle

@@ -1,6 +1,13 @@
 @import "colorpalette";
 @import "mediaquery";
 
+
+.mobile-development-box .container{
+  @include exteraLarge {
+    // max-width: 1600px ;
+    // border: 1px solid red ;
+  }
+}
 .mobiledevelopment {
   padding: 60px 0px 30px 0px;
   .developmentWrapper {
@@ -77,12 +84,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    // align-items: center;
+    align-items: flex-end;
     // padding: 42px 0px 3px 0px;
-    padding: 42px 14px 70px 14px;
+    // padding: 42px 14px 70px 14px;
+    padding: 42px 25px 70px 62px;
     // gap: 106px;
     .decs {
       margin-top: 25px;
+    }
+    @include largeScreen {
+    padding: 42px 0px 70px 0px;
+      
     }
     @include laptops {
       justify-content: center;
@@ -107,7 +119,7 @@
       margin-top: 46px;
       max-width: 600px;
     }
-    @include largeScreen {
+    @include laptops {
       .mobileImage {
         width: 456px !important;
       }

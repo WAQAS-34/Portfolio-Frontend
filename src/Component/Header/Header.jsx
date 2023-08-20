@@ -17,15 +17,12 @@ import { useEffect, useRef, useState } from "react";
 import whatsapp from "@/assets/images/whatsapp.svg";
 import { BsWhatsapp } from "react-icons/bs";
 import { Link } from "react-scroll";
+import { ImCross } from "react-icons/im";
+import { whatsappURL } from "@/utils/whatsAppurl";
 
 function Header({ admin }) {
-  
-  const phoneNumber = "+923056256473";
-  const message = "Hello";
-  // Construct  the WhatsApp URL
-  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message
-  )}`;
+  const [showSideBar, setshowSideBar] = useState(false);
+
   const router = useRouter();
   const [currentIndex, setcurrentIndex] = useState(null);
 
@@ -33,22 +30,28 @@ function Header({ admin }) {
     {
       name: "Home",
       path: "home",
+      linkPath: "/",
+
     },
     {
       name: "services",
       path: "services",
+      linkPath: "/#services",
     },
     {
       name: "Portfolio",
       path: "portfolio",
+      linkPath: "/#portfolio",
     },
     {
       name: "Expertise",
       path: "Expertise",
+      linkPath: "/#Expertise",
     },
     {
       name: "contact",
       path: "contact",
+      linkPath: "/#contact",
     },
   ];
   const adminNavigation = [
@@ -73,7 +76,15 @@ function Header({ admin }) {
       path: "/admin/testimonial/view.html",
     },
   ];
- 
+  console.log("showSideBar", showSideBar);
+  const handleNavigate = () => {
+    setshowSideBar(false);
+  };
+  useEffect(() => {
+    if (window.innerWidth < 500) {
+      setshowSideBar(false);
+    }
+  }, []);
 
   return (
     <>
@@ -84,21 +95,36 @@ function Header({ admin }) {
       >
         <Container className="container-padding">
           <Navbar.Brand className="p-0" href="/">
-            {/* <Image priority={false} src={logo} className="logo"></Image> */}
             <img src={logo.src} className="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${"md"}`}>
-            <RiMenu3Line style={{ color: "#fff", fontSize: "30px" }} />
+            <RiMenu3Line
+              onClick={() => setshowSideBar(true)}
+              style={{ color: "#fff", fontSize: "30px" }}
+            />
           </Navbar.Toggle>
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${"md"}`}
             aria-labelledby={`offcanvasNavbarLabel-expand-${"md"}`}
             placement="end"
-            className="bg-blue"
+            className={`bg-blue `}
+            show={showSideBar}
           >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${"md"}`}>
+            <Offcanvas.Header>
+              <Offcanvas.Title
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  width: "100%",
+                }}
+                id={`offcanvasNavbarLabel-expand-${"md"}`}
+              >
                 <img src={logo.src} className="logo" />
+                <ImCross
+                  onClick={() => setshowSideBar(false)}
+                  style={{ color: "gray" }}
+                />
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
@@ -112,12 +138,29 @@ function Header({ admin }) {
                           router.pathname == item.path ? "active" : ""
                         }`}
                         key={ind}
-                        // className={`${
-                        //   router.pathname == item.path
-                        //     ? " header-link active-nav-link"
-                        //     : "header-link"
-                        // }  `}
                         href={item.path}
+                      >
+                        {item.name}
+                      </Nav.Link>
+                    );
+                  })
+                ) : router.pathname != "/" ? (
+                  navigation?.map((item, ind) => {
+                    return (
+                      <Nav.Link
+                        onClick={() => {
+                          setshowSideBar(false);
+                        }}
+                        className={` header-link ${
+                          admin && router.pathname == item.path
+                            ? "active-nav-link"
+                            : !admin && ind == currentIndex
+                            ? "active"
+                            : ""
+                        }`}
+                        key={ind}
+                        to={item.path}
+                        href={item.linkPath}
                       >
                         {item.name}
                       </Nav.Link>
@@ -130,6 +173,10 @@ function Header({ admin }) {
                         <Link
                           spy={true}
                           smooth={true}
+                          // onClick={handleNavigate}
+                          onClick={() => {
+                            setshowSideBar(false);
+                          }}
                           duration={500}
                           // onClick={() => setcurrentIndex(ind)}
                           className={` header-link ${
@@ -140,8 +187,8 @@ function Header({ admin }) {
                               : ""
                           }`}
                           key={ind}
-                          href={item.path}
                           to={item.path}
+                          href={item.linkPath}
                         >
                           {item.name}
                         </Link>
@@ -158,12 +205,6 @@ function Header({ admin }) {
                     style={{ width: "97px", height: "39px" }}
                   >
                     Hire Us
-                    {/* <BsWhatsapp
-                      style={{
-                        fontSize: "23px",
-                        color: "#fff",
-                      }}
-                    /> */}
                   </button>
                 </div>
               )}
