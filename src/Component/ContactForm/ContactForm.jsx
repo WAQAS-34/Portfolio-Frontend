@@ -67,7 +67,7 @@ const ContactForm = () => {
           message: "",
         });
 
-        console.log("res", res);
+        
         if (res.data) {
           toast.success(`message sent successfully`, {
             position: "top-right",

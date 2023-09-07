@@ -76,7 +76,7 @@ function Header({ admin }) {
       path: "/admin/testimonial/view.html",
     },
   ];
-  console.log("showSideBar", showSideBar);
+  
   const handleNavigate = () => {
     setshowSideBar(false);
   };

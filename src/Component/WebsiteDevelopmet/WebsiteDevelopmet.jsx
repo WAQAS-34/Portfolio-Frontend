@@ -35,7 +35,7 @@ const WebsiteDevelopmet = () => {
   const webDevState = useSelector(
     (state) => state && state.webDevelopment.webDev
   );
-  console.log("webDevState", webDevState);
+  
   useEffect(() => {
     dispatch(websiteDev());
   }, []);

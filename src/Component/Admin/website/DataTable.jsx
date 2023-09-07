@@ -18,11 +18,6 @@ function DataTable() {
 
   const dispatch = useDispatch();
   const [show, setshow] = useState(false);
-  console.log(
-    "webDevState",
-    webDevState,
-    webDevState && typeof webDevState === "object"
-  );
 
   const handleDelet = () => {
     axios({
@@ -97,7 +92,6 @@ function DataTable() {
               ? null
               : webDevState &&
                 webDevState?.map((item, ind) => {
-                  console.log(item)
                   return (
                     <tr key={ind}>
                       <td>{ind + 1}</td>

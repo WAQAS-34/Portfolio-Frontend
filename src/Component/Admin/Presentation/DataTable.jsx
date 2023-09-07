@@ -17,7 +17,7 @@ function DataTable() {
   const PresentationState = useSelector(
     (state) => state && state.presetatIonReducer.presentation
   );
-  console.log(PresentationState);
+  
   const dispatch = useDispatch();
   const [show, setshow] = useState(false);
 
@@ -109,7 +109,7 @@ function DataTable() {
               ? null
               : PresentationState &&
                 PresentationState?.map((item, ind) => {
-                  console.log(item);
+                  
                   return (
                     <tr key={ind}>
                       <td>{ind + 1}</td>

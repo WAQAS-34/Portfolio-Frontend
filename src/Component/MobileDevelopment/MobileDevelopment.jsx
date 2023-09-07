@@ -26,20 +26,23 @@ const MobileDevelopment = () => {
         </div>
         {/* <MobilePortfolio /> */}
       </div>
-      {mobileAppState &&mobileAppState?.map((item, ind) => {
-        return (
-          <div key={ind}>
-          <MobilePortfolio
-          ind={ind}
-            appName={item.appName}
-            appDecs={item.appDecs}
-            appImage={item.appImage}
-            appSkills={item.appSkills}
-            allScreenImages={item.allScreenImages}
-          />
-          </div>
-        );
-      })}
+      {mobileAppState &&
+        mobileAppState?.map((item, ind) => {
+          console.log("item", item);
+
+          return !item.selected ? (
+            <div key={ind}>
+              <MobilePortfolio
+                ind={ind}
+                appName={item.appName}
+                appDecs={item.appDecs}
+                appImage={item.appImage}
+                appSkills={item.appSkills}
+                allScreenImages={item.allScreenImages}
+              />
+            </div>
+          ) : null;
+        })}
     </div>
   );
 };

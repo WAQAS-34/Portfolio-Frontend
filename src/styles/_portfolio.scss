@@ -15,12 +15,11 @@
   display: flex;
   gap: 41px;
   align-items: center;
-  margin-bottom:41px;
+  margin-bottom: 41px;
   justify-content: center;
   @include laptops {
     gap: 29px;
-  margin-bottom:29px;
-
+    margin-bottom: 29px;
   }
   @include medium {
     // gap: 29px;
@@ -45,12 +44,12 @@
   padding: 22px;
   width: max-content;
   border-radius: 12px;
-  .thumbContainer{
+  .thumbContainer {
     display: flex;
     align-items: center;
     gap: 13px;
   }
-  .infoContainer{
+  .infoContainer {
     display: flex;
     justify-content: space-between;
     // width: 100%;
@@ -65,14 +64,14 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 23px;
-    h4{
+    h4 {
       margin-bottom: 0px !important;
-      text-transform: capitalize ;
+      text-transform: capitalize;
     }
   }
   .portfolioImg {
     max-width: 695px;
-    
+
     @include mdLarge {
       width: 570px;
     }

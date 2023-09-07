@@ -13,7 +13,7 @@ function PresentationDesignTabs() {
 
   const { elementRef, mainControls } = useInViewAnimation();
   const handleChange = (type) => {
-    console.log("runn");
+    
     dispatch(presentationDispatch(`?type=${type}`));
   };
   useEffect(() => {

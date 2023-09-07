@@ -9,7 +9,7 @@ import { presentationDispatch } from "@/store/action";
 import { useDispatch, useSelector } from "react-redux";
 
 const GoogleSlides = ({ type }) => {
-  console.log("type", type);
+  
   const ref = useRef();
   const cardRef = useRef();
   const PresetationState = useSelector(

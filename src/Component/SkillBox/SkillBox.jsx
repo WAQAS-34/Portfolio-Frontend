@@ -1,7 +1,7 @@
 import React from "react";
 
 const SkillBox = ({ icon, title }) => {
-  console.log(icon);
+  
   return (
     <div className="SkillBox">
       <div className="icon-wrapper">

@@ -24,7 +24,7 @@ const Portfolio = () => {
   const selecteSate = useSelector(
     (state) => state && state.selectedReducer.selected
   );
-  console.log("selecteSate", selecteSate);
+  
   const ref = useRef();
   const router = useRouter();
   const dispatch = useDispatch();

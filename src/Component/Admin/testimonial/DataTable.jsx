@@ -22,7 +22,7 @@ function DataTable() {
   const testimonialState = useSelector(
     (state) => state && state.testmonialReducer.testimonial
   );
-  console.log(testimonialState);
+  
   const dispatch = useDispatch();
   const [show, setshow] = useState(false);
 
@@ -102,7 +102,7 @@ function DataTable() {
               ? null
               : testimonialState &&
                 testimonialState?.map((item, ind) => {
-                  console.log(item);
+                  
                   return (
                     <tr key={ind}>
                       <td>{ind + 1}</td>

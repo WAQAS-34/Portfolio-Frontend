@@ -41,7 +41,7 @@ const CreateWebsite = () => {
     review: "",
     star: null,
   });
-  console.log("State.selected", State);
+  
 
   const handleimage = (e) => {
     const file = e.target.files[0];
@@ -84,7 +84,7 @@ const CreateWebsite = () => {
       data: formData,
     })
       .then((res) => {
-        console.log("upload ", res.data.link);
+        
         if (router.query.id) {
           handleUpdate(res.data.link);
         } else {
@@ -92,7 +92,7 @@ const CreateWebsite = () => {
         }
       })
       .catch((err) => {
-        console.log(err);
+        
 
         if (err?.response?.data) {
           toast.error("Only images are allowed", {
@@ -205,7 +205,7 @@ const CreateWebsite = () => {
           star: 0,
         });
 
-        console.log("res", res);
+        
         if (res.data) {
           handleUpdateAndNavigate();
           // dispatch(websiteDev());
@@ -251,7 +251,7 @@ const CreateWebsite = () => {
       });
   };
   useEffect(() => {
-    console.log(router.query);
+    
     if (router.query.id) {
       dispatch(testimonailDispatch(`/${router.query.id}`));
     }

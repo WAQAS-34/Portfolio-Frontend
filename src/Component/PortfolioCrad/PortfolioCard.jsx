@@ -49,7 +49,7 @@ const PortfolioCard = ({
         },
       })
         .then((res) => {
-          console.log("res", res);
+          
         })
         .catch((err) => {});
     }

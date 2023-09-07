@@ -22,7 +22,7 @@ function DataTable() {
   const mobileAppState = useSelector(
     (state) => state && state.mobileAppReducer.mobileApp
   );
-  console.log(mobileAppState);
+  
   const dispatch = useDispatch();
   const [show, setshow] = useState(false);
 
@@ -105,7 +105,7 @@ function DataTable() {
               ? null
               : mobileAppState &&
                 mobileAppState?.map((item, ind) => {
-                  console.log(item);
+                  
                   return (
                     <tr key={ind}>
                       <td>{ind + 1}</td>

@@ -51,7 +51,7 @@ const CreateWebsite = () => {
   const mobileAppState = useSelector(
     (state) => state && state.mobileAppReducer.mobileApp
   );
-  console.log("mobileAppState", mobileAppState);
+  
   const [State, setState] = useState({
     appName: "",
     appImage: "",
@@ -91,7 +91,7 @@ const CreateWebsite = () => {
       data: formData,
     })
       .then((res) => {
-        console.log("res", res);
+        
         setState((prev) => {
           return {
             ...prev,
@@ -114,7 +114,7 @@ const CreateWebsite = () => {
       data: formData,
     })
       .then((res) => {
-        console.log("res", res);
+        
         setState((prev) => {
           return {
             ...prev,
@@ -154,7 +154,7 @@ const CreateWebsite = () => {
       data: formData,
     })
       .then((res) => {
-        console.log("upload ", res.data.link);
+        
         if (router.query.id) {
           handleUpdate(res.data.link);
         } else {
@@ -162,7 +162,7 @@ const CreateWebsite = () => {
         }
       })
       .catch((err) => {
-        console.log(err);
+        
 
         if (err?.response?.data) {
           toast.error("Only images are allowed", {
@@ -254,7 +254,7 @@ const CreateWebsite = () => {
     await dispatch(websiteDev()); // Wait for the state to be updated
     router.push(`/admin/mob-dev/view`); // Navigate after state update
   };
-  console.log("multiSelect", multiSelect);
+  
   const handleUpdate = (imageLink) => {
     // const appSkills = multiSelect.map((item) => {
     //   return item.value;
@@ -289,7 +289,7 @@ const CreateWebsite = () => {
           selected: false,
         });
 
-        console.log("res", res);
+        
         if (res.data) {
           handleUpdateAndNavigate();
           // dispatch(websiteDev());
@@ -336,7 +336,7 @@ const CreateWebsite = () => {
       });
   };
   useEffect(() => {
-    console.log(router.query);
+    
     if (router.query.id) {
       dispatch(mobileDispatch(`/${router.query.id}`));
     }

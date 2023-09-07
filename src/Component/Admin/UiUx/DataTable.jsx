@@ -93,7 +93,7 @@ function DataTable() {
               ? null
               : webDevState &&
                 webDevState?.map((item, ind) => {
-                  console.log(item)
+                  
                   return (
                     <tr key={ind}>
                       <td>{ind + 1}</td>

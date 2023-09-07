@@ -10,7 +10,7 @@ import Select from "react-select";
 
 const MultiSelect = ({options ,multiSelect,setmultiSelect}) => {
 const handleChange =(data)=>{
-    console.log("data",data)
+    
 
 }
   return (

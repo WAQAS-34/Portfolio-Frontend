@@ -3,7 +3,7 @@ import flag from "@/assets/images/flag.svg";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 const ReviewCard = ({ userPic, name, county, countyPic, review, star }) => {
-  console.log("star", star);
+  
   const maxRating = 5;
   const filledStars = star > 5 ? 5 : star;
   const unfilledStars = maxRating - filledStars;

@@ -22,7 +22,7 @@ const Testimonial = () => {
   const { elementRef, mainControls } = useInViewAnimation();
   const [activeSlide, setActiveSlide] = useState(0);
   const remainingSlides =  (testimonialState?.length +1) - (activeSlide + 3);
-  console.log(remainingSlides);
+  
 
   const settings = {
     dots: false,

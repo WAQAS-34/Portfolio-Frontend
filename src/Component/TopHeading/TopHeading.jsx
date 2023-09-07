@@ -23,7 +23,7 @@ const TopHeading = ({ tittle, btnText, colorTitle }) => {
   //   //   mainControls.start("hidden");
   //   // }
 
-  //   console.log("isInview", isInview);
+  //   
   // }, [isInview]);
 
   return (

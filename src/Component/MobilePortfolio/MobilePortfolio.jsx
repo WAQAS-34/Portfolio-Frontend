@@ -66,7 +66,7 @@ function MobilePortfolio({
   allScreenImages,
 }) {
   // const appSkills = ["JavaScript", "typescript", "keynote", "Figma"];
-  console.log("appSkills", appSkills);
+  
   const iconMapping = {
     typescript: ts,
     html5: html5,
