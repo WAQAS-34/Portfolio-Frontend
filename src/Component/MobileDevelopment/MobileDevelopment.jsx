@@ -26,6 +26,7 @@ const MobileDevelopment = () => {
         </div>
         {/* <MobilePortfolio /> */}
       </div>
+      {/* <MobilePortfolio /> */}
       {mobileAppState &&
         mobileAppState?.map((item, ind) => {
           console.log("item", item);

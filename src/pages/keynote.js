@@ -8,7 +8,7 @@ const Presentation = () => {
     return (
         <>
             <Header />
-            <PresentationDesign type={"GoogleSlide"} />
+            <PresentationDesign type={"Keynote"} />
             <ContactForm />
         </>
     )

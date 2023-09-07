@@ -34,10 +34,11 @@ function ContextAwareToggle({ appName, children, eventKey, callback }) {
   );
 
   const isCurrentEventKey = activeEventKey === eventKey;
+  
 
   return (
     <>
-      <div className="accordian-haedwer ">
+      <div onMouseEnter={decoratedOnClick}   className="accordian-haedwer ">
         <h1 className="heading1 sora-font">{appName}</h1>
         {/* <img onClick={decoratedOnClick} src={upArrow.src} alt="" /> */}
         <button
@@ -90,11 +91,11 @@ function MobilePortfolio({
   };
   return (
     <div className="mobileprotoflio">
-      <Accordion defaultActiveKey="0">
+      <Accordion defaultActiveKey={0}>
         <Card>
           <div className="container container-padding">
             <Card.Header className="">
-              {/* <div className="container"></div> */}
+              
               <ContextAwareToggle
                 appName={appName}
                 eventKey={ind}

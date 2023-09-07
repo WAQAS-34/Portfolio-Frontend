@@ -5,6 +5,42 @@
   @include mobile {
     padding: 97px 0px 78px 0px;
   }
+  .btn1 {
+    background-color: $darkColor;
+    color: $white;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border-radius: 12px;
+
+    padding: 9px 24px;
+    width: 140px;
+    border: none;
+    @include mobile {
+      font-size: 13px;
+      width: 100px;
+    }
+  }
+  .activeBtn {
+    background-color: $red !important;
+  }
+  .presentation-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    @include mobile {
+      gap: 5px;
+    }
+  }
+  .presentation-design {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 70px;
+  }
 }
 
 .skillTabs {
@@ -65,10 +101,10 @@
     height: 63px;
     position: relative;
     // border: 1px solid red;
-    
+
     img {
       position: absolute;
-      left: 0px ;
+      left: 0px;
       bottom: 0px;
       width: 100%;
     }
@@ -222,7 +258,6 @@
   // border-radius: 6px;
   img {
     width: 214px;
-    
   }
 }
 .company-row {
@@ -238,12 +273,12 @@
   }
 }
 
-.likeIcon{
+.likeIcon {
   color: $white;
   font-size: 20px !important;
-  transition: .5s ease;
+  transition: 0.5s ease;
   cursor: pointer;
 }
-.likeIcon:hover{
-  color: $red ;
+.likeIcon:hover {
+  color: $red;
 }

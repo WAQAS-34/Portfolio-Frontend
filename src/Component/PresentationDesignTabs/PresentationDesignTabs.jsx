@@ -8,16 +8,15 @@ import GoogleSlides from "../GoogleSlides/GoogleSlides";
 import { useDispatch } from "react-redux";
 import { presentationDispatch } from "@/store/action";
 import { useEffect } from "react";
-function PresentationDesignTabs() {
+function PresentationDesignTabs({ type }) {
   const dispatch = useDispatch();
 
   const { elementRef, mainControls } = useInViewAnimation();
   const handleChange = (type) => {
-    
     dispatch(presentationDispatch(`?type=${type}`));
   };
   useEffect(() => {
-    dispatch(presentationDispatch(`?type=${"GoogleSlide"}`));
+    dispatch(presentationDispatch(`?type=${type}`));
   }, []);
   return (
     <motion.div
@@ -30,8 +29,10 @@ function PresentationDesignTabs() {
       animate={mainControls}
       transition={{ duration: 1 }}
     >
-      <Tabs
-        defaultActiveKey="GoogleSlide"
+      <GoogleSlides />
+
+      {/* <Tabs
+        defaultActiveKey="Keynote"
         id="uncontrolled-tab-example"
         className="mb-3 skillTabs"
         onSelect={handleChange}
@@ -45,7 +46,7 @@ function PresentationDesignTabs() {
         <Tab eventKey="PowerPoint" title="PowerPoint">
           <GoogleSlides type={"PowerPoint"} />
         </Tab>
-      </Tabs>
+      </Tabs> */}
     </motion.div>
   );
 }

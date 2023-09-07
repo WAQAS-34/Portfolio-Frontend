@@ -137,6 +137,7 @@
 .accordian-haedwer {
   align-items: center;
   display: flex;
+  cursor: pointer;
   justify-content: space-between;
   @include mobile {
     .arrowbtnAccordian{
