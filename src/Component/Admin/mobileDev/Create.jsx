@@ -22,6 +22,7 @@ import {
 import { Form } from "react-bootstrap";
 import MultiSelect from "@/Component/MultiSelect/MultiSelect";
 import { PORTFOLIO_TYPE } from "@/utils/utils";
+import { ImCross } from "react-icons/im";
 
 const CreateWebsite = () => {
   const options = [
@@ -51,7 +52,7 @@ const CreateWebsite = () => {
   const mobileAppState = useSelector(
     (state) => state && state.mobileAppReducer.mobileApp
   );
-  
+
   const [State, setState] = useState({
     appName: "",
     appImage: "",
@@ -91,11 +92,10 @@ const CreateWebsite = () => {
       data: formData,
     })
       .then((res) => {
-        
         setState((prev) => {
           return {
             ...prev,
-            allScreenImages: [...State.allScreenImages, ...res.data.urls],
+            allScreenImages: [...res.data.urls,...State.allScreenImages, ],
           };
         });
       })
@@ -114,7 +114,6 @@ const CreateWebsite = () => {
       data: formData,
     })
       .then((res) => {
-        
         setState((prev) => {
           return {
             ...prev,
@@ -154,7 +153,6 @@ const CreateWebsite = () => {
       data: formData,
     })
       .then((res) => {
-        
         if (router.query.id) {
           handleUpdate(res.data.link);
         } else {
@@ -162,8 +160,6 @@ const CreateWebsite = () => {
         }
       })
       .catch((err) => {
-        
-
         if (err?.response?.data) {
           toast.error("Only images are allowed", {
             position: "top-right",
@@ -254,7 +250,7 @@ const CreateWebsite = () => {
     await dispatch(websiteDev()); // Wait for the state to be updated
     router.push(`/admin/mob-dev/view`); // Navigate after state update
   };
-  
+
   const handleUpdate = (imageLink) => {
     // const appSkills = multiSelect.map((item) => {
     //   return item.value;
@@ -289,7 +285,6 @@ const CreateWebsite = () => {
           selected: false,
         });
 
-        
         if (res.data) {
           handleUpdateAndNavigate();
           // dispatch(websiteDev());
@@ -336,7 +331,6 @@ const CreateWebsite = () => {
       });
   };
   useEffect(() => {
-    
     if (router.query.id) {
       dispatch(mobileDispatch(`/${router.query.id}`));
     }
@@ -359,7 +353,18 @@ const CreateWebsite = () => {
       });
     }
   }, [mobileAppState]);
-
+  const handleDelete = (ind) => {
+    console.log("ind", ind);
+    const data = [...State.allScreenImages];
+    data.splice(ind, 1);
+    console.log("deleteOne", data);
+    setState((prev) => {
+      return {
+        ...prev,
+        allScreenImages: data,
+      };
+    });
+  };
   return (
     <div className="bg-darkblue">
       <br />
@@ -460,23 +465,48 @@ const CreateWebsite = () => {
         </div>
 
         <br />
+        <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+          {State.allScreenImages &&
+            State.allScreenImages?.map((item, ind) => {
+              return (
+                <>
+                  <div
+                    style={{
+                      position: "relative",
+                      width: "max-content",
+                      display: "flex",
 
-        {State.allScreenImages &&
-          State.allScreenImages?.map((item) => {
-            return (
-              <>
-                <img
-                  src={item}
-                  style={{
-                    width: "261px",
-                    height: "537px",
-                    objectFit: "contain",
-                  }}
-                  alt=""
-                />
-              </>
-            );
-          })}
+                      justifyContent: "center",
+                      gap: "10px",
+                      alignItems: "center",
+                    }}
+                  >
+                    <ImCross
+                      onClick={() => handleDelete(ind)}
+                      style={{
+                        position: "absolute",
+                        top: "0px",
+                        right: "0px",
+                        fontSize: "20px",
+                        color: "red",
+                        cursor: "pointer",
+                        zIndex: 99,
+                      }}
+                    />
+                    <img
+                      src={item}
+                      style={{
+                        width: "261px",
+                        height: "537px",
+                        objectFit: "contain",
+                      }}
+                      alt=""
+                    />
+                  </div>
+                </>
+              );
+            })}
+        </div>
         <label className="btn4">
           <input
             type="file"
@@ -505,8 +535,8 @@ const CreateWebsite = () => {
         {State.thumbnailImage ? (
           <img src={State.thumbnailImage} className="previwImag" alt="" />
         ) : null}
-       <br />
-       <br />
+        <br />
+        <br />
         {router.query.id ? (
           <button className="outlinebtn1" onClick={handleUplod}>
             {loading ? <Loader /> : "Update"}
