@@ -1,0 +1,101 @@
+[
+  {
+    "_id": "64d7d85d135ef51bc0738280",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1694710762781--Slide21.JPG",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1694710705013--Slide21.JPG",
+    "likeCount": 70,
+    "views": 138,
+    "type": "GoogleSlide",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "64db0b0a135ef51bc0738650",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1694795054382--Slide14.JPG",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1694795045802--Slide14.JPG",
+    "likeCount": 19,
+    "views": 48,
+    "type": "GoogleSlide",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "64db0b3a135ef51bc0738653",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1694795100791--Slide28.JPG",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1694795094100--Slide28.JPG",
+    "likeCount": 6,
+    "views": 20,
+    "type": "GoogleSlide",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "64db0b6d135ef51bc0738656",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1694795134687--Slide32.JPG",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1694795127980--Slide32.JPG",
+    "likeCount": 18,
+    "views": 35,
+    "type": "GoogleSlide",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "64db0be9135ef51bc0738659",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1694795216344--Slide33.JPG",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1694795208232--Slide33.JPG",
+    "likeCount": 43,
+    "views": 98,
+    "type": "GoogleSlide",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "64db0c0e135ef51bc073865c",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1694795243994--Slide37.JPG",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1694795237595--Slide37.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "GoogleSlide",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "64dd05de135ef51bc0738c33",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1694795315843--Slide54.JPG",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1694795306798--Slide54.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "GoogleSlide",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "64dd06d3135ef51bc0738c58",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1694795352331--Slide53.JPG",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1694795343767--Slide53.JPG",
+    "likeCount": 32,
+    "views": 85,
+    "type": "GoogleSlide",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "64dd078f135ef51bc0738c75",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1694795413852--Slide41.JPG",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1694795374495--Slide41.JPG",
+    "likeCount": 5,
+    "views": 21,
+    "type": "GoogleSlide",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  }
+]

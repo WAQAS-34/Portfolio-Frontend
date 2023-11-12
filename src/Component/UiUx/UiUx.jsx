@@ -5,11 +5,12 @@ import portfolio1 from "@/assets/images/portfolio1.svg";
 import PortfolioCard from "../PortfolioCrad/PortfolioCard";
 import { useDispatch, useSelector } from "react-redux";
 import { uiuxDispatch } from "@/store/action";
-
+import uiuxState from "@/db/uiux.json"
 const UiUx = () => {
   const ref = useRef();
   const dispatch = useDispatch();
-  const uiuxState = useSelector((state) => state && state.uiuxDesign.uiux);
+  // const uiuxState = useSelector((state) => state && state.uiuxDesign.uiux);
+  console.log("uiuxState",uiuxState)
   const portfolio = [
     {
       tittle: "Mobile app development",

@@ -18,13 +18,13 @@ import {
   websiteDev,
 } from "@/store/action";
 import { PORTFOLIO_TYPE } from "@/utils/utils";
-
+import selecteSate from "@/db/selected.json";
 const Portfolio = () => {
   const uiuxState = useSelector((state) => state && state.uiuxDesign.uiux);
-  const selecteSate = useSelector(
-    (state) => state && state.selectedReducer.selected
-  );
-  
+  // const selecteSate = useSelector(
+  //   (state) => state && state.selectedReducer.selected
+  // );
+  console.log("selecteSate", selecteSate);
   const ref = useRef();
   const router = useRouter();
   const dispatch = useDispatch();

@@ -8,13 +8,15 @@ import useInViewAnimation from "@/Hooks/useInViewAnimation";
 import { presentationDispatch } from "@/store/action";
 import { useDispatch, useSelector } from "react-redux";
 
-const GoogleSlides = ({ type }) => {
+const GoogleSlides = ({ data, type }) => {
   
   const ref = useRef();
   const cardRef = useRef();
   const PresetationState = useSelector(
+
     (state) => state && state.presetatIonReducer.presentation
   );
+  console.log("PresetationState",PresetationState)
   const portfolio = [
     {
       tittle: "Mobile app development",
@@ -46,8 +48,8 @@ const GoogleSlides = ({ type }) => {
     <div className="googleSlides">
       {Array.from({ length: numRows }, (_, rowIndex) => (
         <div className="portfolio-row" key={rowIndex}>
-          {PresetationState &&
-            PresetationState.slice(
+          {data &&
+            data.slice(
               rowIndex * itemsPerRow,
               (rowIndex + 1) * itemsPerRow
             ).map((item, ind) => (

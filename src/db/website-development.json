@@ -1,0 +1,103 @@
+[
+  {
+    "_id": "64d7d81e135ef51bc0738278",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1692079056701--3158778.jpg",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1692079030982--3158778.jpg",
+    "likeCount": 5,
+    "views": 20,
+    "selected": false,
+    "portfolioType": "Website Development",
+    "__v": 0
+  },
+  {
+    "_id": "64db15f2135ef51bc07386b1",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1692079600792--FOOD-1.jpg",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1692079580975--FOOD-1.jpg",
+    "likeCount": 59,
+    "views": 110,
+    "portfolioType": "Website Development",
+    "__v": 0
+  },
+  {
+    "_id": "64db160f135ef51bc07386b4",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1692080401825--3654617.jpg",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1692080368930--3654617.jpg",
+    "likeCount": 10,
+    "views": 30,
+    "portfolioType": "Website Development",
+    "__v": 0
+  },
+  {
+    "_id": "64db1657135ef51bc07386b7",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1692080504290--3468530.jpg",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1692080486905--3468530.jpg",
+    "likeCount": 35,
+    "views": 76,
+    "portfolioType": "Website Development",
+    "__v": 0
+  },
+  {
+    "_id": "64db1658135ef51bc07386ba",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1692084536202--3650395.jpg",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1692084497103--3650395.jpg",
+    "likeCount": 0,
+    "views": 0,
+    "portfolioType": "Website Development",
+    "__v": 0
+  },
+  {
+    "_id": "64db1670135ef51bc07386bc",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1692079725850--4191612.jpg",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1692079716971--4191612.jpg",
+    "likeCount": 34,
+    "views": 60,
+    "portfolioType": "Website Development",
+    "__v": 0
+  },
+  {
+    "_id": "64db16ab135ef51bc07386bf",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1692080570865--5721471.png",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1692080564060--5721471.png",
+    "likeCount": 20,
+    "views": 59,
+    "portfolioType": "Website Development",
+    "__v": 0
+  },
+  {
+    "_id": "64db171c135ef51bc07386cf",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1692079896682--5721502.jpg",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1692079887430--5721502.jpg",
+    "likeCount": 4,
+    "views": 20,
+    "portfolioType": "Website Development",
+    "__v": 0
+  },
+  {
+    "_id": "64db1744135ef51bc07386d2",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1692079932405--7694497.jpg",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1692079915391--7694497.jpg",
+    "likeCount": -1,
+    "views": 0,
+    "portfolioType": "Website Development",
+    "__v": 0
+  },
+  {
+    "_id": "64db1744135ef51bc07386d4",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1692080592539--6145997.jpg",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1692080587539--6145997.jpg",
+    "likeCount": 0,
+    "views": 0,
+    "portfolioType": "Website Development",
+    "__v": 0
+  },
+  {
+    "_id": "64eb7aff135ef51bc073a244",
+    "webImage": "http://portfolio-backend.up.railway.app/images/1693154037931--website-mockup.png",
+    "fullImage": "http://portfolio-backend.up.railway.app/images/1693154007437--website-mockup.png",
+    "likeCount": 101,
+    "views": 190,
+    "selected": true,
+    "portfolioType": "Website Development",
+    "__v": 0
+  }
+]

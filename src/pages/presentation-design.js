@@ -3,12 +3,13 @@ import Header from '@/Component/Header/Header'
 import PresentationDesign from '@/Component/PresentationDesign/PresentationDesign'
 import WebsiteDevelopmet from '@/Component/WebsiteDevelopmet/WebsiteDevelopmet'
 import React from 'react'
+import googleSlides from "@/db/googleSlides.json"
 
 const Presentation = () => {
     return (
         <>
             <Header />
-            <PresentationDesign type={"GoogleSlide"} />
+            <PresentationDesign data={googleSlides} type={"GoogleSlide"} />
             <ContactForm />
         </>
     )

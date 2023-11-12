@@ -1,0 +1,55 @@
+[
+  {
+    "_id": "64eb7979135ef51bc073a1a9",
+    "webImage": "/images/s2.png",
+    "fullImage": "/images/s2.png",
+    "likeCount": 205,
+    "views": 300,
+    "type": "PowerPoint",
+    "selected": true,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "64eb7b44135ef51bc073a24a",
+    "webImage": "/images/s3.jpg",
+    "fullImage": "/images/s3.jpg",
+    "likeCount": 89,
+    "views": 180,
+    "selected": true,
+    "portfolioType": "UI/UX Design",
+    "__v": 0
+  },
+  {
+    "_id": "64eb7aff135ef51bc073a244",
+    "webImage": "/images/s1.png",
+    "fullImage": "/images/s1.png",
+    "likeCount": 101,
+    "views": 190,
+    "selected": true,
+    "portfolioType": "Website Development",
+    "__v": 0
+  },
+  {
+    "_id": "64eb7a12135ef51bc073a204",
+    "appName": "ree",
+    "appDecs": "ee",
+    "appImage": "http://portfolio-backend.up.railway.app/images/1693153804713--KAZZAH-MOCKUP.png",
+    "thumbnailImage": "/images/s4.png",
+    "appSkills": [
+      {
+        "value": "css3",
+        "label": "css 3",
+        "_id": "64eb7a12135ef51bc073a205"
+      }
+    ],
+    "allScreenImages": [
+      "http://portfolio-backend.up.railway.app/images/1693153725096--KAZZAH-MOCKUP.png"
+    ],
+    "selected": true,
+    "portfolioType": "Mobile app development",
+    "likeCount": 189,
+    "views": 205,
+    "__v": 0
+  }
+]

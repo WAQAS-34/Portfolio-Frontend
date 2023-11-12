@@ -11,6 +11,10 @@ import { mobileappdev, presentation, uiux, webdev } from "@/endPoints";
 import axios from "axios";
 import portfolio1 from "@/assets/images/portfolio1.svg";
 import baguetteBox from "baguettebox.js";
+// import dynamic from 'next/dynamic';
+
+// const baguetteBox = dynamic(() => import('baguettebox.js'), {ssr:false});
+
 const PortfolioCard = ({
   event,
   views,
@@ -54,12 +58,16 @@ const PortfolioCard = ({
         .catch((err) => {});
     }
   };
-  baguetteBox.run(".images", {
-    // Custom options
-    captions: true,
-    buttons: false,
-    fullScreen: false,
-  });
+  useEffect(() => {
+    
+    baguetteBox?.run(".images", {
+      // Custom options
+      captions: true,
+      buttons: false,
+      fullScreen: false,
+    });
+  }, [])
+  
 
   return (
     <>

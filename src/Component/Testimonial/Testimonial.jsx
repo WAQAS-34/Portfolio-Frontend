@@ -12,11 +12,12 @@ import { motion } from "framer-motion";
 import useInViewAnimation from "@/Hooks/useInViewAnimation";
 import { useDispatch, useSelector } from "react-redux";
 import { testimonailDispatch } from "@/store/action";
-
+import testimonialState from "@/db/testimonial.json"
 const Testimonial = () => {
-  const testimonialState = useSelector(
-    (state) => state && state.testmonialReducer.testimonial
-  );
+  // const testimonialState = useSelector(
+  //   (state) => state && state.testmonialReducer.testimonial
+  // );
+  console.log("testimonialState",testimonialState)
   const ref = useRef();
   const SliderRef = useRef();
   const { elementRef, mainControls } = useInViewAnimation();

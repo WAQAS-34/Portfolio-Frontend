@@ -8,7 +8,7 @@ import GoogleSlides from "../GoogleSlides/GoogleSlides";
 import { useDispatch } from "react-redux";
 import { presentationDispatch } from "@/store/action";
 import { useEffect } from "react";
-function PresentationDesignTabs({ type }) {
+function PresentationDesignTabs({ data, type }) {
   const dispatch = useDispatch();
 
   const { elementRef, mainControls } = useInViewAnimation();
@@ -29,7 +29,7 @@ function PresentationDesignTabs({ type }) {
       animate={mainControls}
       transition={{ duration: 1 }}
     >
-      <GoogleSlides />
+      <GoogleSlides  data={data}/>
 
       {/* <Tabs
         defaultActiveKey="Keynote"

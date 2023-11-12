@@ -5,8 +5,7 @@ import Testimonial from "../Testimonial/Testimonial";
 import TrustedByCompany from "../TrustedByCompany/TrustedByCompany";
 import PresentationDesignTabs from "../PresentationDesignTabs/PresentationDesignTabs";
 import { useRouter } from "next/router";
-
-const PresentationDesign = ({ type }) => {
+const PresentationDesign = ({  data, type }) => {
   const ref = useRef();
   const router = useRouter();
   const handlePresentation = (path) => {
@@ -54,7 +53,7 @@ const PresentationDesign = ({ type }) => {
             </div>
           </div>
 
-          <PresentationDesignTabs type={type} />
+          <PresentationDesignTabs data={data} type={type} />
         </div>
       </div>
     </div>

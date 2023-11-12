@@ -5,7 +5,7 @@ import portfolio1 from "@/assets/images/portfolio1.svg";
 import PortfolioCard from "../PortfolioCrad/PortfolioCard";
 import { useDispatch, useSelector } from "react-redux";
 import { websiteDev } from "@/store/action";
-
+import webDevState from "@/db/website-development.json"
 const WebsiteDevelopmet = () => {
   const ref = useRef();
   const dispatch = useDispatch();
@@ -32,10 +32,10 @@ const WebsiteDevelopmet = () => {
     },
   ];
 
-  const webDevState = useSelector(
-    (state) => state && state.webDevelopment.webDev
-  );
-  
+  // const webDevState = useSelector(
+  //   (state) => state && state.webDevelopment.webDev
+  // );
+  console.log("webDevState",webDevState)
   useEffect(() => {
     dispatch(websiteDev());
   }, []);

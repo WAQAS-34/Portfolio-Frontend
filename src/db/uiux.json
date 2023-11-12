@@ -1,0 +1,42 @@
+[
+    {
+        "_id": "64db2a8c135ef51bc073872b",
+        "webImage": "http://portfolio-backend.up.railway.app/images/1692084854032--FOODAPP.png",
+        "fullImage": "http://portfolio-backend.up.railway.app/images/1692084824225--FOODAPP.png",
+        "likeCount": 1,
+        "views": 0,
+        "selected": false,
+        "portfolioType": "UI/UX Design",
+        "__v": 0
+    },
+    {
+        "_id": "64db2a91135ef51bc073872e",
+        "webImage": "http://portfolio-backend.up.railway.app/images/1692085183893--3969052.jpg",
+        "fullImage": "http://portfolio-backend.up.railway.app/images/1692084824225--FOODAPP.png",
+        "likeCount": 2,
+        "views": 0,
+        "selected": false,
+        "portfolioType": "UI/UX Design",
+        "__v": 0
+    },
+    {
+        "_id": "64db2c14135ef51bc0738744",
+        "webImage": "http://portfolio-backend.up.railway.app/images/1692085266640--4313045.jpg",
+        "fullImage": "http://portfolio-backend.up.railway.app/images/1692085260150--4313045.jpg",
+        "likeCount": 2,
+        "views": 0,
+        "selected": false,
+        "portfolioType": "UI/UX Design",
+        "__v": 0
+    },
+    {
+        "_id": "64eb7b44135ef51bc073a24a",
+        "webImage": "http://portfolio-backend.up.railway.app/images/1693154114473--5400479-2.jpg",
+        "fullImage": "http://portfolio-backend.up.railway.app/images/1693154098303--5400479-2.jpg",
+        "likeCount": 89,
+        "views": 180,
+        "selected": true,
+        "portfolioType": "UI/UX Design",
+        "__v": 0
+    }
+]

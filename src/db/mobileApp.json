@@ -1,0 +1,360 @@
+[
+  {
+    "_id": "64dbadba135ef51bc0738817",
+    "appName": "Popup Video  App",
+    "appDecs": "Popup movie application is a software program that allows users to browse, search, and watch movies on their device. It typically includes features such as a library of movies, user reviews, and the ability to create and share lists of favorite movies. Some movie applications also allow users to purchase or rent movies, and may integrate with streaming services to provide access to a larger selection of films. The application can be designed for mobile, tablet, smart tv, or web-browser.\n",
+    "appImage": "http://portfolio-backend.up.railway.app/images/1695394303670--POPUP-ALL.png",
+    "thumbnailImage": "http://portfolio-backend.up.railway.app/images/1692118192231--cd19b830e585e261a26d1396135e10b4.jpg",
+    "appSkills": [
+      {
+        "value": "typescript",
+        "label": "typescript",
+        "_id": "64dbadba135ef51bc0738818"
+      },
+      {
+        "value": "Redux",
+        "label": "Redux",
+        "_id": "64dbadba135ef51bc0738819"
+      },
+      {
+        "value": "nodejs",
+        "label": "node js",
+        "_id": "64dbadba135ef51bc073881a"
+      },
+      {
+        "value": "reactNative",
+        "label": "react Native",
+        "_id": "64dbb87d135ef51bc0738904"
+      }
+    ],
+    "allScreenImages": [
+      "http://portfolio-backend.up.railway.app/images/1695394286064--pop-8.png",
+      "http://portfolio-backend.up.railway.app/images/1695394286690--POPUP-1.png",
+      "http://portfolio-backend.up.railway.app/images/1695394287281--POPUP-2.png",
+      "http://portfolio-backend.up.railway.app/images/1695394288184--POPUP-3.png",
+      "http://portfolio-backend.up.railway.app/images/1695394288694--POPUP-4.png",
+      "http://portfolio-backend.up.railway.app/images/1695394289309--POPUP-5.png",
+      "http://portfolio-backend.up.railway.app/images/1695394289874--POPUP-7.png",
+      "http://portfolio-backend.up.railway.app/images/1695394290722--POPUP6.png"
+    ],
+    "selected": false,
+    "portfolioType": "Mobile app development",
+    "likeCount": 10,
+    "views": 20,
+    "__v": 0
+  },
+  {
+    "_id": "64dbb054135ef51bc0738832",
+    "appName": "Crypto App",
+    "appDecs": "This innovative mobile application is at the forefront of the crypto revolution, offering users an intuitive and secure platform to manage, trade, and explore the world of cryptocurrencies. With Crypto Mobile, traditional financial barriers are dismantled as users gain access to a diverse array of cryptocurrencies right from their smartphones. Seamlessly linking with leading cryptocurrency exchanges, the app empowers users to buy, sell, and exchange digital assets with just a few taps, opening doors to new investment opportunities.",
+    "appImage": "http://portfolio-backend.up.railway.app/images/1695394391470--cyrpto-all.png",
+    "thumbnailImage": "http://portfolio-backend.up.railway.app/images/1692119110176--cd19b830e585e261a26d1396135e10b4.jpg",
+    "appSkills": [
+      {
+        "value": "Redux",
+        "label": "Redux",
+        "_id": "64dbb054135ef51bc0738833"
+      },
+      {
+        "value": "JavaScript",
+        "label": "JavaScript",
+        "_id": "64dbb054135ef51bc0738834"
+      },
+      {
+        "value": "reactNative",
+        "label": "react Native",
+        "_id": "64dcb0c4135ef51bc07389ef"
+      }
+    ],
+    "allScreenImages": [
+      "http://portfolio-backend.up.railway.app/images/1695394379351--1-(1).png",
+      "http://portfolio-backend.up.railway.app/images/1695394380112--2.png",
+      "http://portfolio-backend.up.railway.app/images/1695394381002--3.png",
+      "http://portfolio-backend.up.railway.app/images/1695394381354--4.png",
+      "http://portfolio-backend.up.railway.app/images/1695394382073--5.png",
+      "http://portfolio-backend.up.railway.app/images/1695394382607--6.png",
+      "http://portfolio-backend.up.railway.app/images/1695394383633--7.png",
+      "http://portfolio-backend.up.railway.app/images/1695394384142--8.png"
+    ],
+    "selected": false,
+    "portfolioType": "Mobile app development",
+    "likeCount": 12,
+    "views": 30,
+    "__v": 0
+  },
+  {
+    "_id": "64dcaf91135ef51bc0738990",
+    "appName": "KAZZAH Service Provider App",
+    "appDecs": "KAZZAH  is the Service Provider Mobile App – your dedicated tool to revolutionize how you manage and deliver services. This app is designed to empower service providers across various industries, from beauty and wellness to home services and beyond. Experience the power of streamlined operations, enhanced client interactions, and business growth – all at your fingertips. Key Features:\nUser-Friendly, Time-Saving, Client Satisfaction, Business Expansion, Real-Time Connection, Location Optimization, Secure Payments, Feedback and Growth, Security. With  KAZZAH user-friendly app, you can effortlessly manage appointments, communicate with clients, and grow your business like never before.",
+    "appImage": "http://portfolio-backend.up.railway.app/images/1695394505597--Frame-1000003496-(1).png",
+    "thumbnailImage": "http://portfolio-backend.up.railway.app/images/1692184377909--1653a1307d1c92583049759b4cf351f9.jpg",
+    "appSkills": [
+      {
+        "value": "reactNative",
+        "label": "react Native",
+        "_id": "64dcaf91135ef51bc0738991"
+      },
+      {
+        "value": "Redux",
+        "label": "Redux",
+        "_id": "64dcaf91135ef51bc0738992"
+      },
+      {
+        "value": "typescript",
+        "label": "typescript",
+        "_id": "64dcaf91135ef51bc0738993"
+      },
+      {
+        "value": "nodejs",
+        "label": "node js",
+        "_id": "64dcaf91135ef51bc0738994"
+      }
+    ],
+    "allScreenImages": [
+      "http://portfolio-backend.up.railway.app/images/1695394489999--iPhone-14-Pro-(2).png",
+      "http://portfolio-backend.up.railway.app/images/1695394490705--iPhone-14-Pro-(4).png",
+      "http://portfolio-backend.up.railway.app/images/1695394491116--iPhone-14-Pro-(7).png",
+      "http://portfolio-backend.up.railway.app/images/1695394446076--iPhone-14-Pro-(1).png",
+      "http://portfolio-backend.up.railway.app/images/1695394446491--iPhone-14-Pro-(2)-2.png",
+      "http://portfolio-backend.up.railway.app/images/1695394447068--iPhone-14-Pro-(3)-2.png",
+      "http://portfolio-backend.up.railway.app/images/1695394448307--iPhone-14-Pro-(4).png",
+      "http://portfolio-backend.up.railway.app/images/1695394448770--iPhone-14-Pro-(5).png",
+      "http://portfolio-backend.up.railway.app/images/1695394449244--iPhone-14-Pro-(5)-2.png",
+      "http://portfolio-backend.up.railway.app/images/1695394449741--iPhone-14-Pro-(6).png",
+      "http://portfolio-backend.up.railway.app/images/1695394450091--iPhone-14-Pro.png",
+      "http://portfolio-backend.up.railway.app/images/1695394450926--iPhone-14-Pro-2.png"
+    ],
+    "selected": false,
+    "portfolioType": "Mobile app development",
+    "likeCount": 90,
+    "views": 125,
+    "__v": 0
+  },
+  {
+    "_id": "64dcb3ed135ef51bc0738a5f",
+    "appName": "Flutter Dating App",
+    "appDecs": "Flutter dating application is a software program that facilitates communication between individuals seeking romantic relationships. Users create a profile and can browse through profiles of other users, swiping or liking those they are interested in. If two users mutually like each other, they can then message each other and potentially arrange to meet in person. Flutter app often include features such as location-based matching, profile verification, and chat functionality. Users can also set preferences such as age range and gender, Flutter dating app also offer additional services such as photo/profile review, dating advice and safety tips.",
+    "appImage": "http://portfolio-backend.up.railway.app/images/1695394570362--fluter-all.png",
+    "thumbnailImage": "http://portfolio-backend.up.railway.app/images/1692185406427--deb5af7b1291bd4b10d771070deb34df.jpg",
+    "appSkills": [
+      {
+        "value": "JavaScript",
+        "label": "JavaScript",
+        "_id": "64dcb3ed135ef51bc0738a60"
+      },
+      {
+        "value": "Redux",
+        "label": "Redux",
+        "_id": "64dcb3ed135ef51bc0738a61"
+      },
+      {
+        "value": "Firebase",
+        "label": "Firebase",
+        "_id": "64dcb3ed135ef51bc0738a62"
+      },
+      {
+        "value": "reactNative",
+        "label": "react Native",
+        "_id": "64dcb3ed135ef51bc0738a63"
+      }
+    ],
+    "allScreenImages": [
+      "http://portfolio-backend.up.railway.app/images/1695394548025--1.png",
+      "http://portfolio-backend.up.railway.app/images/1695394548426--2.png",
+      "http://portfolio-backend.up.railway.app/images/1695394549638--3.png",
+      "http://portfolio-backend.up.railway.app/images/1695394550859--4.png",
+      "http://portfolio-backend.up.railway.app/images/1695394552312--5.png",
+      "http://portfolio-backend.up.railway.app/images/1695394552530--6.png",
+      "http://portfolio-backend.up.railway.app/images/1695394552875--7o.png",
+      "http://portfolio-backend.up.railway.app/images/1695394553084--8.png"
+    ],
+    "selected": false,
+    "portfolioType": "Mobile app development",
+    "likeCount": 24,
+    "views": 46,
+    "__v": 0
+  },
+  {
+    "_id": "64dcb906135ef51bc0738aa9",
+    "appName": "JABAL Fitness App",
+    "appDecs": "JABAL Fitness app can include features such as workout tracking, calorie counting, progress monitoring, and the ability to connect with other users for motivation and support. It include instructional videos and detailed information on exercises, nutrition, and other health-related topics. Fitness mobile app can be tailored to specific goals, such as weight loss or muscle gain, and can be used by people of all fitness levels.",
+    "appImage": "http://portfolio-backend.up.railway.app/images/1695394622851--Frame-1000003496.png",
+    "thumbnailImage": "http://portfolio-backend.up.railway.app/images/1692186856726--deb5af7b1291bd4b10d771070deb34df.jpg",
+    "appSkills": [
+      {
+        "value": "JavaScript",
+        "label": "JavaScript",
+        "_id": "64dcb906135ef51bc0738aaa"
+      },
+      {
+        "value": "reactNative",
+        "label": "react Native",
+        "_id": "64dcb906135ef51bc0738aab"
+      },
+      {
+        "value": "Firebase",
+        "label": "Firebase",
+        "_id": "64dcb906135ef51bc0738aac"
+      }
+    ],
+    "allScreenImages": [
+      "http://portfolio-backend.up.railway.app/images/1695394610831--iPhone-14-Pro-(1).png",
+      "http://portfolio-backend.up.railway.app/images/1695394612342--iPhone-14-Pro-(2).png",
+      "http://portfolio-backend.up.railway.app/images/1695394612726--iPhone-14-Pro-(3).png",
+      "http://portfolio-backend.up.railway.app/images/1695394612963--iPhone-14-Pro-(4).png",
+      "http://portfolio-backend.up.railway.app/images/1695394613366--iPhone-14-Pro-(5).png",
+      "http://portfolio-backend.up.railway.app/images/1695394613679--iPhone-14-Pro-(6).png",
+      "http://portfolio-backend.up.railway.app/images/1695394614664--iPhone-14-Pro-(7).png",
+      "http://portfolio-backend.up.railway.app/images/1695394615357--iPhone-14-Pro.png"
+    ],
+    "selected": false,
+    "portfolioType": "Mobile app development",
+    "likeCount": 7,
+    "views": 19,
+    "__v": 0
+  },
+  {
+    "_id": "64dd0990135ef51bc0738cd3",
+    "appName": "FRAMUS Gallery App",
+    "appDecs": "Framus art gallery mobile application is a software program designed for smartphones and tablets that allows users to browse and view artworks from an art gallery or museum. The app typically includes features such as a digital catalog of artworks, artist bios, and exhibition information. Users can typically view high-resolution images of artworks and zoom in to see details. The app can also have a feature that allows users to save or make a note of the artworks they liked, and also\nshare the artwork with others.",
+    "appImage": "http://portfolio-backend.up.railway.app/images/1695394689093--FRAMAR-IST-PAGE.png",
+    "thumbnailImage": "http://portfolio-backend.up.railway.app/images/1692207490061--08b596cf25250505ec74d02d901a057e.jpg",
+    "appSkills": [
+      {
+        "value": "reactNative",
+        "label": "react Native",
+        "_id": "64dd0990135ef51bc0738cd4"
+      },
+      {
+        "value": "JavaScript",
+        "label": "JavaScript",
+        "_id": "64dd0990135ef51bc0738cd5"
+      },
+      {
+        "value": "Firebase",
+        "label": "Firebase",
+        "_id": "64dd0990135ef51bc0738cd6"
+      },
+      {
+        "value": "Redux",
+        "label": "Redux",
+        "_id": "64dd0990135ef51bc0738cd7"
+      }
+    ],
+    "allScreenImages": [
+      "http://portfolio-backend.up.railway.app/images/1695394671097--FRAMAR-1-(1).png",
+      "http://portfolio-backend.up.railway.app/images/1695394672906--FRAMAR-2.png",
+      "http://portfolio-backend.up.railway.app/images/1695394673791--FRAMAR-3-(1).png",
+      "http://portfolio-backend.up.railway.app/images/1695394674735--FRAMAR-4).png",
+      "http://portfolio-backend.up.railway.app/images/1695394675647--FRAMAR-5-(1).png",
+      "http://portfolio-backend.up.railway.app/images/1695394675834--FRAMAR-6.png",
+      "http://portfolio-backend.up.railway.app/images/1695394676618--FRAMAR-7.png",
+      "http://portfolio-backend.up.railway.app/images/1695394677993--iPhone-14-Pro.png"
+    ],
+    "selected": false,
+    "portfolioType": "Mobile app development",
+    "likeCount": 20,
+    "views": 30,
+    "__v": 0
+  },
+  {
+    "_id": "64dd0fb5135ef51bc0738d41",
+    "appName": "VR Xpression Physical Consulting App",
+    "appDecs": "VR Xpression online physical consulting application is a software program that allows users to consult with physical therapists or other medical professionals remotely, typically through video conferencing. The app allows users to schedule appointments and communicate with their healthcare provider in real time, eliminating the need for in-person visits. It may include features such as virtual exercise and rehabilitation plans, tracking of progress, and the ability to send and receive messages with their provider. The application can also allow users to upload their medical history, test results and also monitor their progress through the recovery process.\n",
+    "appImage": "http://portfolio-backend.up.railway.app/images/1695394759007--Frame-1000003496.png",
+    "thumbnailImage": "http://portfolio-backend.up.railway.app/images/1692209068063--deb5af7b1291bd4b10d771070deb34df.jpg",
+    "appSkills": [
+      {
+        "value": "JavaScript",
+        "label": "JavaScript",
+        "_id": "64dd0fb5135ef51bc0738d42"
+      },
+      {
+        "value": "reactNative",
+        "label": "react Native",
+        "_id": "64dd0fb5135ef51bc0738d43"
+      },
+      {
+        "value": "Firebase",
+        "label": "Firebase",
+        "_id": "64dd0fb5135ef51bc0738d44"
+      }
+    ],
+    "allScreenImages": [
+      "http://portfolio-backend.up.railway.app/images/1695394739680--iPhone-14-Pro-(1).png",
+      "http://portfolio-backend.up.railway.app/images/1695394741402--iPhone-14-Pro-(2).png",
+      "http://portfolio-backend.up.railway.app/images/1695394742207--iPhone-14-Pro-(3).png",
+      "http://portfolio-backend.up.railway.app/images/1695394742897--iPhone-14-Pro-(4).png",
+      "http://portfolio-backend.up.railway.app/images/1695394743654--iPhone-14-Pro-(5).png",
+      "http://portfolio-backend.up.railway.app/images/1695394744194--iPhone-14-Pro-(7).png",
+      "http://portfolio-backend.up.railway.app/images/1695394744897--iPhone-14-Pro-(8).png",
+      "http://portfolio-backend.up.railway.app/images/1695394745515--iPhone-14-Pro.png"
+    ],
+    "selected": false,
+    "portfolioType": "Mobile app development",
+    "likeCount": 3,
+    "views": 10,
+    "__v": 0
+  },
+  {
+    "_id": "64dd116a135ef51bc0738d7f",
+    "appName": "Goony Dating App",
+    "appDecs": "Goony dating application is a software program that facilitates communication between individuals seeking romantic relationships. Users create a profile and can browse through profiles of other users, swiping or liking those they are interested in. If two users mutually like each other, they can then message each other and potentially arrange to meet in person. Goony app often include features such as location-based matching, profile verification, and chat functionality. Users can also set preferences such as age range and gender, Goony dating app also offer additional services such as photo/profile review, dating advice and safety tips.\n",
+    "appImage": "http://portfolio-backend.up.railway.app/images/1695394817336--Frame-1000003496.png",
+    "thumbnailImage": "http://portfolio-backend.up.railway.app/images/1692209491476--deb5af7b1291bd4b10d771070deb34df.jpg",
+    "appSkills": [
+      {
+        "value": "typescript",
+        "label": "typescript",
+        "_id": "64dd116a135ef51bc0738d80"
+      },
+      {
+        "value": "reactNative",
+        "label": "react Native",
+        "_id": "64dd116a135ef51bc0738d81"
+      },
+      {
+        "value": "Redux",
+        "label": "Redux",
+        "_id": "650dac02135ef51bc073b354"
+      }
+    ],
+    "allScreenImages": [
+      "http://portfolio-backend.up.railway.app/images/1695394800412--iPhone-14-Pro-(1).png",
+      "http://portfolio-backend.up.railway.app/images/1695394801411--iPhone-14-Pro-(2).png",
+      "http://portfolio-backend.up.railway.app/images/1695394801726--iPhone-14-Pro-(3).png",
+      "http://portfolio-backend.up.railway.app/images/1695394802740--iPhone-14-Pro-(4).png",
+      "http://portfolio-backend.up.railway.app/images/1695394803151--iPhone-14-Pro-(5).png",
+      "http://portfolio-backend.up.railway.app/images/1695394804166--iPhone-14-Pro-(6).png",
+      "http://portfolio-backend.up.railway.app/images/1695394804685--iPhone-14-Pro-(7).png",
+      "http://portfolio-backend.up.railway.app/images/1695394805058--iPhone-14-Pro.png"
+    ],
+    "selected": false,
+    "portfolioType": "Mobile app development",
+    "likeCount": 0,
+    "views": 0,
+    "__v": 0
+  },
+  {
+    "_id": "64eb7a12135ef51bc073a204",
+    "appName": "ree",
+    "appDecs": "ee",
+    "appImage": "http://portfolio-backend.up.railway.app/images/1693153804713--KAZZAH-MOCKUP.png",
+    "thumbnailImage": "http://portfolio-backend.up.railway.app/images/1693153730802--KAZZAH-MOCKUP.png",
+    "appSkills": [
+      {
+        "value": "css3",
+        "label": "css 3",
+        "_id": "64eb7a12135ef51bc073a205"
+      }
+    ],
+    "allScreenImages": [
+      "http://portfolio-backend.up.railway.app/images/1693153725096--KAZZAH-MOCKUP.png"
+    ],
+    "selected": true,
+    "portfolioType": "Mobile app development",
+    "likeCount": 189,
+    "views": 205,
+    "__v": 0
+  }
+]
