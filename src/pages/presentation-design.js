@@ -4,6 +4,7 @@ import PresentationDesign from '@/Component/PresentationDesign/PresentationDesig
 import WebsiteDevelopmet from '@/Component/WebsiteDevelopmet/WebsiteDevelopmet'
 import React from 'react'
 import googleSlides from "@/db/googleSlides.json"
+console.log("googleSlides",googleSlides);
 
 const Presentation = () => {
     return (

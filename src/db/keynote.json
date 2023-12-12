@@ -1,8 +1,8 @@
 [
   {
     "_id": "64db0c45135ef51bc0738660",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1692077123835--Slide20.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1692077096930--Slide20.JPG",
+    "webImage": "/images/keynote/17.JPG",
+    "fullImage": "/images/keynote/17.JPG",
     "likeCount": 70,
     "views": 160,
     "type": "Keynote",
@@ -12,8 +12,8 @@
   },
   {
     "_id": "64db0c6f135ef51bc0738664",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1692077166074--Slide22.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1692077148392--Slide22.JPG",
+    "webImage": "/images/keynote/Slide11.JPG",
+    "fullImage": "/images/keynote/Slide11.JPG",
     "likeCount": 17,
     "views": 101,
     "type": "Keynote",
@@ -23,8 +23,8 @@
   },
   {
     "_id": "64db0ca2135ef51bc0738668",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1692077217051--Slide24.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1692077213108--Slide24.JPG",
+    "webImage": "/images/keynote/Slide26.JPG",
+    "fullImage": "/images/keynote/Slide26.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "Keynote",
@@ -34,8 +34,8 @@
   },
   {
     "_id": "64db0cc6135ef51bc073866c",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1692077253605--Slide25.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1692077249129--Slide25.JPG",
+    "webImage": "/images/keynote/Slide27.JPG",
+    "fullImage": "/images/keynote/Slide27.JPG",
     "likeCount": 3,
     "views": 10,
     "type": "Keynote",
@@ -45,8 +45,8 @@
   },
   {
     "_id": "64db0cf4135ef51bc0738670",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1692077298860--Slide30.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1692077277724--Slide30.JPG",
+    "webImage": "/images/keynote/Slide32.JPG",
+    "fullImage": "/images/keynote/Slide32.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "Keynote",
@@ -56,8 +56,8 @@
   },
   {
     "_id": "64db0d1a135ef51bc0738674",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1692077337496--Slide31.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1692077323535--Slide31.JPG",
+    "webImage": "/images/keynote/Slide33.JPG",
+    "fullImage": "/images/keynote/Slide33.JPG",
     "likeCount": 12,
     "views": 30,
     "type": "Keynote",
@@ -67,8 +67,8 @@
   },
   {
     "_id": "64db0d4b135ef51bc0738679",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1692077386879--Slide35.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1692077369130--Slide35.JPG",
+    "webImage": "/images/keynote/Slide37.JPG",
+    "fullImage": "/images/keynote/Slide37.JPG",
     "likeCount": 39,
     "views": 78,
     "type": "Keynote",
@@ -78,8 +78,8 @@
   },
   {
     "_id": "64dd07a8135ef51bc0738c78",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1692207014919--Slide46.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1692207005633--Slide46.JPG",
+    "webImage": "/images/keynote/Slide48.JPG",
+    "fullImage": "/images/keynote/Slide48.JPG",
     "likeCount": 59,
     "views": 85,
     "type": "Keynote",

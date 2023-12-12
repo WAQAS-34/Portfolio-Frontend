@@ -1,8 +1,8 @@
 [
   {
     "_id": "64da3092135ef51bc0738316",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142311468--Slide1.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142308745--Slide1.JPG",
+    "webImage": "/images/Powerpoint/1.JPG",
+    "fullImage": "/images/Powerpoint/1.JPG",
     "likeCount": 21,
     "views": 198,
     "type": "PowerPoint",
@@ -12,8 +12,8 @@
   },
   {
     "_id": "64da33c1135ef51bc073838a",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1692035437196--Slide3.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1692035432051--Slide3.JPG",
+    "webImage": "/images/Powerpoint/2.JPG",
+    "fullImage": "/images/Powerpoint/2.JPG",
     "likeCount": 20,
     "views": 100,
     "type": "PowerPoint",
@@ -23,8 +23,8 @@
   },
   {
     "_id": "64da3406135ef51bc0738398",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142341502--Slide12.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142337989--Slide12.JPG",
+    "webImage": "/images/Powerpoint/3.JPG",
+    "fullImage": "/images/Powerpoint/3.JPG",
     "likeCount": 10,
     "views": 50,
     "type": "PowerPoint",
@@ -34,8 +34,8 @@
   },
   {
     "_id": "64db04fa135ef51bc07385c6",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142371005--Slide4.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142368015--Slide4.JPG",
+    "webImage": "/images/Powerpoint/4.JPG",
+    "fullImage": "/images/Powerpoint/4.JPG",
     "likeCount": 40,
     "views": 100,
     "type": "PowerPoint",
@@ -45,8 +45,8 @@
   },
   {
     "_id": "64db0572135ef51bc07385cc",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142400278--Slide15.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142395839--Slide15.JPG",
+    "webImage": "/images/Powerpoint/5.JPG",
+    "fullImage": "/images/Powerpoint/5.JPG",
     "likeCount": 30,
     "views": 50,
     "type": "PowerPoint",
@@ -54,32 +54,12 @@
     "portfolioType": "Presentations Design",
     "__v": 0
   },
-  {
-    "_id": "64db05eb135ef51bc07385dd",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142434254--Slide19.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142431284--Slide19.JPG",
-    "likeCount": 14,
-    "views": 28,
-    "type": "PowerPoint",
-    "selected": false,
-    "portfolioType": "Presentations Design",
-    "__v": 0
-  },
-  {
-    "_id": "64db06fb135ef51bc07385e1",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142476015--Slide26.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142471937--Slide26.JPG",
-    "likeCount": 0,
-    "views": 0,
-    "type": "PowerPoint",
-    "selected": false,
-    "portfolioType": "Presentations Design",
-    "__v": 0
-  },
+
+
   {
     "_id": "64db07f3135ef51bc07385ef",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142513653--Slide34.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142509696--Slide34.JPG",
+    "webImage": "/images/Powerpoint/9.JPG",
+    "fullImage": "/images/Powerpoint/9.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "PowerPoint",
@@ -89,8 +69,8 @@
   },
   {
     "_id": "64db081a135ef51bc07385f3",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142711420--Slide11.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142709381--Slide11.JPG",
+    "webImage": "/images/Powerpoint/10.JPG",
+    "fullImage": "/images/Powerpoint/10.JPG",
     "likeCount": 4,
     "views": 10,
     "type": "PowerPoint",
@@ -100,8 +80,8 @@
   },
   {
     "_id": "64db0857135ef51bc07385fc",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142732620--Slide2.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142729454--Slide2.JPG",
+    "webImage": "/images/Powerpoint/11.JPG",
+    "fullImage": "/images/Powerpoint/11.JPG",
     "likeCount": 53,
     "views": 89,
     "type": "PowerPoint",
@@ -111,8 +91,8 @@
   },
   {
     "_id": "64db087d135ef51bc0738600",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142875544--Slide5.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142870289--Slide5.JPG",
+    "webImage": "/images/Powerpoint/12.JPG",
+    "fullImage": "/images/Powerpoint/12.JPG",
     "likeCount": 69,
     "views": 101,
     "type": "PowerPoint",
@@ -122,8 +102,8 @@
   },
   {
     "_id": "64db0899135ef51bc0738604",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142897560--Slide6.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142894570--Slide6.JPG",
+    "webImage": "/images/Powerpoint/13.JPG",
+    "fullImage": "/images/Powerpoint/13.JPG",
     "likeCount": 11,
     "views": 25,
     "type": "PowerPoint",
@@ -133,8 +113,8 @@
   },
   {
     "_id": "64db08b9135ef51bc0738608",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142946730--Slide7.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142944145--Slide7.JPG",
+    "webImage": "/images/Powerpoint/14.JPG",
+    "fullImage": "/images/Powerpoint/14.JPG",
     "likeCount": 58,
     "views": 110,
     "type": "PowerPoint",
@@ -144,8 +124,8 @@
   },
   {
     "_id": "64db08d8135ef51bc073860c",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142967010--Slide8.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142964058--Slide8.JPG",
+    "webImage": "/images/Powerpoint/15.JPG",
+    "fullImage": "/images/Powerpoint/15.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "PowerPoint",
@@ -155,8 +135,8 @@
   },
   {
     "_id": "64db0900135ef51bc0738610",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695142994099--Slide10.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695142992227--Slide10.JPG",
+    "webImage": "/images/Powerpoint/16.JPG",
+    "fullImage": "/images/Powerpoint/16.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "PowerPoint",
@@ -166,8 +146,8 @@
   },
   {
     "_id": "64db0919135ef51bc0738614",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695143065060--Slide13.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695143034444--Slide13.JPG",
+    "webImage": "/images/Powerpoint/17.JPG",
+    "fullImage": "/images/Powerpoint/17.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "PowerPoint",
@@ -175,21 +155,11 @@
     "portfolioType": "Presentations Design",
     "__v": 0
   },
-  {
-    "_id": "64db0957135ef51bc0738622",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695143093309--Slide17.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695143088372--Slide17.JPG",
-    "likeCount": 5,
-    "views": 15,
-    "type": "PowerPoint",
-    "selected": false,
-    "portfolioType": "Presentations Design",
-    "__v": 0
-  },
+
   {
     "_id": "64db0993135ef51bc0738628",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695143125294--Slide18.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695143122810--Slide18.JPG",
+    "webImage": "/images/Powerpoint/19.JPG",
+    "fullImage": "/images/Powerpoint/19.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "PowerPoint",
@@ -199,8 +169,8 @@
   },
   {
     "_id": "64db09b5135ef51bc073862c",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695143162208--Slide27.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695143158981--Slide27.JPG",
+    "webImage": "/images/Powerpoint/20.JPG",
+    "fullImage": "/images/Powerpoint/20.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "PowerPoint",
@@ -210,8 +180,8 @@
   },
   {
     "_id": "64db09dd135ef51bc0738630",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695143204906--Slide29.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695143199751--Slide29.JPG",
+    "webImage": "/images/Powerpoint/21.JPG",
+    "fullImage": "/images/Powerpoint/21.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "PowerPoint",
@@ -221,8 +191,8 @@
   },
   {
     "_id": "64db0a02135ef51bc0738634",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695143270753--Slide36.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695143268644--Slide36.JPG",
+    "webImage": "/images/Powerpoint/22.JPG",
+    "fullImage": "/images/Powerpoint/22.JPG",
     "likeCount": 2,
     "views": 5,
     "type": "PowerPoint",
@@ -232,8 +202,8 @@
   },
   {
     "_id": "64db0a29135ef51bc0738638",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695143622696--Slide6.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695143618256--Slide6.JPG",
+    "webImage": "/images/Powerpoint/23.JPG",
+    "fullImage": "/images/Powerpoint/23.JPG",
     "likeCount": 28,
     "views": 60,
     "type": "PowerPoint",
@@ -243,8 +213,8 @@
   },
   {
     "_id": "64db0a3d135ef51bc073863b",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695143672249--Slide39.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695143669488--Slide39.JPG",
+    "webImage": "/images/Powerpoint/24.JPG",
+    "fullImage": "/images/Powerpoint/24.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "PowerPoint",
@@ -254,8 +224,8 @@
   },
   {
     "_id": "64db0a6b135ef51bc073863f",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1692076649530--Slide40.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1692076631342--Slide40.JPG",
+    "webImage": "/images/Powerpoint/25.JPG",
+    "fullImage": "/images/Powerpoint/25.JPG",
     "likeCount": 56,
     "views": 119,
     "type": "PowerPoint",
@@ -265,8 +235,8 @@
   },
   {
     "_id": "64dd0574135ef51bc0738c13",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695143822037--Slide57.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695143819128--Slide57.JPG",
+    "webImage": "/images/Powerpoint/26.JPG",
+    "fullImage": "/images/Powerpoint/26.JPG",
     "likeCount": 39,
     "views": 58,
     "type": "PowerPoint",
@@ -276,8 +246,8 @@
   },
   {
     "_id": "64dd0596135ef51bc0738c1e",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695143985896--Slide56.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695143840584--Slide56.JPG",
+    "webImage": "/images/Powerpoint/27.JPG",
+    "fullImage": "/images/Powerpoint/27.JPG",
     "likeCount": 59,
     "views": 80,
     "type": "PowerPoint",
@@ -287,8 +257,8 @@
   },
   {
     "_id": "64dd05ba135ef51bc0738c2f",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695144015921--Slide55.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695144011236--Slide55.JPG",
+    "webImage": "/images/Powerpoint/28.JPG",
+    "fullImage": "/images/Powerpoint/28.JPG",
     "likeCount": 19,
     "views": 38,
     "type": "PowerPoint",
@@ -298,8 +268,8 @@
   },
   {
     "_id": "64dd0605135ef51bc0738c37",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695144056706--Slide49.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695144055284--Slide49.JPG",
+    "webImage": "/images/Powerpoint/29.JPG",
+    "fullImage": "/images/Powerpoint/29.JPG",
     "likeCount": 42,
     "views": 80,
     "type": "PowerPoint",
@@ -307,21 +277,11 @@
     "portfolioType": "Presentations Design",
     "__v": 0
   },
-  {
-    "_id": "64dd0670135ef51bc0738c4c",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1692206703400--Slide50.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1692206688149--Slide50.JPG",
-    "likeCount": 9,
-    "views": 15,
-    "type": "PowerPoint",
-    "selected": false,
-    "portfolioType": "Presentations Design",
-    "__v": 0
-  },
+ 
   {
     "_id": "64dd0692135ef51bc0738c50",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695144088291--Slide51.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695144084231--Slide51.JPG",
+    "webImage": "/images/Powerpoint/31.JPG",
+    "fullImage": "/images/Powerpoint/31.JPG",
     "likeCount": 15,
     "views": 25,
     "type": "PowerPoint",
@@ -329,32 +289,12 @@
     "portfolioType": "Presentations Design",
     "__v": 0
   },
-  {
-    "_id": "64dd06b5135ef51bc0738c54",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695144111572--Slide52.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695144109494--Slide52.JPG",
-    "likeCount": 51,
-    "views": 89,
-    "type": "PowerPoint",
-    "selected": false,
-    "portfolioType": "Presentations Design",
-    "__v": 0
-  },
-  {
-    "_id": "64dd06fa135ef51bc0738c5c",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695144133382--Slide48.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695144130654--Slide48.JPG",
-    "likeCount": 12,
-    "views": 20,
-    "type": "PowerPoint",
-    "selected": false,
-    "portfolioType": "Presentations Design",
-    "__v": 0
-  },
+
+
   {
     "_id": "64dd071c135ef51bc0738c6a",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695144197902--Slide47.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695144191956--Slide47.JPG",
+    "webImage": "/images/Powerpoint/34.JPG",
+    "fullImage": "/images/Powerpoint/34.JPG",
     "likeCount": 25,
     "views": 49,
     "type": "PowerPoint",
@@ -362,21 +302,11 @@
     "portfolioType": "Presentations Design",
     "__v": 0
   },
-  {
-    "_id": "64dd074a135ef51bc0738c6e",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695144304423--Slide7.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695144301179--Slide7.JPG",
-    "likeCount": 20,
-    "views": 85,
-    "type": "PowerPoint",
-    "selected": false,
-    "portfolioType": "Presentations Design",
-    "__v": 0
-  },
+
   {
     "_id": "64dd076d135ef51bc0738c72",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695144368874--Slide9.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695144364729--Slide9.JPG",
+    "webImage": "/images/Powerpoint/36.JPG",
+    "fullImage": "/images/Powerpoint/36.JPG",
     "likeCount": 1,
     "views": 0,
     "type": "PowerPoint",
@@ -384,21 +314,23 @@
     "portfolioType": "Presentations Design",
     "__v": 0
   },
+
   {
-    "_id": "64eb7979135ef51bc073a1a9",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1693153652462--110-(1).png",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1693153633653--110-(1).png",
-    "likeCount": 205,
-    "views": 300,
+    "_id": "6509da17135ef51bc073abf8",
+    "webImage": "/images/Powerpoint/38.JPG",
+    "fullImage": "/images/Powerpoint/38.JPG",
+    "likeCount": 0,
+    "views": 0,
     "type": "PowerPoint",
-    "selected": true,
+    "selected": false,
     "portfolioType": "Presentations Design",
     "__v": 0
   },
+ 
   {
-    "_id": "6509da17135ef51bc073abf8",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695144469971--Slide8.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695144465812--Slide8.JPG",
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/40.JPG",
+    "fullImage": "/images/Powerpoint/40.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "PowerPoint",
@@ -408,8 +340,134 @@
   },
   {
     "_id": "6509da2d135ef51bc073abfc",
-    "webImage": "http://portfolio-backend.up.railway.app/images/1695144492707--Slide10.JPG",
-    "fullImage": "http://portfolio-backend.up.railway.app/images/1695144489619--Slide10.JPG",
+    "webImage": "/images/Powerpoint/41.JPG",
+    "fullImage": "/images/Powerpoint/41.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "PowerPoint",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/42.JPG",
+    "fullImage": "/images/Powerpoint/42.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "PowerPoint",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+
+  {
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/44.JPG",
+    "fullImage": "/images/Powerpoint/44.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "PowerPoint",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+
+  {
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/46.JPG",
+    "fullImage": "/images/Powerpoint/46.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "PowerPoint",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/47.JPG",
+    "fullImage": "/images/Powerpoint/47.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "PowerPoint",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+
+  {
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/49.JPG",
+    "fullImage": "/images/Powerpoint/49.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "PowerPoint",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/50.JPG",
+    "fullImage": "/images/Powerpoint/50.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "PowerPoint",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/51.JPG",
+    "fullImage": "/images/Powerpoint/51.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "PowerPoint",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/52.JPG",
+    "fullImage": "/images/Powerpoint/52.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "PowerPoint",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/53.JPG",
+    "fullImage": "/images/Powerpoint/53.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "PowerPoint",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+  {
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/54.JPG",
+    "fullImage": "/images/Powerpoint/54.JPG",
+    "likeCount": 0,
+    "views": 0,
+    "type": "PowerPoint",
+    "selected": false,
+    "portfolioType": "Presentations Design",
+    "__v": 0
+  },
+
+
+  {
+    "_id": "6509da2d135ef51bc073abfc",
+    "webImage": "/images/Powerpoint/57.JPG",
+    "fullImage": "/images/Powerpoint/57.JPG",
     "likeCount": 0,
     "views": 0,
     "type": "PowerPoint",

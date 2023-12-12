@@ -9,14 +9,13 @@ import { presentationDispatch } from "@/store/action";
 import { useDispatch, useSelector } from "react-redux";
 
 const GoogleSlides = ({ data, type }) => {
-  
+  console.log("data",data);
   const ref = useRef();
   const cardRef = useRef();
   const PresetationState = useSelector(
-
     (state) => state && state.presetatIonReducer.presentation
   );
-  console.log("PresetationState",PresetationState)
+  console.log("PresetationState", PresetationState);
   const portfolio = [
     {
       tittle: "Mobile app development",
@@ -42,31 +41,29 @@ const GoogleSlides = ({ data, type }) => {
   const { elementRef, mainControls } = useInViewAnimation();
 
   const itemsPerRow = 2;
-  const numRows = Math.ceil(PresetationState?.length / itemsPerRow);
+  const numRows = Math.ceil(data?.length / itemsPerRow);
 
   return (
     <div className="googleSlides">
       {Array.from({ length: numRows }, (_, rowIndex) => (
         <div className="portfolio-row" key={rowIndex}>
           {data &&
-            data.slice(
-              rowIndex * itemsPerRow,
-              (rowIndex + 1) * itemsPerRow
-            ).map((item, ind) => (
-              <div key={ind} className="portfolio-card">
-                <PortfolioCard
-                      fullImage={item.fullImage}
-
-                  id={item._id}
-                  likeCount={item.likeCount}
-                  views={item.views}
-                  bluecolor={"bg-blue"}
-                  tittle={item.portfolioType}
-                  year={item.year}
-                  image={item.webImage}
-                />
-              </div>
-            ))}
+            data
+              .slice(rowIndex * itemsPerRow, (rowIndex + 1) * itemsPerRow)
+              .map((item, ind) => (
+                <div key={ind} className="portfolio-card">
+                  <PortfolioCard
+                    fullImage={item.fullImage}
+                    id={item._id}
+                    likeCount={item.likeCount}
+                    views={item.views}
+                    bluecolor={"bg-blue"}
+                    tittle={item.portfolioType}
+                    year={item.year}
+                    image={item.webImage}
+                  />
+                </div>
+              ))}
         </div>
       ))}
     </div>

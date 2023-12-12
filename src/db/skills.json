@@ -1,0 +1,70 @@
+[
+    {
+      "value": "html5",
+      "label": "html 5"
+    },
+    {
+      "value": "css3",
+      "label": "css 3"
+    },
+    {
+      "value": "JavaScript",
+      "label": "JavaScript"
+    },
+    {
+      "value": "reactjs",
+      "label": "react js"
+    },
+    {
+      "value": "reactNative",
+      "label": "react Native"
+    },
+    {
+      "value": "Redux",
+      "label": "Redux"
+    },
+    {
+      "value": "typescript",
+      "label": "typescript"
+    },
+    {
+      "value": "keynote",
+      "label": "keynote"
+    },
+    {
+      "value": "Microsoft_PowerPoint",
+      "label": "Microsoft_PowerPoint"
+    },
+    {
+      "value": "googleslides",
+      "label": "google slides"
+    },
+    {
+      "value": "Firebase",
+      "label": "Firebase"
+    },
+    {
+      "value": "Laravel",
+      "label": "Laravel"
+    },
+    {
+      "value": "nodejs",
+      "label": "node js"
+    },
+    {
+      "value": "PandaDoc",
+      "label": "PandaDoc"
+    },
+    {
+      "value": "PHP",
+      "label": "PHP"
+    },
+    {
+      "value": "Figma",
+      "label": "Figma"
+    },
+    {
+      "value": "AdobeXD",
+      "label": "Adobe XD"
+    }
+  ]

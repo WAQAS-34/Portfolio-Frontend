@@ -22,9 +22,8 @@
         "_id": "64dbadba135ef51bc073881a"
       },
       {
-        "value": "reactNative",
-        "label": "react Native",
-        "_id": "64dbb87d135ef51bc0738904"
+        "value": "html5",
+        "label": "html 5"
       }
     ],
     "allScreenImages": [
@@ -35,6 +34,7 @@
       "http://portfolio-backend.up.railway.app/images/1695394288694--POPUP-4.png",
       "http://portfolio-backend.up.railway.app/images/1695394289309--POPUP-5.png",
       "http://portfolio-backend.up.railway.app/images/1695394289874--POPUP-7.png",
+      "http://portfolio-backend.up.railway.app/images/1695394290722--POPUP6.png",
       "http://portfolio-backend.up.railway.app/images/1695394290722--POPUP6.png"
     ],
     "selected": false,
