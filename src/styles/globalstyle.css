@@ -13567,4 +13567,10 @@ p {
 
 .hidesideBar {
   display: none !important;
+}
+
+@media (max-width: 1130px) {
+  .social-icon {
+    width: 40px !important;
+  }
 }/*# sourceMappingURL=globalstyle.css.map */
