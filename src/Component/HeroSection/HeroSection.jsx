@@ -78,7 +78,7 @@ const HeroSection = () => {
                  */}
               </div>
               <div className="position-relative ">
-                <p className="p1 text-white">200+ Projects</p>
+                <p className="p1 text-white">1000+ Projects</p>
                 <p className="smalltext texthoverglow" > <Link href={"/#testmonial"}> Read testimonial </Link></p>
                 <img src={realProjects.src} className="real-project" alt="" />
               </div>

@@ -60,7 +60,7 @@ const Portfolio = () => {
     } else if (type == PORTFOLIO_TYPE.Website_Development) {
       router.push(`/website-development.html`);
     } else if (type == PORTFOLIO_TYPE.Presentations_Design) {
-      router.push(`/presentation-design.html`);
+      router.push(`/power-point.html`);
     }
   };
 
@@ -80,12 +80,12 @@ const Portfolio = () => {
             colorTitle={"Works"}
             btnText={"Portfolio"}
           />
-          {/* <button className="btn3">
+          <button onClick={() => router.push("/presentation-design.html")} className="btn3">
             <span className="btntext">
               {" "}
               View All Work <img src={arrow.src} />{" "}
             </span>
-          </button> */}
+          </button>
         </div>
         <div className="portfiolio-card-box">
           {Array.from({ length: numRows }, (_, rowIndex) => (
@@ -96,6 +96,7 @@ const Portfolio = () => {
                   .map((item, ind) => (
                     <div key={ind} className="portfolio-card">
                       <PortfolioCard
+                        disableLikeCount
                         event={() => handlePortfolio(item.portfolioType)}
                         diableFullImage
                         fullImage={item.fullImage}

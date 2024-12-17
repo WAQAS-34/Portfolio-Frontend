@@ -28,10 +28,11 @@ const Testimonial = () => {
   const settings = {
     dots: false,
     infinite: false,
+    
     arrows: false,
     speed: 1500,
     centerMode:false,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     afterChange: (currentSlide) => {
       setActiveSlide(currentSlide); // Update the active slide index
@@ -48,7 +49,7 @@ const Testimonial = () => {
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
         },
       },
       {
@@ -151,18 +152,7 @@ const Testimonial = () => {
               })}
           </Slider>
         </motion.div>
-        <div className="arrowBox">
-          <button onClick={handlePrev} className="outlinebtn1">
-            <img src={leftArrow.src} alt="" />
-          </button>
-          <p className="p3">
-            {/* { Math.abs( remainingSlides) ?? ""}  */}
-            {activeSlide}/{testimonialState?.length}
-          </p>
-          <button onClick={handleNext} className="outlinebtn1">
-            <img src={rightArrow.src} alt="" />
-          </button>
-        </div>
+    
       </div>
     </div>
   );

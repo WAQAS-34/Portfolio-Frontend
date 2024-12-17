@@ -23,6 +23,15 @@ const PresentationDesign = ({  data, type }) => {
               btnText={"SKILLS & Expertise"}
             />
             <div className="presentation-row">
+            <button
+                onClick={() => handlePresentation("/power-point")}
+                className={`btn1 ${
+                  router.pathname == "/power-point" ? "activeBtn" : ""
+                }`}
+              >
+                {" "}
+                Power Point
+              </button>
               <button
                 onClick={() => handlePresentation("/presentation-design")}
                 className={`btn1 ${
@@ -41,15 +50,7 @@ const PresentationDesign = ({  data, type }) => {
                 {" "}
                 Keynote
               </button>
-              <button
-                onClick={() => handlePresentation("/power-point")}
-                className={`btn1 ${
-                  router.pathname == "/power-point" ? "activeBtn" : ""
-                }`}
-              >
-                {" "}
-                Power Point
-              </button>
+
             </div>
           </div>
 

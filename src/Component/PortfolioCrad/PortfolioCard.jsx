@@ -27,6 +27,7 @@ const PortfolioCard = ({
   year,
   image,
   id,
+  disableLikeCount
 }) => {
   const { elementRef, mainControls } = useInViewAnimation();
   const [likes, setlikes] = useState(likeCount);
@@ -38,28 +39,27 @@ const PortfolioCard = ({
       setlikes((prev) => prev + 1);
       setisLike(true);
       axios({
-        url: `${BASE_URL}${
-          tittle == PORTFOLIO_TYPE.Mobile_app_development
+        url: `${BASE_URL}${tittle == PORTFOLIO_TYPE.Mobile_app_development
             ? mobileappdev
             : tittle == PORTFOLIO_TYPE.Presentations_Design
-            ? presentation
-            : tittle == PORTFOLIO_TYPE.Website_Development
-            ? webdev
-            : uiux
-        }/${id}`,
+              ? presentation
+              : tittle == PORTFOLIO_TYPE.Website_Development
+                ? webdev
+                : uiux
+          }/${id}`,
         method: "patch",
         data: {
           likeCount: likes + 1,
         },
       })
         .then((res) => {
-          
+
         })
-        .catch((err) => {});
+        .catch((err) => { });
     }
   };
   useEffect(() => {
-    
+
     baguetteBox?.run(".images", {
       // Custom options
       captions: true,
@@ -67,7 +67,7 @@ const PortfolioCard = ({
       fullScreen: false,
     });
   }, [])
-  
+
 
   return (
     <>
@@ -127,7 +127,7 @@ const PortfolioCard = ({
             </div>
           ) : null}
 
-          <div
+          {disableLikeCount ? null : <div
             style={{ width: showtittle ? "auto" : "100%" }}
             className="infoContainer"
           >
@@ -147,7 +147,7 @@ const PortfolioCard = ({
               <img src={eye.src} alt="" />
               <p className="p2">{views} </p>
             </div>
-          </div>
+          </div>}
         </div>
       </motion.div>
     </>

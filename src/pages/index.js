@@ -13,8 +13,7 @@ import { Element } from "react-scroll";
 export default function Home() {
   return (
     <>
-      <WhatsAppIcon />
-      <SocialIcon />
+    
       <Header />
       <Element name="home">
         <HeroSection />

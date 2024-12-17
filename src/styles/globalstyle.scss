@@ -15,7 +15,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 //top heading cmponent css
-
+.yellow-color{
+  
+  color:#FFDA05 ;
+}
 .top-heading-box {
   h3 {
     margin-top: 20px;
@@ -383,12 +386,12 @@ p {
   line-height: 36px;
   font-size: 24px;
   @include mobile {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 .smalltext {
   @include heading(300, $red);
-  font-size: 12px;
+  font-size: 16px;
   line-height: 15px;
   font-weight: 300 !important;
   transition: 0.2s ease-in-out;

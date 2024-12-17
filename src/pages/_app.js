@@ -5,6 +5,8 @@ import Toast from "@/Component/Toast/Toast";
 import { store, wrapper } from "@/store/store";
 import { Provider } from "react-redux";
 import { useEffect } from "react";
+import WhatsAppIcon from "@/Component/WhatsUpFloatingIcon/WhatsUpFloatingIcon";
+import SocialIcon from "@/Component/SocialIcon/SocialIcon";
 function App({ Component, pageProps }) {
   useEffect(() => {
     // <script>s
@@ -37,6 +39,8 @@ function App({ Component, pageProps }) {
         </Head>
         <Toast
         />
+          <WhatsAppIcon />
+          <SocialIcon />
 
         <Component {...pageProps} />
       </Provider>

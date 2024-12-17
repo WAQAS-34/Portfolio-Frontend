@@ -22,17 +22,19 @@ const SocialIcon = () => {
       <img
         className="social-icon"
         src="/images/fiverr.png"
-        onClick={() =>
-          handleDirect(
-            "https://www.upwork.com/fl/~01d7f38bba1c799002?mp_source=share"
-          )
+        onClick={() => handleDirect("https://www.fiverr.com/s/EgPZDb9")
+
         }
         style={{ width: "60px", marginRight: "5px" }}
       />
       <img
         className="social-icon"
 
-        onClick={() => handleDirect("https://www.fiverr.com/s/EgPZDb9")}
+        onClick={() => {
+          handleDirect(
+            "https://www.upwork.com/fl/~01d7f38bba1c799002?mp_source=share"
+          )
+        }}
         src="/images/upwok.png"
         style={{ width: "60px" }}
       />
