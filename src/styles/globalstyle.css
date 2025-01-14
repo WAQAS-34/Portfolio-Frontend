@@ -12157,12 +12157,12 @@ textarea.form-control-lg {
 }
 
 .slidingContaibner {
-  background-color: #17222f;
+  background-color: #1C1C1F;
   padding-bottom: 40px;
 }
 
 .slides {
-  background-color: #141d28;
+  background-color: #121212;
   overflow-x: hidden;
   height: 98px;
   padding: 35px 20px;
@@ -12361,7 +12361,7 @@ textarea.form-control-lg {
 }
 
 .portfolioCard {
-  background-color: #17222f;
+  background-color: #1C1C1F;
   padding: 22px;
   width: -moz-max-content;
   width: max-content;
@@ -12563,15 +12563,15 @@ textarea.form-control-lg {
 }
 
 .reviw-border {
-  background: linear-gradient(0deg, #FF4237 0%, #17222f 65%);
+  background: linear-gradient(0deg, #FF4237 0%, #1C1C1F 65%);
   padding: 3px;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
 }
 
 .reviewCard {
-  height: 450px;
-  background-color: #17222f;
+  height: 468px;
+  background-color: #1C1C1F;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
   padding: 35px 31px 35px 31px;
@@ -12601,8 +12601,8 @@ textarea.form-control-lg {
   font-family: "Sora", sans-serif;
 }
 .reviewCard .userPic {
-  width: 62px;
-  height: 62px;
+  width: 82px;
+  height: 82px;
   border-radius: 100px;
   border: 1px solid #FF4237;
   -o-object-fit: cover;
@@ -12651,7 +12651,8 @@ textarea.form-control-lg {
 .reviewCard .starBox {
   display: flex;
   gap: 6px;
-  margin-top: 14px;
+  justify-content: center;
+  margin-top: 18px;
   gap: 3px;
 }
 @media (max-width: 1450px) {
@@ -12832,7 +12833,7 @@ textarea.form-control-lg {
 .horizontal-line {
   width: 100%;
   height: 1px;
-  border: 1px solid #141d28;
+  border: 1px solid #121212;
 }
 
 .footer {
@@ -12899,7 +12900,7 @@ textarea.form-control-lg {
 .mobileprotoflio .accordion,
 .mobileprotoflio .card,
 .mobileprotoflio .card-header {
-  background-color: #17222f !important;
+  background-color: #1C1C1F !important;
   border: none;
 }
 .mobileprotoflio .card-body {
@@ -12915,7 +12916,7 @@ textarea.form-control-lg {
 .mobileprotoflio .all-mobilesceens {
   width: 100%;
   padding: 90px 0px 20px 0px;
-  background-color: #141d28;
+  background-color: #121212;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -13039,7 +13040,7 @@ textarea.form-control-lg {
 tr,
 td,
 th {
-  background-color: #17222f !important;
+  background-color: #1C1C1F !important;
   color: #fff !important;
   border: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center !important;
@@ -13055,11 +13056,11 @@ th svg {
 }
 
 .modal-content {
-  background-color: #17222f !important;
+  background-color: #1C1C1F !important;
 }
 
 .form-select, .css-13cymwt-control, .css-1fdsijx-ValueContainer {
-  background-color: #17222f !important;
+  background-color: #1C1C1F !important;
   color: #fff !important;
 }
 
@@ -13102,7 +13103,7 @@ th svg {
 
 body {
   overflow-x: hidden !important;
-  background-color: #17222f;
+  background-color: #1C1C1F;
 }
 
 p {
@@ -13110,11 +13111,11 @@ p {
 }
 
 .bg-blue {
-  background-color: #141d28 !important;
+  background-color: #121212 !important;
 }
 
 .bg-darkblue {
-  background-color: #17222f !important;
+  background-color: #1C1C1F !important;
 }
 
 .red-color {
@@ -13275,7 +13276,7 @@ p {
   left: 0;
   display: block;
   border-radius: 100px;
-  background: rgba(23, 34, 47, 0.8);
+  background: #1C1C1F;
   width: 83px;
   height: 83px;
   transition: all 0.3s ease;
@@ -13296,7 +13297,7 @@ p {
 
 .btn3:hover:before {
   width: 100%;
-  background: #17222f;
+  background: #1C1C1F;
   color: #fff !important;
 }
 

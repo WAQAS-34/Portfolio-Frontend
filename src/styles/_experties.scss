@@ -167,7 +167,7 @@
 
 
 
-  background: linear-gradient(0deg, #FF4237 0%, #17222f 65%);
+  background: linear-gradient(0deg, #FF4237 0%, #1C1C1F 65%);
   padding: 3px;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
@@ -175,9 +175,9 @@
 }
 
 .reviewCard {
-  height: 450px;
+  height: 468px;
   // background-color: wheat;
-  background-color: #17222f;
+  background-color: $darkblue;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
 
@@ -222,8 +222,8 @@
 
   // min-height: 327px;
   .userPic {
-    width: 62px;
-    height: 62px;
+    width: 82px;
+    height: 82px;
     border-radius: 100px;
     border: 1px solid #FF4237;
     object-fit: cover;
@@ -286,7 +286,8 @@
   .starBox {
     display: flex;
     gap: 6px;
-    margin-top: 14px;
+    justify-content: center;
+    margin-top: 18px;
 
     @include largeScreen {
       justify-content: center;

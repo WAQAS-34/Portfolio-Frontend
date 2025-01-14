@@ -33,11 +33,12 @@ const Testimonial = () => {
     speed: 1500,
     centerMode:false,
     slidesToShow: 2,
+    draggable: true,
     slidesToScroll: 1,
     afterChange: (currentSlide) => {
       setActiveSlide(currentSlide); // Update the active slide index
     },
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
       // {
