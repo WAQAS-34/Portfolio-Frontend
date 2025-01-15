@@ -21,10 +21,7 @@ import { PORTFOLIO_TYPE } from "@/utils/utils";
 import selecteSate from "@/db/selected.json";
 const Portfolio = () => {
   const uiuxState = useSelector((state) => state && state.uiuxDesign.uiux);
-  // const selecteSate = useSelector(
-  //   (state) => state && state.selectedReducer.selected
-  // );
-  console.log("selecteSate", selecteSate);
+  
   const ref = useRef();
   const router = useRouter();
   const dispatch = useDispatch();
@@ -60,13 +57,11 @@ const Portfolio = () => {
     } else if (type == PORTFOLIO_TYPE.Website_Development) {
       router.push(`/website-development.html`);
     } else if (type == PORTFOLIO_TYPE.Presentations_Design) {
-      router.push(`/power-point.html`);
+      router.push(`/presentation-design.html`);
     }
   };
 
-  useEffect(() => {
-    dispatch(Selected());
-  }, []);
+  
   const itemsPerRow = 2;
   const numRows = Math.ceil(selecteSate?.length / itemsPerRow);
 
@@ -80,7 +75,7 @@ const Portfolio = () => {
             colorTitle={"Works"}
             btnText={"Portfolio"}
           />
-          <button onClick={() => router.push("/presentation-design.html")} className="btn3">
+          <button onClick={() => router.push("/power-point.html")} className="btn3">
             <span className="btntext">
               {" "}
               View All Work <img src={arrow.src} />{" "}

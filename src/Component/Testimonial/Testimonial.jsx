@@ -14,10 +14,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { testimonailDispatch } from "@/store/action";
 import testimonialState from "@/db/testimonial.json"
 const Testimonial = () => {
-  // const testimonialState = useSelector(
-  //   (state) => state && state.testmonialReducer.testimonial
-  // );
-  console.log("testimonialState",testimonialState)
+
   const ref = useRef();
   const SliderRef = useRef();
   const { elementRef, mainControls } = useInViewAnimation();
@@ -27,10 +24,10 @@ const Testimonial = () => {
 
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     
     arrows: false,
-    speed: 1500,
+    speed: 500,
     centerMode:false,
     slidesToShow: 2,
     draggable: true,
@@ -106,11 +103,7 @@ const Testimonial = () => {
       userPic: client,
     },
   ];
-  const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(testimonailDispatch());
-  }, []);
   return (
     <div id="testmonial">
       <TopHeading

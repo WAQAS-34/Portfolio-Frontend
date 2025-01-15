@@ -12028,6 +12028,21 @@ textarea.form-control-lg {
   align-items: center;
   padding: 90px 50px 147px 50px;
 }
+.herocontainer .promo-video {
+  width: 740px;
+  background-color: #1C1C1F;
+}
+@media (max-width: 1450px) {
+  .herocontainer .promo-video {
+    width: 550px;
+  }
+}
+@media (max-width: 982px) {
+  .herocontainer .promo-video {
+    width: 100%;
+    margin-top: 37px;
+  }
+}
 @media (max-width: 1450px) {
   .herocontainer {
     justify-content: center;
@@ -12570,7 +12585,8 @@ textarea.form-control-lg {
 }
 
 .reviewCard {
-  height: 468px;
+  height: 500px;
+  position: relative;
   background-color: #1C1C1F;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
@@ -12590,9 +12606,10 @@ textarea.form-control-lg {
   margin-top: 20px;
 }
 .reviewCard .review-title {
-  font-weight: 600;
+  font-weight: 700;
   font-family: "Sora", sans-serif;
   text-align: center;
+  font-size: 17px;
 }
 .reviewCard .clientreview {
   font-weight: 300;
@@ -12649,10 +12666,12 @@ textarea.form-control-lg {
   color: #fff;
 }
 .reviewCard .starBox {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
-  gap: 6px;
   justify-content: center;
-  margin-top: 18px;
   gap: 3px;
 }
 @media (max-width: 1450px) {

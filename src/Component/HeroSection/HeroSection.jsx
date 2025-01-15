@@ -9,6 +9,7 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 import { whatsappURL } from "@/utils/whatsAppurl";
 import { useRouter } from "next/router";
+import { Video } from "../HeroSectionVideo/HeroSectionVideo";
 
 const HeroSection = () => {
   const router = useRouter()
@@ -84,7 +85,8 @@ const HeroSection = () => {
               </div>
             </motion.div>
           </div>
-          <motion.div
+          <Video/>
+          {/* <motion.div
             initial={{ scale: 0.2 }} // Initial opacity set to 0 and y-position set to 50px (downwards)
             animate={{ scale: 1 }} // Final opacity set to 1 (fully visible) and y-position set to 0px (original position)
             transition={{
@@ -94,7 +96,7 @@ const HeroSection = () => {
             }}
           >
             <img className="graph " src={hero.src} alt="" />
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </>

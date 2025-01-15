@@ -175,8 +175,9 @@
 }
 
 .reviewCard {
-  height: 468px;
+  height: 500px;
   // background-color: wheat;
+  position: relative;
   background-color: $darkblue;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
@@ -204,9 +205,10 @@
   }
 
   .review-title {
-    font-weight: 600;
+    font-weight: 700;
     font-family: "Sora", sans-serif;
     text-align: center;
+    font-size: 17px;
   }
 
   .clientreview {
@@ -284,10 +286,15 @@
   }
 
   .starBox {
+    position: absolute;
+    bottom: 20px;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    gap: 6px;
+    // gap: 6px;
     justify-content: center;
-    margin-top: 18px;
+    // margin-top: 18px;
 
     @include largeScreen {
       justify-content: center;
