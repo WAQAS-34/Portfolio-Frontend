@@ -183,7 +183,7 @@
   border-bottom-right-radius: 20px !important;
 
   @include mobile {
-  height: max-content ;
+    height: max-content;
 
   }
 
@@ -292,7 +292,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+
     // gap: 6px;
+    @include mobile {
+      position: static;
+      margin-top: 18px;
+      transform: translate(0);
+    }
+
     justify-content: center;
     // margin-top: 18px;
 

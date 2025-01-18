@@ -27,7 +27,7 @@ const Testimonial = () => {
     infinite: true,
     
     arrows: false,
-    speed: 500,
+    speed: 1000,
     centerMode:false,
     slidesToShow: 2,
     draggable: true,
@@ -36,14 +36,10 @@ const Testimonial = () => {
       setActiveSlide(currentSlide); // Update the active slide index
     },
     autoplay: true,
-    autoplaySpeed: 3000,
+    // autoplay: false,
+    autoplaySpeed: 2000,
     responsive: [
-      // {
-      //   breakpoint: 1700,
-      //   settings: {
-      //     slidesToShow: 3,
-      //   },
-      // },
+   
       {
         breakpoint: 1400,
         settings: {

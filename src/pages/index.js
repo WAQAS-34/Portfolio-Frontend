@@ -13,13 +13,13 @@ import { Element } from "react-scroll";
 export default function Home() {
   return (
     <>
-    
+
       <Header />
       <Element name="home">
         <HeroSection />
       </Element>
 
-      {/* <ServicesSlides /> */}
+      <ServicesSlides />
 
       <Element name="services" id="services">
         <Services />

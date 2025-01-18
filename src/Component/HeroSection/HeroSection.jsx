@@ -16,6 +16,11 @@ const HeroSection = () => {
   const testimonialState = useSelector(
     (state) => state && state.testmonialReducer.testimonial
   );
+  const clinetsPic = [
+    "/images/testimonial/Aneisha Byrd.jpg",
+    "/images/testimonial/Chris Poole.png",
+    "/images/testimonial/Chuck Mollor.png",
+  ]
   return (
     <>
       <div className="bg-darkblue">
@@ -30,9 +35,9 @@ const HeroSection = () => {
               }}
               className="heading1"
             >
-              We assist visionary{" "}
-              <span className="red-color"> individuals</span> in creating{" "}
-              <span className="red-color"> extraordinary</span> products
+              We Deliver Excellence in
+              <span className="red-color"> Presentation Design </span>and React Native{" "}
+              <span className="red-color"> Mobile App</span> Development
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 50 }} // Initial opacity set to 0 and y-position set to 50px (downwards)
@@ -43,9 +48,7 @@ const HeroSection = () => {
               }}
               className="p1 top-spacing "
             >
-              We specialize in designing and developing all things digital, from
-              custom websites to mobile apps and more, with a focus on
-              supporting startups.
+              At Devpixel Solutions, we offer professional presentation design and React Native app development, blending creativity with technical expertise to deliver high-quality, customized solutions that meet your business needs.
             </motion.p>
             <motion.button
               initial={{ opacity: 0 }} // Initial opacity set to 0 and y-position set to 50px (downwards)
@@ -56,7 +59,7 @@ const HeroSection = () => {
                 delay: 0.7,
               }}
               className="btn1 hoverglow"
-              onClick={()=>router.push(whatsappURL)}
+              onClick={() => router.push(whatsappURL)}
             >
               Lets Talk
             </motion.button>
@@ -71,8 +74,8 @@ const HeroSection = () => {
               className="more-projects"
             >
               <div className="client-profile-box">
-                {testimonialState&&testimonialState.slice(0,3).map((item , ind)=>{
-                  return <img key={ind} className={ ind==1?"prfile2" :ind==2?`prfile3`:''} src={item.clientPic} alt="" />
+                {clinetsPic.map((item, ind) => {
+                  return <img key={ind} className={ind == 1 ? "prfile2" : ind == 2 ? `prfile3` : ''} src={item} alt="" />
                 })}
                 {/* <img  src={profile3.src} alt="" />
                 <img className="prfile3" src={profile2.src} alt="" />
@@ -85,18 +88,8 @@ const HeroSection = () => {
               </div>
             </motion.div>
           </div>
-          <Video/>
-          {/* <motion.div
-            initial={{ scale: 0.2 }} // Initial opacity set to 0 and y-position set to 50px (downwards)
-            animate={{ scale: 1 }} // Final opacity set to 1 (fully visible) and y-position set to 0px (original position)
-            transition={{
-              duration: 2, // Animation duration (in seconds)
-              type: "spring",
-              // delay: 0.9,
-            }}
-          >
-            <img className="graph " src={hero.src} alt="" />
-          </motion.div> */}
+          <Video />
+    
         </div>
       </div>
     </>
