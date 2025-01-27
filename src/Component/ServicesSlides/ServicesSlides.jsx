@@ -15,7 +15,7 @@ const ServicesSlides = () => {
               //   duration: 10, // Animation duration (in seconds)
               //   ease: "linear", // Use linear easing for continuous movement
               // }}
-              style={{ display: "flex", position: "absolute", width: "200%" }}
+              style={{ display: "flex", position: "absolute", width: "100%", }}
               animate={{ x: "-100%" }}
               transition={{
                 repeat: Infinity,
