@@ -27,7 +27,7 @@ const Testimonial = () => {
     infinite: true,
     
     arrows: false,
-    speed: 1000,
+    speed: 2000,
     centerMode:false,
     slidesToShow: 2,
     draggable: true,
@@ -37,7 +37,7 @@ const Testimonial = () => {
     },
     autoplay: true,
     // autoplay: false,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     responsive: [
    
       {
