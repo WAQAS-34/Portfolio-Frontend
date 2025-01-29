@@ -9,19 +9,21 @@
   position: relative;
 // max-width: 1706px  !important;
   .promo-video {
-    // width: 740px;
-    width: 978px;
+
+    // width: 978px;
+    width: 901px;
     background-color: $darkblue;
     position: absolute;
     // border: 1px solid red;
-    top: 104px;
-    right: 90px;
+    top: 122px;
+    right: 69px;
     z-index: 1;
     transform: scale(1.3);
 
     @include largeScreen {
-      width: 774px;
-      right: 0px;
+      // width: 774px;
+      width: 672px;
+      right: -20px;
     }
 
     @include laptops {
