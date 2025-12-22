@@ -88,4 +88,57 @@
       // height: 326px;
     }
   }
+
+  .hover-button-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 14px;
+    background-color: rgba(0, 0, 0, 0.4); // Dark overlay for dull effect
+    backdrop-filter: blur(2px); // Blur effect on background
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .images:hover .hover-button-overlay {
+    opacity: 1;
+  }
+
+  .images:hover .portfolioImg {
+    filter: blur(1px) brightness(0.7); // Additional blur and dimming on image
+    transition: filter 0.3s ease;
+  }
+
+  .hover-button {
+    // background-color: rgba(128, 128, 128, 0.7); // Gray dull background
+
+    color: white;
+    border: none;
+    
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 260px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+    
+    &:hover {
+     
+      transform: translateY(-2px);
+    }
+    
+    &:active {
+      transform: translateY(0);
+    }
+  }
 }

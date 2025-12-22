@@ -1,0 +1,76 @@
+@import "mediaquery";
+
+.presentation-hero-section {
+  background-color: $darkblue;
+
+  padding: 120px 20px;
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include laptops {
+    padding: 100px 20px;
+    min-height: 450px;
+  }
+
+  @include tablet {
+    padding: 80px 20px;
+    min-height: 400px;
+  }
+
+  @include mobile {
+    padding: 60px 15px;
+    min-height: 350px;
+  }
+}
+
+.presentation-hero-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.presentation-hero-description {
+  max-width: 556px;
+  margin: 20px auto 4px auto !important;
+
+  @include tablet {
+    margin: 10px auto 4px auto !important;
+  }
+
+  @include mobile {
+    margin: 0px auto 4px auto !important;
+  }
+}
+
+
+
+.presentation-hero-highlight-text {
+  color: $red;
+  font-weight: 500;
+}
+
+.presentation-hero-cta-button {
+  background-color: $red;
+  color: $white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 27px;
+  // padding: 15px 35px ;
+  width: 212px !important;
+  height: 46px !important;
+
+  &:hover {
+    background-color: darken($red, 5%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 66, 55, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,99 @@
+.statistics-section {
+  background-color: transparent;
+  padding: 60px 0;
+  
+
+  @include laptops {
+    padding: 50px 0;
+    margin: 70px 0;
+  }
+
+  @include mobile {
+    padding: 30px 0;
+    margin: 10px 0;
+  }
+
+  .statistics-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @include mobile {
+    //   flex-direction: column;
+      gap: 10px;
+      padding: 0 5px;
+      
+    }
+  }
+
+  .stat-item {
+    text-align: center;
+    flex: 1;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    .stat-number {
+      font-family: "Sora", sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: $red;
+      margin-bottom: 10px;
+      line-height: 1;
+
+      @include laptops {
+        font-size: 42px;
+      }
+
+      @include tablet {
+        font-size: 36px;
+      }
+
+      @include mobile {
+        font-size: 32px;
+      }
+    }
+
+    .stat-label {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: $lightgary;
+      margin: 0;
+      line-height: 1.4;
+
+      @include laptops {
+        font-size: 15px;
+      }
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .stat-divider {
+    width: 2px;
+    height: 80px;
+    background-color: $red;
+    margin: 0 40px;
+
+    @include laptops {
+      height: 70px;
+      margin: 0 30px;
+    }
+
+    @include tablet {
+      height: 60px;
+      margin: 0 25px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+}

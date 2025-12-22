@@ -59,7 +59,7 @@ const Services = () => {
     } else if (type == PORTFOLIO_TYPE.Website_Development) {
       router.push(`/website-development.html`);
     } else if (type == PORTFOLIO_TYPE.Presentations_Design) {
-      router.push(`/presentation-design.html`);
+      router.push(`/presentation.html`);
     }
   };
   return (

@@ -29,24 +29,8 @@ function PresentationDesignTabs({ data, type }) {
       animate={mainControls}
       transition={{ duration: 1 }}
     >
-      <GoogleSlides  data={data}/>
+      <GoogleSlides  data={data} type={type}/>
 
-      {/* <Tabs
-        defaultActiveKey="Keynote"
-        id="uncontrolled-tab-example"
-        className="mb-3 skillTabs"
-        onSelect={handleChange}
-      >
-        <Tab eventKey="GoogleSlide" title="Google Slide">
-          <GoogleSlides type={"GoogleSlide"} />
-        </Tab>
-        <Tab eventKey="Keynote" title="Keynote">
-          <GoogleSlides type={"Keynote"} />
-        </Tab>
-        <Tab eventKey="PowerPoint" title="PowerPoint">
-          <GoogleSlides type={"PowerPoint"} />
-        </Tab>
-      </Tabs> */}
     </motion.div>
   );
 }

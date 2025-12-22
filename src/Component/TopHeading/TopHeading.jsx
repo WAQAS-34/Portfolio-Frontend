@@ -9,7 +9,7 @@ import {
 
 import React, { useEffect, useRef } from "react";
 
-const TopHeading = ({ tittle, btnText, colorTitle }) => {
+const TopHeading = ({ hidebutton ,tittle, btnText, colorTitle }) => {
   const { elementRef, mainControls } = useInViewAnimation();
 
   // const elementRef = useRef();
@@ -38,7 +38,8 @@ const TopHeading = ({ tittle, btnText, colorTitle }) => {
       transition={{  ease: "linear", duration: 0.7, delay: 0.1 }}
       className="top-heading-box"
     >
-      <button className="outlinebtn">{btnText}</button>
+      {hidebutton ?null:<button className="outlinebtn">{btnText}</button>
+      }
       <h3 className="heading3">
         {tittle} <span className="red-color"> {colorTitle}</span>
       </h3>

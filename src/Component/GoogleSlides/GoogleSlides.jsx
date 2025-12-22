@@ -7,9 +7,10 @@ import { motion } from "framer-motion";
 import useInViewAnimation from "@/Hooks/useInViewAnimation";
 import { presentationDispatch } from "@/store/action";
 import { useDispatch, useSelector } from "react-redux";
+import { PresentationContent, PresentationType } from "@/constant";
 
 const GoogleSlides = ({ data, type }) => {
-  console.log("data",data);
+  console.log("data", data);
   const ref = useRef();
   const cardRef = useRef();
   const PresetationState = useSelector(
@@ -61,6 +62,12 @@ const GoogleSlides = ({ data, type }) => {
                     tittle={item.portfolioType}
                     year={item.year}
                     image={item.webImage}
+                    showHoverButton={type === PresentationType.MobileApp ? true : false}
+                    hoverButtonText="Click to view project online"
+                    onHoverButtonClick={(id, image) => {
+                      // Handle button click
+                      console.log('Button clicked for item:', id);
+                    }}
                   />
                 </div>
               ))}

@@ -4,15 +4,23 @@
 @import "colorpalette";
 @import "mediaquery";
 @import "heroSection";
+@import "presentationHeroSection";
 @import "servicesSlides";
 @import "services";
+@import "presestation";
+@import "statistics";
+@import "achievement";
 @import "portfolio";
 @import "experties";
 @import "contactFrom";
 @import "mobiledevelopment";
 @import "admin";
+@import "pricing";
+@import "beforeAfterSlider";
+
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 //top heading cmponent css
 .yellow-color{
@@ -64,6 +72,10 @@ p {
 }
 .sora-font {
   font-family: "Sora", sans-serif !important;
+}
+
+.rubik-font {
+  font-family: "Rubik", sans-serif !important;
 }
 .header-link {
   text-transform: capitalize;
@@ -443,4 +455,8 @@ p {
   @include medium {
     width: 40px !important;
   }
+}
+.bold{
+  font-weight: 600 ;
+
 }

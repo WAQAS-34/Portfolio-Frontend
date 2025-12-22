@@ -27,7 +27,10 @@ const PortfolioCard = ({
   year,
   image,
   id,
-  disableLikeCount
+  disableLikeCount,
+  showHoverButton = false,
+  hoverButtonText = "View",
+  onHoverButtonClick
 }) => {
   const { elementRef, mainControls } = useInViewAnimation();
   const [likes, setlikes] = useState(likeCount);
@@ -90,7 +93,7 @@ const PortfolioCard = ({
       >
         <div
           className="images"
-          style={{ overflow: "hidden", borderRadius: "14px" }}
+          style={{ overflow: "hidden", borderRadius: "14px", position: "relative" }}
         >
           {diableFullImage ? (
             <motion.img
@@ -118,6 +121,20 @@ const PortfolioCard = ({
                 alt=""
               />
             </a>
+          )}
+          
+          {showHoverButton && (
+            <div className="hover-button-overlay">
+              <button 
+                className="btn1 hover-button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onHoverButtonClick && onHoverButtonClick(id, image);
+                }}
+              >
+                {hoverButtonText}
+              </button>
+            </div>
           )}
         </div>
         <div className="portfolioCardWrapper">
