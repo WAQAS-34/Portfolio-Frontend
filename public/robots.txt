@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://devpixelsolutions.com/sitemap.xml
+
+# Disallow crawling of admin or private areas (if any)
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow crawling of images
+Allow: /images/
+Allow: /public/images/
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1

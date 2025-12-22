@@ -5,14 +5,23 @@ import HeroSection from "@/Component/HeroSection/HeroSection";
 import Portfolio from "@/Component/Portfolio/Portfolio";
 import Services from "@/Component/Services/Services";
 import ServicesSlides from "@/Component/ServicesSlides/ServicesSlides";
-import SkillsTab from "@/Component/SkillsTab/SkillsTab";
-import SocialIcon from "@/Component/SocialIcon/SocialIcon";
-import WhatsAppIcon from "@/Component/WhatsUpFloatingIcon/WhatsUpFloatingIcon";
+import SEOHead from "@/Component/SEO/SEOHead";
+import { seoData } from "@/utils/seoData";
 import { Element } from "react-scroll";
 
 export default function Home() {
   return (
     <>
+      <SEOHead
+        title={seoData.home.title}
+        description={seoData.home.description}
+        keywords={seoData.home.keywords}
+        canonicalUrl={seoData.home.canonicalUrl}
+        structuredData={seoData.home.structuredData}
+        ogTitle={seoData.home.title}
+        ogDescription={seoData.home.description}
+        ogImage="https://devpixelsolutions.com/images/og-home.jpg"
+      />
 
       <Header />
       <Element name="home">

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://devpixelsolutions.com/</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Mobile App Development -->
+  <url>
+    <loc>https://devpixelsolutions.com/mobile-app</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Mobile Development Services -->
+  <url>
+    <loc>https://devpixelsolutions.com/mobile-development</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Presentation Design Services -->
+  <url>
+    <loc>https://devpixelsolutions.com/presentation</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Investor Pitch Decks -->
+  <url>
+    <loc>https://devpixelsolutions.com/presentation/investor-pitch-decks</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Branded Master Templates -->
+  <url>
+    <loc>https://devpixelsolutions.com/presentation/branded-master-templates</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PowerPoint Design -->
+  <url>
+    <loc>https://devpixelsolutions.com/power-point</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Google Slides Design -->
+  <url>
+    <loc>https://devpixelsolutions.com/presentation-design</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Keynote Design -->
+  <url>
+    <loc>https://devpixelsolutions.com/keynote</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- UI/UX Design -->
+  <url>
+    <loc>https://devpixelsolutions.com/ui-ux</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Website Development -->
+  <url>
+    <loc>https://devpixelsolutions.com/website-development</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
