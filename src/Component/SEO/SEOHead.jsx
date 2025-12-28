@@ -14,9 +14,9 @@ const SEOHead = ({
   structuredData,
   additionalMeta = []
 }) => {
-  const defaultTitle = "Dev Pixel Solutions - Mobile App development & Presentation Design Expert";
+  const defaultTitle = "Dev Pixel Solutions - Mobile App Development & Presentation Design Expert";
   const defaultDescription = "Professional React Native mobile app development and presentation design services. Expert in cross-platform apps, PowerPoint templates, pitch decks, and business presentations.";
-  const defaultKeywords = "React Native developer, mobile app development, presentation design, PowerPoint templates, pitch deck design, cross-platform apps, business presentations, Google Slides, investor pitch decks";
+  const defaultKeywords = "Mobile App Development, presentation design, PowerPoint templates, pitch deck design, cross-platform apps, business presentations, Google Slides, investor pitch decks";
   const baseUrl = "https://devpixelsolutions.com";
 
   const finalTitle = title || defaultTitle;

@@ -1,9 +1,9 @@
 // SEO data constants for different pages
 export const seoData = {
   home: {
-    title: "Dev Pixel Solutions - Mobile App development & Presentation Design Expert",
+    title: "Dev Pixel Solutions - Mobile App Development & Presentation Design Expert",
     description: "Professional React Native mobile app development and presentation design services. Expert cross-platform developer specializing in iOS/Android apps, PowerPoint templates, pitch decks, and business presentations.",
-    keywords: "React Native developer, cross-platform mobile app developer, mobile app front-end developer, React Native expert, presentation design, PowerPoint templates, pitch deck design, Google Slides, business presentations, infographic design",
+    keywords: "Mobile App Development, cross-platform mobile app developer, mobile app front-end developer, React Native expert, presentation design, PowerPoint templates, pitch deck design, Google Slides, business presentations, infographic design",
     canonicalUrl: "https://devpixelsolutions.com",
     structuredData: {
       "@context": "https://schema.org",
