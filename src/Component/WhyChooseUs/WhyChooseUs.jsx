@@ -93,7 +93,7 @@ const WhyChooseUs = ({ type }) => {
 
                 }
 
-                <div className={type === PresentationType.MobileApp ? "service-cards-grid" : `why-choose-up`}>
+                <div className={`why-choose-up`}>
                     {servicesType.map((service, index) => (
                         <ServiceCard
                             key={index}

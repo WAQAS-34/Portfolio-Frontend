@@ -258,7 +258,7 @@ const ContactForm = () => {
         <div className="footer ">
           <img src={logo.src} />
           <p className="p1" style={{textAlign:"center"}}>
-            info@devpixelsolutions.com
+            waqas.abbas34@gmail.com
             </p>
           <div>
             <p className="p1">

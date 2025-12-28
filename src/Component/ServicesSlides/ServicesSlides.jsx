@@ -24,27 +24,21 @@ const ServicesSlides = () => {
               }}
             >
               <div className="sliderWapper" >
-                <h1 className="heading2"> Web Development</h1>
-                <img src={star.src} />
+      
                 <h1 className="heading2"> Mobile App Development</h1>
                 <img src={star.src} />
                 <h1 className="heading2"> Presentation Design</h1>
                 <img src={star.src} />
-                <h1 className="heading2"> UI-UX Experience</h1>
-                <img src={star.src} />
+<h1></h1>
+
               </div>
               <div className="sliderWapper"   >
-                <h1 className="heading2" style={{ marginLeft: "130px" }}>
-                  {" "}
-                  Web Development
-                </h1>
-                <img src={star.src} />
+
                 <h1 className="heading2"> Mobile App Development</h1>
                 <img src={star.src} />
                 <h1 className="heading2"> Presentation Design</h1>
                 <img src={star.src} />
-                <h1 className="heading2"> UI-UX Experience</h1>
-                <img src={star.src} />
+<h1></h1>
               </div>
             </motion.div>
           </div>

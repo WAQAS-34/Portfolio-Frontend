@@ -1,7 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
+import { whatsappURL } from '@/utils/whatsAppurl';
 
 const PresentationHeroSection = () => {
+  const router = useRouter()
+  const  handleRedriect = ()=>{
+    router.push(whatsappURL)
+
+  }
   return (
     <section className="presentation-hero-section">
       <div className="presentation-hero-container">
@@ -50,6 +57,7 @@ const PresentationHeroSection = () => {
             type: "easeIn",
             delay: 0.7,
           }}
+          onClick={handleRedriect}
           className="btn1 presentation-hero-cta-button"
         >
           Create My Presentation

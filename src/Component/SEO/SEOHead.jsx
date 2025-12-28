@@ -14,7 +14,7 @@ const SEOHead = ({
   structuredData,
   additionalMeta = []
 }) => {
-  const defaultTitle = "Dev Pixel Solutions - React Native & Presentation Design Expert";
+  const defaultTitle = "Dev Pixel Solutions - Mobile App development & Presentation Design Expert";
   const defaultDescription = "Professional React Native mobile app development and presentation design services. Expert in cross-platform apps, PowerPoint templates, pitch decks, and business presentations.";
   const defaultKeywords = "React Native developer, mobile app development, presentation design, PowerPoint templates, pitch deck design, cross-platform apps, business presentations, Google Slides, investor pitch decks";
   const baseUrl = "https://devpixelsolutions.com";
@@ -23,7 +23,7 @@ const SEOHead = ({
   const finalDescription = description || defaultDescription;
   const finalKeywords = keywords || defaultKeywords;
   const finalCanonicalUrl = canonicalUrl || baseUrl;
-  const finalOgImage = ogImage || `${baseUrl}/images/og-default.jpg`;
+  const finalOgImage =  `https://devpixelsolutions.com/images/logo.png`;
 
   return (
     <Head>

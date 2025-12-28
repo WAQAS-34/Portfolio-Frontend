@@ -56,25 +56,65 @@
   }
 
   &:hover {
-    transform: translateY(-5px);
-    // border-color: rgba($red, 0.3);
+    background-color: $gray;
+    cursor: pointer;
+  border: 2px solid transparent;
+
+    
+    
+    .pricing-plan-name,
+    .pricing-price,
+    .pricing-delivery,
+    .feature-text {
+      color: $white !important;
+    }
+    
+    .circle-icon {
+      background-color: $lightWhite;
+      border-radius: 100px;
+    }
+    
+    .icon-inner {
+      background-color: $white;
+    }
+    
+    .arrow-icon {
+      color: $red;
+    }
+    
+    .feature-icon svg {
+      fill: $white;
+    }
+    
+    .header-container {
+      background-color: $red;
+    }
+
+    @include tablet {
+      transform: scale(1) !important;
+    }
   }
+  
   .header-container {
     background-color: $gray;
     border-radius: 8px;
     padding: 18px 17px;
     margin-bottom: 42px;
+    transition: all 0.5s ease;
   }
+  
   .arrow-icon {
     color: $white;
     font-size: 20px;
     font-weight: 700;
+    transition: all 0.3s ease;
   }
 }
 
 .pricing-card-highlighted {
   background-color: $gray;
   border: none;
+  cursor: pointer;
   transform: scale(1.1) !important;
   .pricing-plan-name,
   .pricing-price,

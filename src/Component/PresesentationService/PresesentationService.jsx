@@ -39,7 +39,7 @@ const PresesentationService = () => {
                     we've for you...
                 </h1>
 
-                <div className="service-cards-grid">
+                <div className="why-choose-up">
                     {services.map((service, index) => (
                         <Link style={{textDecoration:"none"}} href={service.pathname}>
                             <ServiceCard

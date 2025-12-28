@@ -62,8 +62,10 @@ const GoogleSlides = ({ data, type }) => {
                     tittle={item.portfolioType}
                     year={item.year}
                     image={item.webImage}
-                    showHoverButton={type === PresentationType.MobileApp ? true : false}
-                    hoverButtonText="Click to view project online"
+                    
+                    // showHoverButton={type === PresentationType.MobileApp ? true : false}
+                    showHoverButton={false}
+                    hoverButtonText="Click to view "
                     onHoverButtonClick={(id, image) => {
                       // Handle button click
                       console.log('Button clicked for item:', id);
