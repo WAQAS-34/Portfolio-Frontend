@@ -105,13 +105,7 @@ const PortfolioCard = ({
               alt=""
             />
           ) : (
-            <a
-              href={fullImage ?? image}
-              data-at-450={fullImage ?? image}
-              data-at-800={fullImage ?? image}
-              data-at-1366={fullImage ?? image}
-              data-at-1920={fullImage ?? image}
-            >
+
               <motion.img
                 onClick={(e) => e.stopPropagation()}
                 className="portfolioImg"
@@ -120,11 +114,17 @@ const PortfolioCard = ({
                 src={image}
                 alt=""
               />
-            </a>
+         
           )}
           
           {showHoverButton && (
-            <div className="hover-button-overlay">
+                    <a
+              href={fullImage ?? image}
+              data-at-450={fullImage ?? image}
+              data-at-800={fullImage ?? image}
+              data-at-1366={fullImage ?? image}
+              data-at-1920={fullImage ?? image}
+            >
               <button 
                 className="btn1 hover-button"
                 onClick={(e) => {
@@ -134,7 +134,7 @@ const PortfolioCard = ({
               >
                 {hoverButtonText}
               </button>
-            </div>
+         </a>
           )}
         </div>
         <div className="portfolioCardWrapper">

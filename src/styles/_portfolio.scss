@@ -108,8 +108,11 @@
       opacity: 1;
     }
   }
-
-  .images:hover .hover-button-overlay {
+.images{
+  position: relative;
+  z-index: 2;
+}
+  .images:hover .hover-button {
     opacity: 1;
   }
 
@@ -120,25 +123,23 @@
 
   .hover-button {
     // background-color: rgba(128, 128, 128, 0.7); // Gray dull background
-
+opacity: 0;
     color: white;
     border: none;
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 8px;
     font-size: 16px;
     font-weight: 500;
-    width: 260px;
+    width: 150px;
+    height: 49px;
     cursor: pointer;
     transition: all 0.3s ease;
     backdrop-filter: blur(4px);
     
-    &:hover {
-     
-      transform: translateY(-2px);
-    }
+   z-index: 1;
     
-    &:active {
-      transform: translateY(0);
-    }
   }
 }

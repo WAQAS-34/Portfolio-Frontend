@@ -33,9 +33,7 @@ export default function Home() {
       <Element name="services" id="services">
         <Services />
       </Element>
-      <Element name="portfolio" id="portfolio">
-        <Portfolio />
-      </Element>
+ 
       <Element name="Expertise" id="Expertise">
         <Experties />
       </Element>

@@ -6,7 +6,7 @@ import ServicesSlides from '@/Component/ServicesSlides/ServicesSlides'
 import WhyChooseUs from '@/Component/WhyChooseUs/WhyChooseUs'
 import SEOHead from '@/Component/SEO/SEOHead'
 import { seoData } from '@/utils/seoData'
-import { PresentationType } from '@/constant'
+import { pageType, PresentationType } from '@/constant'
 import React from 'react'
 
 const InvestorPitchDecks = () => {
@@ -28,7 +28,7 @@ const InvestorPitchDecks = () => {
             <ServicesSlides/>
             <WhyChooseUs/>
             <PresentationPortfolio type={PresentationType.InvestorPitchDecks}/>
-            <ContactForm />
+            <ContactForm type={pageType.Presentation}/>
         </>
     )
 }

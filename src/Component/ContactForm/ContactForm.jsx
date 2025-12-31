@@ -20,8 +20,9 @@ import { MdOutlineEmail } from "react-icons/md";
 import { GrMapLocation } from "react-icons/gr";
 import { useRouter } from "next/router";
 import { whatsappURL } from "@/utils/whatsAppurl";
+import { pageType } from "@/constant";
 
-const ContactForm = () => {
+const ContactForm = ({ type }) => {
   const router = useRouter()
   // const phoneNumber = "+923056256473";
   // const message = "Hello";
@@ -67,7 +68,7 @@ const ContactForm = () => {
           message: "",
         });
 
-        
+
         if (res.data) {
           toast.success(`message sent successfully`, {
             position: "top-right",
@@ -110,7 +111,7 @@ const ContactForm = () => {
         <TopHeading
           elementRef={ref}
           tittle={"Let's make your    "}
-          colorTitle={"brand brilliant!"}
+          colorTitle={type == pageType.Presentation ? "presentation brilliant!" : "brand brilliant!"}
           btnText={"GET IN TOUCH"}
         />
         <motion.p
@@ -185,7 +186,7 @@ const ContactForm = () => {
                 <img src={facebook.src} alt="" />
               </Link>
             </div>
-            <button  onClick={()=>router.push(whatsappURL)} className="btn4 hoverglow">
+            <button onClick={() => router.push(whatsappURL)} className="btn4 hoverglow">
               Book a free call <img src={arrowright.src} alt="" />{" "}
             </button>
           </div>
@@ -257,15 +258,15 @@ const ContactForm = () => {
       <div className="container container-padding">
         <div className="footer ">
           <img src={logo.src} />
-          <p className="p1" style={{textAlign:"center"}}>
+          <p className="p1" style={{ textAlign: "center" }}>
             waqas.abbas34@gmail.com
-            </p>
+          </p>
           <div>
             <p className="p1">
-            &copy; {new Date().getFullYear()} The Devpixelsolutions. All rights reserved.
+              &copy; {new Date().getFullYear()} The Devpixelsolutions. All rights reserved.
             </p>
-   
-     
+
+
           </div>
         </div>
       </div>

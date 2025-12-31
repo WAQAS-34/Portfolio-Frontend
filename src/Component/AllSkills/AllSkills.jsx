@@ -41,30 +41,25 @@ const AllSkills = ({ development, presentation, uiux }) => {
           <SkillBox title={"css 3"} icon={css3} />
           <SkillBox title={"JavaScript"} icon={js} />
 
-          <SkillBox title={"react js"} icon={reactjs} />
+          
           <SkillBox title={"react Native "} icon={react} />
           <SkillBox title={"Redux"} icon={redux} />
           <SkillBox title={"typescript"} icon={ts} />
-          <SkillBox title={"Firebase"} icon={firebase} />
-          <SkillBox title={"Laravel"} icon={laravel} />
-          <SkillBox title={"node js"} icon={node} />
-          <SkillBox title={"PHP"} icon={Php} />
+          <SkillBox title={"Firebase"} style={{width:"100px"}} icon={firebase} />
+          
+          <SkillBox title={"node js"} style={{width:"100px"}} icon={node} />
+          
         </>
       ) : null}
       {presentation ? (
         <>
-          <SkillBox title={"keynote"} icon={keynote} />
+          
           <SkillBox title={"power point "} icon={pp} />
           <SkillBox title={"google slides"} icon={googleSlides} />
-          <SkillBox title={"Panda Doc"} icon={PandaDoc} />
+          
         </>
       ) : null}
-      {uiux ? (
-        <>
-          <SkillBox title={"Figma"} icon={Figma} />
-          <SkillBox title={"AdobeXD"} icon={AdobeXD} />
-        </>
-      ) : null}
+
     </motion.div>
   );
 };

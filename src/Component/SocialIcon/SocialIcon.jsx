@@ -29,7 +29,7 @@ const SocialIcon = () => {
       />
       <img
         className="social-icon"
-
+        alt="upwork"
         onClick={() => {
           handleDirect(
             "https://www.upwork.com/fl/~01d7f38bba1c799002?mp_source=share"

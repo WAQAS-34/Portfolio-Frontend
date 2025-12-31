@@ -31,9 +31,9 @@ function SkillsTab() {
         <Tab eventKey="PresentationDesign" title="Presentation Design">
           <AllSkills presentation />
         </Tab>
-        <Tab eventKey="UIUXDesign" title="UIUX Design">
+        {/* <Tab eventKey="UIUXDesign" title="UIUX Design">
           <AllSkills uiux />
-        </Tab>
+        </Tab> */}
       </Tabs>
     </motion.div>
   );

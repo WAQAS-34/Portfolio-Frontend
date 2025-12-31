@@ -2,14 +2,19 @@ import React from 'react'
 import PresentationDesignTabs from '../PresentationDesignTabs/PresentationDesignTabs'
 import { PresentationType } from '@/constant'
 
+// Helper function to generate random counts in range 200-800
+const generateRandomCount = (min = 200, max = 800) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 // Investor Pitch Decks Portfolio Data
 const investorPitchDecksData = [
     {
         id: 1,
         webImage: "/images/investor/Slide1.jpeg",
         fullImage: "/images/investor/Slide1.jpeg",
-        likeCount: 85,
-        views: 245,
+        likeCount: 342,
+        views: 687,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -18,8 +23,8 @@ const investorPitchDecksData = [
         id: 2,
         webImage: "/images/investor/Slide2.jpeg",
         fullImage: "/images/investor/Slide2.jpeg",
-        likeCount: 92,
-        views: 312,
+        likeCount: 298,
+        views: 534,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -28,8 +33,8 @@ const investorPitchDecksData = [
         id: 3,
         webImage: "/images/investor/Slide3.jpeg",
         fullImage: "/images/investor/Slide3.jpeg",
-        likeCount: 67,
-        views: 189,
+        likeCount: 456,
+        views: 723,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -38,8 +43,8 @@ const investorPitchDecksData = [
         id: 4,
         webImage: "/images/investor/Slide4.jpeg",
         fullImage: "/images/investor/Slide4.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 267,
+        views: 412,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -48,8 +53,8 @@ const investorPitchDecksData = [
         id: 5,
         webImage: "/images/investor/Slide5.jpeg",
         fullImage: "/images/investor/Slide5.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 389,
+        views: 645,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -58,8 +63,8 @@ const investorPitchDecksData = [
         id: 6,
         webImage: "/images/investor/Slide6.jpeg",
         fullImage: "/images/investor/Slide6.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 523,
+        views: 798,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -68,8 +73,8 @@ const investorPitchDecksData = [
         id: 7,
         webImage: "/images/investor/Slide7.jpeg",
         fullImage: "/images/investor/Slide7.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 234,
+        views: 367,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -78,8 +83,8 @@ const investorPitchDecksData = [
         id: 8,
         webImage: "/images/investor/Slide8.jpeg",
         fullImage: "/images/investor/Slide8.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 445,
+        views: 612,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -88,8 +93,8 @@ const investorPitchDecksData = [
         id: 9,
         webImage: "/images/investor/Slide9.jpeg",
         fullImage: "/images/investor/Slide9.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 312,
+        views: 489,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -98,8 +103,8 @@ const investorPitchDecksData = [
         id: 10,
         webImage: "/images/investor/Slide10.jpeg",
         fullImage: "/images/investor/Slide10.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 567,
+        views: 743,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -108,8 +113,8 @@ const investorPitchDecksData = [
         id: 11,
         webImage: "/images/investor/Slide11.jpeg",
         fullImage: "/images/investor/Slide11.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 289,
+        views: 423,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -118,8 +123,8 @@ const investorPitchDecksData = [
         id: 12,
         webImage: "/images/investor/Slide12.jpeg",
         fullImage: "/images/investor/Slide12.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 398,
+        views: 576,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -128,8 +133,8 @@ const investorPitchDecksData = [
         id: 13,
         webImage: "/images/investor/Slide13.jpeg",
         fullImage: "/images/investor/Slide13.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 467,
+        views: 689,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -138,8 +143,8 @@ const investorPitchDecksData = [
         id: 14,
         webImage: "/images/investor/Slide14.jpeg",
         fullImage: "/images/investor/Slide14.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 256,
+        views: 378,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -148,8 +153,8 @@ const investorPitchDecksData = [
         id: 15,
         webImage: "/images/investor/Slide15.jpeg",
         fullImage: "/images/investor/Slide15.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 534,
+        views: 721,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -158,8 +163,8 @@ const investorPitchDecksData = [
         id: 16,
         webImage: "/images/investor/Slide16.jpeg",
         fullImage: "/images/investor/Slide16.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 345,
+        views: 512,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -172,8 +177,8 @@ const brandedMasterTemplatesData = [
         id: 1,
         webImage: "/images/brand-master-template/Slide1.jpeg",
         fullImage: "/images/brand-master-template/Slide1.jpeg",
-        likeCount: 85,
-        views: 245,
+        likeCount: 278,
+        views: 456,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -182,8 +187,8 @@ const brandedMasterTemplatesData = [
         id: 2,
         webImage: "/images/brand-master-template/Slide2.jpeg",
         fullImage: "/images/brand-master-template/Slide2.jpeg",
-        likeCount: 92,
-        views: 312,
+        likeCount: 423,
+        views: 678,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -192,8 +197,8 @@ const brandedMasterTemplatesData = [
         id: 3,
         webImage: "/images/brand-master-template/Slide3.jpeg",
         fullImage: "/images/brand-master-template/Slide3.jpeg",
-        likeCount: 67,
-        views: 189,
+        likeCount: 356,
+        views: 589,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -202,8 +207,8 @@ const brandedMasterTemplatesData = [
         id: 4,
         webImage: "/images/brand-master-template/Slide4.jpeg",
         fullImage: "/images/brand-master-template/Slide4.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 489,
+        views: 734,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -212,8 +217,8 @@ const brandedMasterTemplatesData = [
         id: 5,
         webImage: "/images/brand-master-template/Slide5.jpeg",
         fullImage: "/images/brand-master-template/Slide5.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 245,
+        views: 398,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -222,8 +227,8 @@ const brandedMasterTemplatesData = [
         id: 6,
         webImage: "/images/brand-master-template/Slide6.jpeg",
         fullImage: "/images/brand-master-template/Slide6.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 567,
+        views: 789,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -232,8 +237,8 @@ const brandedMasterTemplatesData = [
         id: 7,
         webImage: "/images/brand-master-template/Slide7.jpeg",
         fullImage: "/images/brand-master-template/Slide7.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 334,
+        views: 523,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -242,8 +247,8 @@ const brandedMasterTemplatesData = [
         id: 8,
         webImage: "/images/brand-master-template/Slide8.jpeg",
         fullImage: "/images/brand-master-template/Slide8.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 412,
+        views: 656,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -252,8 +257,8 @@ const brandedMasterTemplatesData = [
         id: 9,
         webImage: "/images/brand-master-template/Slide9.jpeg",
         fullImage: "/images/brand-master-template/Slide9.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 298,
+        views: 467,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -262,8 +267,8 @@ const brandedMasterTemplatesData = [
         id: 10,
         webImage: "/images/brand-master-template/Slide10.jpeg",
         fullImage: "/images/brand-master-template/Slide10.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 543,
+        views: 712,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -272,8 +277,8 @@ const brandedMasterTemplatesData = [
         id: 11,
         webImage: "/images/brand-master-template/Slide11.jpeg",
         fullImage: "/images/brand-master-template/Slide11.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 267,
+        views: 434,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -282,8 +287,8 @@ const brandedMasterTemplatesData = [
         id: 12,
         webImage: "/images/brand-master-template/Slide12.jpeg",
         fullImage: "/images/brand-master-template/Slide12.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 456,
+        views: 623,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -292,8 +297,8 @@ const brandedMasterTemplatesData = [
         id: 13,
         webImage: "/images/brand-master-template/Slide13.jpeg",
         fullImage: "/images/brand-master-template/Slide13.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 378,
+        views: 567,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -302,8 +307,8 @@ const brandedMasterTemplatesData = [
         id: 14,
         webImage: "/images/brand-master-template/Slide14.jpeg",
         fullImage: "/images/brand-master-template/Slide14.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 512,
+        views: 745,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -312,8 +317,8 @@ const brandedMasterTemplatesData = [
         id: 15,
         webImage: "/images/brand-master-template/Slide15.jpeg",
         fullImage: "/images/brand-master-template/Slide15.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 289,
+        views: 445,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -322,8 +327,8 @@ const brandedMasterTemplatesData = [
         id: 16,
         webImage: "/images/brand-master-template/Slide16.jpeg",
         fullImage: "/images/brand-master-template/Slide16.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 434,
+        views: 678,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -336,8 +341,8 @@ const businessPresentationsData = [
         id: 1,
         webImage: "/images/business-presentation/Slide1.jpeg",
         fullImage: "/images/business-presentation/Slide1.jpeg",
-        likeCount: 85,
-        views: 245,
+        likeCount: 367,
+        views: 598,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -346,8 +351,8 @@ const businessPresentationsData = [
         id: 2,
         webImage: "/images/business-presentation/Slide2.jpeg",
         fullImage: "/images/business-presentation/Slide2.jpeg",
-        likeCount: 92,
-        views: 312,
+        likeCount: 445,
+        views: 712,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -356,8 +361,8 @@ const businessPresentationsData = [
         id: 3,
         webImage: "/images/business-presentation/Slide3.jpeg",
         fullImage: "/images/business-presentation/Slide3.jpeg",
-        likeCount: 67,
-        views: 189,
+        likeCount: 289,
+        views: 456,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -366,8 +371,8 @@ const businessPresentationsData = [
         id: 4,
         webImage: "/images/business-presentation/Slide4.jpeg",
         fullImage: "/images/business-presentation/Slide4.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 523,
+        views: 789,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -376,8 +381,8 @@ const businessPresentationsData = [
         id: 5,
         webImage: "/images/business-presentation/Slide5.jpeg",
         fullImage: "/images/business-presentation/Slide5.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 234,
+        views: 378,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -386,8 +391,8 @@ const businessPresentationsData = [
         id: 6,
         webImage: "/images/business-presentation/Slide6.jpeg",
         fullImage: "/images/business-presentation/Slide6.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 456,
+        views: 634,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -396,8 +401,8 @@ const businessPresentationsData = [
         id: 7,
         webImage: "/images/business-presentation/Slide7.jpeg",
         fullImage: "/images/business-presentation/Slide7.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 378,
+        views: 567,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -406,8 +411,8 @@ const businessPresentationsData = [
         id: 8,
         webImage: "/images/business-presentation/Slide8.jpeg",
         fullImage: "/images/business-presentation/Slide8.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 512,
+        views: 723,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -416,8 +421,8 @@ const businessPresentationsData = [
         id: 9,
         webImage: "/images/business-presentation/Slide9.jpeg",
         fullImage: "/images/business-presentation/Slide9.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 298,
+        views: 445,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -426,8 +431,8 @@ const businessPresentationsData = [
         id: 10,
         webImage: "/images/business-presentation/Slide10.jpeg",
         fullImage: "/images/business-presentation/Slide10.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 434,
+        views: 656,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -436,8 +441,8 @@ const businessPresentationsData = [
         id: 11,
         webImage: "/images/business-presentation/Slide11.jpeg",
         fullImage: "/images/business-presentation/Slide11.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 356,
+        views: 534,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -446,8 +451,8 @@ const businessPresentationsData = [
         id: 12,
         webImage: "/images/business-presentation/Slide12.jpeg",
         fullImage: "/images/business-presentation/Slide12.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 489,
+        views: 698,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -456,8 +461,8 @@ const businessPresentationsData = [
         id: 13,
         webImage: "/images/business-presentation/Slide13.jpeg",
         fullImage: "/images/business-presentation/Slide13.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 267,
+        views: 423,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -466,8 +471,8 @@ const businessPresentationsData = [
         id: 14,
         webImage: "/images/business-presentation/Slide14.jpeg",
         fullImage: "/images/business-presentation/Slide14.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 543,
+        views: 756,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -476,8 +481,8 @@ const businessPresentationsData = [
         id: 15,
         webImage: "/images/business-presentation/Slide15.jpeg",
         fullImage: "/images/business-presentation/Slide15.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 312,
+        views: 489,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -486,28 +491,28 @@ const businessPresentationsData = [
         id: 16,
         webImage: "/images/business-presentation/Slide16.jpeg",
         fullImage: "/images/business-presentation/Slide16.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 423,
+        views: 612,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
     },
-        {
-        id: 16,
+    {
+        id: 17,
         webImage: "/images/business-presentation/Slide17.jpeg",
         fullImage: "/images/business-presentation/Slide17.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 389,
+        views: 567,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
     },
-        {
-        id: 16,
+    {
+        id: 18,
         webImage: "/images/business-presentation/Slide18.jpeg",
         fullImage: "/images/business-presentation/Slide18.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 456,
+        views: 734,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -516,13 +521,12 @@ const businessPresentationsData = [
 
 // Infographic Presentations Portfolio Data
 const infographicPresentationsData = [
-
     {
         id: 26,
         webImage: "/images/info-graphic/Slide1.jpeg",
         fullImage: "/images/info-graphic/Slide1.jpeg",
-        likeCount: 19,
-        views: 48,
+        likeCount: 324,
+        views: 567,
         type: "InfographicPresentation",
         selected: false,
         portfolioType: "Infographic Presentations"
@@ -531,8 +535,8 @@ const infographicPresentationsData = [
         id: 27,
         webImage: "/images/info-graphic/Slide2.jpeg",
         fullImage: "/images/info-graphic/Slide2.jpeg",
-        likeCount: 6,
-        views: 20,
+        likeCount: 278,
+        views: 445,
         type: "InfographicPresentation",
         selected: false,
         portfolioType: "Infographic Presentations"
@@ -541,8 +545,8 @@ const infographicPresentationsData = [
         id: 28,
         webImage: "/images/info-graphic/Slide3.jpeg",
         fullImage: "/images/info-graphic/Slide3.jpeg",
-        likeCount: 18,
-        views: 35,
+        likeCount: 456,
+        views: 689,
         type: "InfographicPresentation",
         selected: false,
         portfolioType: "Infographic Presentations"
@@ -551,28 +555,28 @@ const infographicPresentationsData = [
         id: 29,
         webImage: "/images/info-graphic/Slide4.jpeg",
         fullImage: "/images/info-graphic/Slide4.jpeg",
-        likeCount: 43,
-        views: 98,
+        likeCount: 389,
+        views: 612,
         type: "InfographicPresentation",
         selected: false,
         portfolioType: "Infographic Presentations"
     },
-        {
-        id: 29,
+    {
+        id: 30,
         webImage: "/images/info-graphic/Slide5.jpeg",
         fullImage: "/images/info-graphic/Slide5.jpeg",
-        likeCount: 43,
-        views: 98,
+        likeCount: 234,
+        views: 378,
         type: "InfographicPresentation",
         selected: false,
         portfolioType: "Infographic Presentations"
     },
-        {
-        id: 29,
+    {
+        id: 31,
         webImage: "/images/info-graphic/Slide6.jpeg",
         fullImage: "/images/info-graphic/Slide6.jpeg",
-        likeCount: 43,
-        views: 98,
+        likeCount: 512,
+        views: 734,
         type: "InfographicPresentation",
         selected: false,
         portfolioType: "Infographic Presentations"
@@ -583,8 +587,8 @@ const mobapp = [
         id: 1,
         webImage: "/images/mob-app/Slide1.jpeg",
         fullImage: "/images/mob-app/Slide1.jpeg",
-        likeCount: 85,
-        views: 245,
+        likeCount: 367,
+        views: 589,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -593,8 +597,8 @@ const mobapp = [
         id: 2,
         webImage: "/images/mob-app/Slide2.jpeg",
         fullImage: "/images/mob-app/Slide2.jpeg",
-        likeCount: 92,
-        views: 312,
+        likeCount: 423,
+        views: 656,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -603,8 +607,8 @@ const mobapp = [
         id: 3,
         webImage: "/images/mob-app/Slide3.jpeg",
         fullImage: "/images/mob-app/Slide3.jpeg",
-        likeCount: 67,
-        views: 189,
+        likeCount: 298,
+        views: 467,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -613,8 +617,8 @@ const mobapp = [
         id: 4,
         webImage: "/images/mob-app/Slide4.jpeg",
         fullImage: "/images/mob-app/Slide4.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 512,
+        views: 723,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -623,8 +627,8 @@ const mobapp = [
         id: 5,
         webImage: "/images/mob-app/Slide5.jpeg",
         fullImage: "/images/mob-app/Slide5.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 245,
+        views: 389,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -633,8 +637,8 @@ const mobapp = [
         id: 6,
         webImage: "/images/mob-app/Slide6.jpeg",
         fullImage: "/images/mob-app/Slide6.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 456,
+        views: 634,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -643,8 +647,8 @@ const mobapp = [
         id: 7,
         webImage: "/images/mob-app/Slide7.jpeg",
         fullImage: "/images/mob-app/Slide7.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 334,
+        views: 523,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -653,8 +657,8 @@ const mobapp = [
         id: 8,
         webImage: "/images/mob-app/Slide8.jpeg",
         fullImage: "/images/mob-app/Slide8.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 489,
+        views: 698,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -663,8 +667,8 @@ const mobapp = [
         id: 9,
         webImage: "/images/mob-app/Slide9.jpeg",
         fullImage: "/images/mob-app/Slide9.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 278,
+        views: 445,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -673,8 +677,8 @@ const mobapp = [
         id: 10,
         webImage: "/images/mob-app/Slide10.jpeg",
         fullImage: "/images/mob-app/Slide10.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 543,
+        views: 756,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -683,8 +687,8 @@ const mobapp = [
         id: 11,
         webImage: "/images/mob-app/Slide11.jpeg",
         fullImage: "/images/mob-app/Slide11.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 312,
+        views: 478,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -693,8 +697,8 @@ const mobapp = [
         id: 12,
         webImage: "/images/mob-app/Slide12.jpeg",
         fullImage: "/images/mob-app/Slide12.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 434,
+        views: 612,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -703,8 +707,8 @@ const mobapp = [
         id: 13,
         webImage: "/images/mob-app/Slide13.jpeg",
         fullImage: "/images/mob-app/Slide13.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 356,
+        views: 567,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -713,8 +717,8 @@ const mobapp = [
         id: 14,
         webImage: "/images/mob-app/Slide14.jpeg",
         fullImage: "/images/mob-app/Slide14.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 467,
+        views: 689,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -723,8 +727,8 @@ const mobapp = [
         id: 15,
         webImage: "/images/mob-app/Slide15.jpeg",
         fullImage: "/images/mob-app/Slide15.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 289,
+        views: 423,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
@@ -733,48 +737,48 @@ const mobapp = [
         id: 16,
         webImage: "/images/mob-app/Slide16.jpeg",
         fullImage: "/images/mob-app/Slide16.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 398,
+        views: 578,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
     },
-        {
-        id: 16,
+    {
+        id: 17,
         webImage: "/images/mob-app/Slide17.jpeg",
         fullImage: "/images/mob-app/Slide17.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 523,
+        views: 734,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
     },
-        {
-        id: 16,
+    {
+        id: 18,
         webImage: "/images/mob-app/Slide18.jpeg",
         fullImage: "/images/mob-app/Slide18.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 267,
+        views: 412,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
     },
-        {
-        id: 16,
+    {
+        id: 19,
         webImage: "/images/mob-app/Slide19.jpeg",
         fullImage: "/images/mob-app/Slide19.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 445,
+        views: 656,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
     },
-      {
-        id: 16,
+    {
+        id: 20,
         webImage: "/images/mob-app/Slide20.jpeg",
         fullImage: "/images/mob-app/Slide20.jpeg",
-        likeCount: 73,
-        views: 201,
+        likeCount: 378,
+        views: 589,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"

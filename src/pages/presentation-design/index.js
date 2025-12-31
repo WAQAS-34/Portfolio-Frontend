@@ -7,6 +7,7 @@ import Achievement from "@/Component/Achievement/Achievement"
 import Pricing from "@/Component/Pricing/Pricing"
 import SEOHead from "@/Component/SEO/SEOHead"
 import { seoData } from "@/utils/seoData"
+import { pageType } from "@/constant"
 
 const Presentation = () => {
     return (
@@ -28,7 +29,7 @@ const Presentation = () => {
             <PresesentationService />
             <Achievement />
             <Pricing />
-            <ContactForm />
+            <ContactForm  type={pageType.Presentation}/>
         </>
     )
 }

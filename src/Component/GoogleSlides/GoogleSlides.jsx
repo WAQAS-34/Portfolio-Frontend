@@ -64,7 +64,7 @@ const GoogleSlides = ({ data, type }) => {
                     image={item.webImage}
                     
                     // showHoverButton={type === PresentationType.MobileApp ? true : false}
-                    showHoverButton={false}
+                    showHoverButton={true}
                     hoverButtonText="Click to view "
                     onHoverButtonClick={(id, image) => {
                       // Handle button click

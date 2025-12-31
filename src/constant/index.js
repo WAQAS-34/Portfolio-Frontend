@@ -6,6 +6,9 @@ export const PresentationType = {
     MobileApp: "MobileApp",
 
 }
+export const pageType = {
+    Presentation:"Presentation"
+}
 
 export const PresentationContent = {
     [PresentationType.InvestorPitchDecks]: {

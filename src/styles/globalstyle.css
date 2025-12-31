@@ -13157,29 +13157,34 @@ textarea.form-control-lg {
 .portfolioCard .hover-button-overlay:hover {
   opacity: 1;
 }
-.portfolioCard .images:hover .hover-button-overlay {
+.portfolioCard .images {
+  position: relative;
+  z-index: 2;
+}
+.portfolioCard .images:hover .hover-button {
   opacity: 1;
 }
 .portfolioCard .images:hover .portfolioImg {
   transition: filter 0.3s ease;
 }
 .portfolioCard .hover-button {
+  opacity: 0;
   color: white;
   border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
-  width: 260px;
+  width: 150px;
+  height: 49px;
   cursor: pointer;
   transition: all 0.3s ease;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-}
-.portfolioCard .hover-button:hover {
-  transform: translateY(-2px);
-}
-.portfolioCard .hover-button:active {
-  transform: translateY(0);
+  z-index: 1;
 }
 
 .expertiesContainer {

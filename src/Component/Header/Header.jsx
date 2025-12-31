@@ -38,11 +38,7 @@ function Header({ admin }) {
       path: "services",
       linkPath: "/#services",
     },
-    {
-      name: "Portfolio",
-      path: "portfolio",
-      linkPath: "/#portfolio",
-    },
+
     {
       name: "Expertise",
       path: "Expertise",
@@ -95,7 +91,7 @@ function Header({ admin }) {
       >
         <Container className="container-padding">
           <Navbar.Brand className="p-0" href="/">
-            <img src={logo.src} className="logo" />
+            <img src={logo.src} className="logo" alt="logo"/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${"md"}`}>
             <RiMenu3Line

@@ -7,25 +7,25 @@ const PresesentationService = () => {
             icon: '/images/service-icon/pitch-deck.svg',
             title: 'Investor Pitch Decks',
             description: 'Pitch decks that impress potential investors and help to fundraise for your business.',
-            pathname: "/presentation/investor-pitch-decks.html"
+            pathname: "/presentation-design/investor-pitch-decks.html"
         },
         {
             icon: '/images/service-icon/slides.svg',
             title: 'Branded Master Templates',
-            pathname: "/presentation/branded-master-templates.html",
+            pathname: "/presentation-design/branded-master-templates.html",
             description: 'Custom master template that reflect your brand identity and elevate your future presentations.'
         },
         {
             icon: '/images/service-icon/presentation.svg',
             title: 'Business Presentations',
             description: 'Transform your content into stunning business presentations that captivate your audience and clearly your brand.',
-            pathname: "/presentation/business-presentations.html",
+            pathname: "/presentation-design/business-presentations.html",
         },
         {
             icon: '/images/service-icon/pitches.svg',
             title: 'Infographic Presentation',
             description: 'Transform complex data into clear, engaging infographic presentations that inspire and inform.',
-            pathname: "/presentation/infographic-presentations.html",
+            pathname: "/presentation-design/infographic-presentations.html",
 
         }
     ];

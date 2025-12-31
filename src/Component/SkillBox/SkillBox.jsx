@@ -1,10 +1,10 @@
 import React from "react";
 
-const SkillBox = ({ icon, title }) => {
+const SkillBox = ({ icon, title ,style}) => {
   
   return (
     <div className="SkillBox">
-      <div className="icon-wrapper">
+      <div className="icon-wrapper" style={style}>
         <img src={icon?.src} alt="" />
       </div>
 

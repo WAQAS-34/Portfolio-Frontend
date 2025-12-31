@@ -28,7 +28,7 @@ const Pricing = () => {
             price: '40',
             delivery: '/3-day delivery',
             features: [
-                'Up to 5 slides',
+                'Up to 10 slides',
                 'Customized template',
                 'Unlimited revisions',
                 'Include source file',
@@ -47,7 +47,7 @@ const Pricing = () => {
             price: '80',
             delivery: '/5-day delivery',
             features: [
-                'Up to 5 slides',
+                'Up to 20 slides',
                 'Customized template',
                 'Unlimited revisions',
                 'Include source file',

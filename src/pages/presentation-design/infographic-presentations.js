@@ -5,7 +5,7 @@ import PresentationTypeHero from '@/Component/PresentationTypeHero/PresentationT
 import ServicesSlides from '@/Component/ServicesSlides/ServicesSlides'
 import SliderExample from '@/Component/SliderExample'
 import WhyChooseUs from '@/Component/WhyChooseUs/WhyChooseUs'
-import { PresentationType } from '@/constant'
+import { pageType, PresentationType } from '@/constant'
 // import SliderExample from '@/Component/SliderExample'
 import React from 'react'
 
@@ -18,7 +18,7 @@ const InvestorPitchDecks = () => {
 
             <WhyChooseUs/>
             <PresentationPortfolio type={PresentationType.InfographicPresentation}/>
-            <ContactForm />
+            <ContactForm type={pageType.Presentation}/>
 
         </>
 

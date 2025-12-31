@@ -9,6 +9,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import useInViewAnimation from "@/Hooks/useInViewAnimation";
 import { PORTFOLIO_TYPE } from "@/utils/utils";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Services = () => {
   const ref = useRef();
@@ -23,20 +24,8 @@ const Services = () => {
       icon: mobApp,
       PORTFOLIO_TYPE: PORTFOLIO_TYPE.Mobile_app_development,
     },
-    {
-      name: "UX/UI Design &  Website/App Design",
-      content:
-        "Create intuitive interfaces that make users feel at ease while using your platform.",
-      icon: uiicon,
-      PORTFOLIO_TYPE: PORTFOLIO_TYPE.UI_Design,
-    },
-    {
-      name: "Website Development",
-      content:
-        "By using React.js, creates modern and powerful websites with rich and interactive user experiences.",
-      icon: webdev,
-      PORTFOLIO_TYPE: PORTFOLIO_TYPE.Website_Development,
-    },
+
+
     {
       name: "Presentations Design",
       content:
@@ -51,17 +40,11 @@ const Services = () => {
     }
   }, []);
 
-  const handleServices = (type) => {
-    if (type == PORTFOLIO_TYPE.Mobile_app_development) {
-      router.push(`/mobile-development.html`);
-    } else if (type == PORTFOLIO_TYPE.UI_Design) {
-      router.push(`/ui-ux.html`);
-    } else if (type == PORTFOLIO_TYPE.Website_Development) {
-      router.push(`/website-development.html`);
-    } else if (type == PORTFOLIO_TYPE.Presentations_Design) {
-      router.push(`/presentation.html`);
-    }
-  };
+  const servicesPath = {
+    [PORTFOLIO_TYPE.Mobile_app_development]:"/mobile-app-development.html",
+    [PORTFOLIO_TYPE.Presentations_Design]:"/presentation-design.html"
+  }
+
   return (
     <div id="services" className="bg-darkblue ">
       <div className="container  serviceswrapper container-padding">
@@ -76,8 +59,9 @@ const Services = () => {
           <div className="services-cardrow">
             {servicesdata.slice(0, 2).map((item, ind) => {
               return (
+                <Link  style={{textDecoration:"none"}} href={servicesPath[item.PORTFOLIO_TYPE]}>
                 <motion.div
-                  onClick={() => handleServices(item.PORTFOLIO_TYPE)}
+                  
                   key={ind}
                 >
                   <ServicesCard
@@ -86,25 +70,11 @@ const Services = () => {
                     icon={item.icon}
                   />
                 </motion.div>
+                </Link>
               );
             })}
           </div>
-          <div className="services-cardrow services-cardrow2  ">
-            {servicesdata.slice(2, 4).map((item, ind) => {
-              return (
-                <motion.div
-                onClick={() => handleServices(item.PORTFOLIO_TYPE)}
-
-                 key={ind}>
-                  <ServicesCard
-                    name={item.name}
-                    content={item.content}
-                    icon={item.icon}
-                  />
-                </motion.div>
-              );
-            })}
-          </div>
+        
         </div>
       </div>
     </div>
