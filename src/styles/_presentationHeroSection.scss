@@ -35,9 +35,9 @@
 
 
 .presentation-hero-description {
-  max-width: 556px;
-  margin: 20px auto 4px auto !important;
-
+  max-width: 800px;
+  margin: 20px auto 10px auto !important;
+color: $lightgary !important;
   @include tablet {
     margin: 10px auto 4px auto !important;
   }

@@ -31,7 +31,7 @@ const PresentationHeroSection = () => {
             duration: 0.9,
             type: "linear",
           }}
-          className="p1 presentation-hero-description rubik-font"
+          className="p3 presentation-hero-description rubik-font"
         >
           We are a leading presentation design team committed to creating
           engaging and impactful presentations that captivate your audience.
@@ -44,7 +44,7 @@ const PresentationHeroSection = () => {
             duration: 0.9,
             type: "linear",
           }}
-          className="  p1 rubik-font"
+          className="  p3 rubik-font"
         >
           <span className="red-color">Just share your requirements, and we'll take care of the rest.</span>
         </motion.p>

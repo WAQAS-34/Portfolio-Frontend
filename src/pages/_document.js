@@ -24,7 +24,7 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#000000" />
       </Head>
       <body>
-         <GoogleAnalytics gaId="G-GY46YJVE19" /> 
+         <GoogleAnalytics gaId="G-GR7E4QM816" /> 
         <Main />
         <NextScript />
       </body>

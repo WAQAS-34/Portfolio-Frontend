@@ -12214,8 +12214,9 @@ textarea.form-control-lg {
 }
 
 .presentation-hero-description {
-  max-width: 556px;
-  margin: 20px auto 4px auto !important;
+  max-width: 800px;
+  margin: 20px auto 10px auto !important;
+  color: #dddddd !important;
 }
 @media (max-width: 982px) {
   .presentation-hero-description {
@@ -12263,15 +12264,25 @@ textarea.form-control-lg {
 
 .slides {
   background-color: #121212;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 98px;
   padding: 35px 20px;
   width: 100%;
+  position: relative;
+}
+.slides .slider-track {
+  display: flex;
+  position: absolute;
+  width: 200%;
+  left: 0;
+  top: 35px;
 }
 .slides .sliderWapper {
   display: flex;
   align-items: center;
   gap: 148px;
+  width: 50%;
+  flex-shrink: 0;
 }
 @media (max-width: 600px) {
   .slides .sliderWapper {
@@ -12280,6 +12291,10 @@ textarea.form-control-lg {
 }
 .slides h1, .slides .h1 {
   white-space: nowrap;
+  flex-shrink: 0;
+}
+.slides img {
+  flex-shrink: 0;
 }
 
 .serviceswrapper {
@@ -12756,6 +12771,9 @@ textarea.form-control-lg {
 .why-choose-setion {
   padding-top: 100px;
 }
+.why-choose-setion .choose-us-wrapper {
+  text-align: center;
+}
 .why-choose-setion .choose-us {
   margin-bottom: 22px;
 }
@@ -12976,7 +12994,7 @@ textarea.form-control-lg {
   height: 95px;
 }
 .achievement-card .achievement-icon-wrapper img {
-  width: 50px;
+  width: 40px;
 }
 .achievement-card .achievement-icon-wrapper .icon-inner {
   width: 75px;

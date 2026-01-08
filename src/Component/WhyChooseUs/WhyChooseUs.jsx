@@ -63,6 +63,7 @@ const WhyChooseUs = ({ type }) => {
     return (
         <>
             <div className="container  why-choose-setion">
+                <div className="choose-us-wrapper">
                 <h1 className="heading3 rubik-font  choose-us">
                     Why
                     <span className="red-color "> Choose </span>
@@ -92,7 +93,7 @@ const WhyChooseUs = ({ type }) => {
 
 
                 }
-
+</div>
                 <div className={`why-choose-up`}>
                     {servicesType.map((service, index) => (
                         <ServiceCard

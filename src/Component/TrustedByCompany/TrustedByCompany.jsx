@@ -91,7 +91,7 @@ const TrustedByCompany = () => {
         initial={"hidden"}
         animate={mainControls}
         transition={{ duration: 0.7, ease: "linear" }}
-        className="heading5"
+        className="heading5 text-white"
       >
         Trusted by the top companies in this industry{" "}
       </motion.h1>

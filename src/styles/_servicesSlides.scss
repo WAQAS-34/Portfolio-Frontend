@@ -8,24 +8,41 @@
   background-color: $darkblue;
   padding-bottom: 40px;
 }
+
 .slides {
   background-color: $blue;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 98px;
   padding: 35px 20px;
-  // transform: rotate(-1.242deg);
   width: 100%;
+  position: relative;
+  
+  .slider-track {
+    display: flex;
+    position: absolute;
+    width: 200%; // Double width to accommodate duplicate content
+    left: 0;
+    top: 35px;
+  }
+  
   .sliderWapper {
     display: flex;
     align-items: center;
-
     gap: 148px;
+    width: 50%; // Each wrapper takes half the track width
+    flex-shrink: 0;
+    
     @include mobile {
       gap: 85px;
-
     }
   }
+  
   h1 {
     white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  img {
+    flex-shrink: 0;
   }
 }
