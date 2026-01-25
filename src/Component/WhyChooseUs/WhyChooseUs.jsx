@@ -85,7 +85,7 @@ const WhyChooseUs = ({ type }) => {
 
                     :
 
-                    <p className="p1 " style={{maxWidth:"870px"}}> 
+                    <p className="p1 " style={{maxWidth:"870px" , margin:"auto"}}> 
 
                         At  <span className="red-color bold">  DevPixel Solution,</span> we deliver complete <b>full-stack app</b> solutions using <b>React
                         Native</b> and Node.js, ensuring fast, scalable, and high-performance mobile applications from front to back

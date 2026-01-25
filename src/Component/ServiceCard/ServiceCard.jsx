@@ -22,7 +22,7 @@ const ServiceCard = ({ icon, title, description, index }) => {
                     <img src={icon} alt={title} />
                 </div>
             </div>
-            <h3 className="service-card-title rubik-font">{title}</h3>
+            <h3 className="service-card-title rubik-font" style={{fontStyle:"normal"}}>{title}</h3>
             <p className="service-card-description">{description}</p>
         </motion.div>
     );

@@ -26,7 +26,7 @@ export default function Document() {
       <body>
          <GoogleAnalytics gaId="G-GR7E4QM816" /> 
         <Main />
-        <NextScript />
+        <NextScript />  
       </body>
     </Html>
   )

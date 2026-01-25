@@ -1,4 +1,150 @@
 @import "colorpalette";
+
+.services-slider-container {
+  width: 100%;
+  background-color: $blue;
+  overflow: hidden;
+  height: 98px;
+  padding: 35px 20px;
+  border-top: 1px solid $borderColor2;
+  border-bottom: 1px solid $borderColor2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .services-slider-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .continuous-scroll {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .scroll-track {
+      display: flex;
+      width: max-content;
+      animation: scroll 60s linear infinite;
+      align-items: center;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-37.5%);
+    }
+  }
+
+  .service-slide {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+    flex-shrink: 0;
+    white-space: nowrap;
+
+    .service-text {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+
+    .separator {
+      color: #ff2d2d;
+      font-size: 26px;
+      margin-left: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 80px;
+    padding: 25px 15px;
+
+    .service-slide {
+      margin-right: 40px;
+
+      .service-text {
+        font-size: 18px;
+      }
+
+      .separator {
+        font-size: 22px;
+        margin-left: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 70px;
+    padding: 20px 10px;
+
+    .service-slide {
+      margin-right: 30px;
+
+      .service-text {
+        font-size: 16px;
+      }
+
+      .separator {
+        font-size: 20px;
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+// Legacy styles for backward compatibility
+.ticker-wrapper {
+  width: 100%;
+  background-color: $blue;
+  overflow: hidden;
+  height: 98px;
+  padding: 35px 20px;
+  width: 100%;
+  border-top: 1px solid $borderColor2;
+  border-bottom: 1px solid $borderColor2;
+}
+
+.ticker {
+  display: flex;
+  width: fit-content;
+  animation: scroll 11s linear infinite;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.service-text {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.separator {
+  color: #ff2d2d;
+  font-size: 26px;
+  margin-left: 40px;
+}
+
 .sliding-border {
   border-top: 1px solid $borderColor2;
   border-bottom: 1px solid $borderColor2;
@@ -20,7 +166,7 @@
   .slider-track {
     display: flex;
     position: absolute;
-    width: 200%; // Double width to accommodate duplicate content
+    width: 200%;
     left: 0;
     top: 35px;
   }
@@ -29,7 +175,7 @@
     display: flex;
     align-items: center;
     gap: 148px;
-    width: 50%; // Each wrapper takes half the track width
+    width: 50%;
     flex-shrink: 0;
     
     @include mobile {
