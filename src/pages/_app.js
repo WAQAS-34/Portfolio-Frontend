@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import { useEffect } from "react";
 import WhatsAppIcon from "@/Component/WhatsUpFloatingIcon/WhatsUpFloatingIcon";
 import SocialIcon from "@/Component/SocialIcon/SocialIcon";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 function App({ Component, pageProps }) {
   useEffect(() => {
@@ -45,6 +46,8 @@ function App({ Component, pageProps }) {
         </Head>
         
         <Toast />
+                 <GoogleAnalytics gaId="G-MJ998S2M48" /> 
+        
         <WhatsAppIcon />
         <SocialIcon />
         <Component {...pageProps} />
