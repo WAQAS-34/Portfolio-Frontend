@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { whatsappURL } from '@/utils/whatsAppurl';
+import MoreProjects from '../HeroSection/MoreProjects';
+import { EXTERNAL_LINKS } from '@/constant';
 
 const PresentationHeroSection = () => {
   const router = useRouter()
@@ -62,6 +64,11 @@ const PresentationHeroSection = () => {
         >
           Create My Presentation
         </motion.button>
+              <MoreProjects
+                
+                linkHref={EXTERNAL_LINKS.presentation}
+                linkText="Read testimonial"
+              />
       </div>
     </section>
   );

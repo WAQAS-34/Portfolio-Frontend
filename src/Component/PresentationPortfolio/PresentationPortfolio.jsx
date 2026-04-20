@@ -585,24 +585,118 @@ const infographicPresentationsData = [
 const mobapp = [
     {
         id: 1,
-        webImage: "/images/mob-app/Slide1.jpeg",
-        fullImage: "/images/mob-app/Slide1.jpeg",
+        webImage: "/images/mob-app/Slide1 video.jpeg",
+        fullImage: "/images/mob-app/Slide1 video.jpeg",
         likeCount: 367,
         views: 589,
         type: "InvestorPitch",
         selected: false,
-        portfolioType: "Investor Pitch Decks"
+        portfolioType: "Investor Pitch Decks",
+        link:"https://drive.google.com/file/d/10_-LFYWyBUs34-XWLJLwlUPaAHPUkrhC/view?usp=sharing"
     },
     {
         id: 2,
-        webImage: "/images/mob-app/Slide2.jpeg",
-        fullImage: "/images/mob-app/Slide2.jpeg",
+        webImage: "/images/mob-app/Slide2 video.jpeg",
+        fullImage: "/images/mob-app/Slide2 video.jpeg",
         likeCount: 423,
+        views: 656,
+        type: "InvestorPitch",
+        selected: false,
+        portfolioType: "Investor Pitch Decks",
+        link: "https://drive.google.com/file/d/177563JwjtMBai30GFPSJFe1W6T0brz6V/view?usp=sharing"
+    },
+    {
+        id: 6,
+        webImage: "/images/mob-app/Slide6 video.jpeg",
+        fullImage: "/images/mob-app/Slide6 video.jpeg",
+        likeCount: 456,
+        views: 634,
+        type: "InvestorPitch",
+        selected: false,
+        portfolioType: "Investor Pitch Decks",
+        link: "https://drive.google.com/file/d/1dLkjNk8Fe3Ngwdrd6usPwkQue_F2GOvB/view?usp=sharing"
+    },
+        {
+        id: 8,
+        webImage: "/images/mob-app/Slide8 video.jpeg",
+        fullImage: "/images/mob-app/Slide8 video.jpeg",
+        likeCount: 489,
+        views: 698,
+        type: "InvestorPitch",
+        selected: false,
+        portfolioType: "Investor Pitch Decks",
+        link: "https://drive.google.com/file/d/1bget0ltjEbIdENU_yltk-hfsmDsgN9l5/view?usp=sharing"
+    },
+        {
+        id: 11,
+        webImage: "/images/mob-app/Slide8 video.jpeg",
+        fullImage: "/images/mob-app/Slide8 video.jpeg",
+        likeCount: 312,
+        views: 478,
+        type: "InvestorPitch",
+        selected: false,
+        portfolioType: "Investor Pitch Decks",
+        link: "https://drive.google.com/file/d/1QhhA4WLXq5I95t_Wca5SZe2RtdqLGPSz/view?usp=sharing"
+    },
+
+    {
+        id: 14,
+        webImage: "/images/mob-app/Slide14 video.jpeg",
+        fullImage: "/images/mob-app/Slide14 video.jpeg",
+        likeCount: 467,
+        views: 689,
+        type: "InvestorPitch",
+        selected: false,
+        portfolioType: "Investor Pitch Decks",
+        link: "https://drive.google.com/file/d/1IWyt7SmU56r4D_u2vXvGxEzJ3lp2BIf6/view?usp=sharing"
+    },
+
+    {
+        id: 18,
+        webImage: "/images/mob-app/Slide14 video.jpeg",
+        fullImage: "/images/mob-app/Slide14 video.jpeg",
+        likeCount: 267,
+        views: 412,
+        type: "InvestorPitch",
+        selected: false,
+        portfolioType: "Investor Pitch Decks",
+        link: "https://drive.google.com/file/d/1z6GKiJNklDu8C6Nwt0pIHWSUX0wu14wd/view?usp=sharing"
+    },
+    {
+        id: 19,
+        webImage: "/images/mob-app/Slide19 video.jpeg",
+        fullImage: "/images/mob-app/Slide19 video.jpeg",
+        likeCount: 445,
         views: 656,
         type: "InvestorPitch",
         selected: false,
         portfolioType: "Investor Pitch Decks"
     },
+
+    {
+        id: 20,
+        webImage: "/images/mob-app/Slide20 video.jpeg",
+        fullImage: "/images/mob-app/Slide20 video.jpeg",
+        likeCount: 378,
+        views: 589,
+        type: "InvestorPitch",
+        selected: false,
+        portfolioType: "Investor Pitch Decks",
+        link: "https://drive.google.com/file/d/1CZSpBMZSWFJFvRyF0v_dRbNZFly-vSHP/view?usp=sharing"
+    },
+
+    {
+        id: 21,
+        webImage: "/images/mob-app/Slide21 video.jpeg",
+        fullImage: "/images/mob-app/Slide21 video.jpeg",
+        likeCount: 378,
+        views: 589,
+        type: "InvestorPitch",
+        selected: false,
+        portfolioType: "Investor Pitch Decks",
+        link: "https://drive.google.com/file/d/1Xa-JtJ-EzievsIyfEvgkmOaDbM57u6N9/view?usp=sharing"
+    },
+
     {
         id: 3,
         webImage: "/images/mob-app/Slide3.jpeg",
@@ -634,16 +728,6 @@ const mobapp = [
         portfolioType: "Investor Pitch Decks"
     },
     {
-        id: 6,
-        webImage: "/images/mob-app/Slide6.jpeg",
-        fullImage: "/images/mob-app/Slide6.jpeg",
-        likeCount: 456,
-        views: 634,
-        type: "InvestorPitch",
-        selected: false,
-        portfolioType: "Investor Pitch Decks"
-    },
-    {
         id: 7,
         webImage: "/images/mob-app/Slide7.jpeg",
         fullImage: "/images/mob-app/Slide7.jpeg",
@@ -653,16 +737,7 @@ const mobapp = [
         selected: false,
         portfolioType: "Investor Pitch Decks"
     },
-    {
-        id: 8,
-        webImage: "/images/mob-app/Slide8.jpeg",
-        fullImage: "/images/mob-app/Slide8.jpeg",
-        likeCount: 489,
-        views: 698,
-        type: "InvestorPitch",
-        selected: false,
-        portfolioType: "Investor Pitch Decks"
-    },
+
     {
         id: 9,
         webImage: "/images/mob-app/Slide9.jpeg",
@@ -683,16 +758,7 @@ const mobapp = [
         selected: false,
         portfolioType: "Investor Pitch Decks"
     },
-    {
-        id: 11,
-        webImage: "/images/mob-app/Slide11.jpeg",
-        fullImage: "/images/mob-app/Slide11.jpeg",
-        likeCount: 312,
-        views: 478,
-        type: "InvestorPitch",
-        selected: false,
-        portfolioType: "Investor Pitch Decks"
-    },
+
     {
         id: 12,
         webImage: "/images/mob-app/Slide12.jpeg",
@@ -713,16 +779,7 @@ const mobapp = [
         selected: false,
         portfolioType: "Investor Pitch Decks"
     },
-    {
-        id: 14,
-        webImage: "/images/mob-app/Slide14.jpeg",
-        fullImage: "/images/mob-app/Slide14.jpeg",
-        likeCount: 467,
-        views: 689,
-        type: "InvestorPitch",
-        selected: false,
-        portfolioType: "Investor Pitch Decks"
-    },
+
     {
         id: 15,
         webImage: "/images/mob-app/Slide15.jpeg",
@@ -753,36 +810,9 @@ const mobapp = [
         selected: false,
         portfolioType: "Investor Pitch Decks"
     },
-    {
-        id: 18,
-        webImage: "/images/mob-app/Slide18.jpeg",
-        fullImage: "/images/mob-app/Slide18.jpeg",
-        likeCount: 267,
-        views: 412,
-        type: "InvestorPitch",
-        selected: false,
-        portfolioType: "Investor Pitch Decks"
-    },
-    {
-        id: 19,
-        webImage: "/images/mob-app/Slide19.jpeg",
-        fullImage: "/images/mob-app/Slide19.jpeg",
-        likeCount: 445,
-        views: 656,
-        type: "InvestorPitch",
-        selected: false,
-        portfolioType: "Investor Pitch Decks"
-    },
-    {
-        id: 20,
-        webImage: "/images/mob-app/Slide20.jpeg",
-        fullImage: "/images/mob-app/Slide20.jpeg",
-        likeCount: 378,
-        views: 589,
-        type: "InvestorPitch",
-        selected: false,
-        portfolioType: "Investor Pitch Decks"
-    }
+
+
+
 ];
 const PresentationPortfolio = ({ type }) => {
     const headings = {

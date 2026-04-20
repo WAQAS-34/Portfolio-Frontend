@@ -12157,6 +12157,7 @@ textarea.form-control-lg {
 }
 .more-projects .p1 {
   line-height: 19px;
+  margin:  0px !important;
 }
 .more-projects .smalltext {
   margin-left: -3px;

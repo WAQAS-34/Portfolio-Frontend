@@ -93,7 +93,7 @@
 }
 
 .herowrapper {
-  max-width: 576px;
+  max-width: 605px;
   position: relative;
   z-index: 2;
 
@@ -141,7 +141,9 @@
   align-items: center;
   margin-top: 32px;
   cursor: pointer;
-
+.margin-o{
+  margin: 2px !important;
+}
   :hover {
     .texthoverglow {
       text-shadow: 0 0 20px rgba(255, 66, 55, 0.5);

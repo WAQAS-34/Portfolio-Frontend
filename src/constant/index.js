@@ -33,10 +33,21 @@ export const PresentationContent = {
         description: "Turn complex data into stunning visuals! Get custom infographic presentations that simplify information, engage your audience, and impress with clear, visually compelling slides."
     },
     [PresentationType.MobileApp]: {
-        title: <> Building High-Performance Mobile Apps for 
-         <span className="red-color"> IOS </span>
-         and </>,
-        titleHighlight: "Android",
-        description: "From design to deployment we turn your ready designs into powerful, production-ready mobile apps. Using React Native, we create fast, stable, and scalable cross-platform apps backed by API integration and Node.js backend development for seamless, secure performance. From clean code to App Store and Play Store launch, I make sure your app is ready to perform and built to grow."
+        title: <> Build Scalable Mobile Apps That Users Love 
+         <span className="red-color"> IOS </span> &    <span className="red-color"> Android </span> 
+       Apps  | React Native Experts </>,
+        // titleHighlight: "",
+        description: "We turn your ideas into fast, reliable, and production-ready mobile apps. From MVPs to full-scale platforms, we build cross-platform applications using React Native backed by powerful technologies like Node.js, Firebase, Supabase, and Appwrite. Whether it’s real-time features, secure authentication, or seamless API integrations we make sure your app is built to scale and ready for launch."
     }
 }
+export const EXTERNAL_LINKS = {
+    testimonial: "https://www.fiverr.com/s/8zkYZDg",
+    presentation: "https://www.fiverr.com/waqasabbas891/design-a-premium-business-powerpoint-presentation",
+    mobileApp: "https://www.fiverr.com/waqasabbas891/be-your-react-native-developer-front-end-for-ios-and-android",
+}
+
+ export const clinetsPic = [
+    "/images/testimonial/Aneisha Byrd.jpg",
+    "/images/testimonial/Chris Poole.png",
+    "/images/testimonial/Chuck Mollor.png",
+  ]

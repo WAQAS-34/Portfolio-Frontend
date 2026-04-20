@@ -3,9 +3,14 @@ import { motion } from "framer-motion";
 import { whatsappURL } from "@/utils/whatsAppurl";
 import { useRouter } from "next/router";
 import BeforeAfterSlider from "../BeforeAfterSlider";
-import { PresentationType, PresentationContent } from "@/constant";
+import {
+  PresentationType,
+  PresentationContent,
+  EXTERNAL_LINKS,
+} from "@/constant";
+import MoreProjects from "../HeroSection/MoreProjects";
 
-const PresentationTypeHero = ({ type  ,disbaleSlide}) => {
+const PresentationTypeHero = ({ type, disbaleSlide }) => {
   const router = useRouter();
   const content = PresentationContent[type];
   const portfolioPitchDeck = [
@@ -24,7 +29,6 @@ const PresentationTypeHero = ({ type  ,disbaleSlide}) => {
     { image: "/images//before-after/b-m-t/Slide4.jpeg" },
     { image: "/images//before-after/b-m-t/Slide5.jpeg" },
     { image: "/images//before-after/b-m-t/Slide6.jpeg" },
-    
   ];
   const portfolioBP = [
     { image: "/images//before-after/b-p/Slide1.jpeg" },
@@ -46,15 +50,12 @@ const PresentationTypeHero = ({ type  ,disbaleSlide}) => {
     { image: "/images//before-after/i-f/Slide6.jpeg" },
     { image: "/images//before-after/i-f/Slide7.jpeg" },
   ];
-const portfolio = {
-  [PresentationType.InvestorPitchDecks]:portfolioPitchDeck,
-  [PresentationType.BrandedMasterTemplates]:portfolioBMT,
-  [PresentationType.BusinessPresentations]:portfolioBP,
-  [PresentationType.InfographicPresentation]:portfolioIF,
-
-
-
-}
+  const portfolio = {
+    [PresentationType.InvestorPitchDecks]: portfolioPitchDeck,
+    [PresentationType.BrandedMasterTemplates]: portfolioBMT,
+    [PresentationType.BusinessPresentations]: portfolioBP,
+    [PresentationType.InfographicPresentation]: portfolioIF,
+  };
   return (
     <>
       <div className="bg-darkblue">
@@ -70,7 +71,7 @@ const portfolio = {
               className="heading1 font-rubik"
             >
               {content?.title}
-              
+
               <span className="red-color"> {content?.titleHighlight}</span>
               {content?.titleSuffix && ` ${content.titleSuffix}`}
             </motion.h1>
@@ -98,12 +99,18 @@ const portfolio = {
             >
               Start MY Project{" "}
             </motion.button>
+            {type === PresentationType.MobileApp ? (
+              <MoreProjects
+                linkHref={EXTERNAL_LINKS.presentation}
+                linkText="Read testimonial"
+              />
+            ) : null}
           </div>
-          {disbaleSlide?
-          <img src="/images/mob-hero.png" className="mob-hero-img" alt="" />
-          :
-          <BeforeAfterSlider slides={portfolio[type]} />
-          }
+          {disbaleSlide ? (
+            <img src="/images/mob-hero.png" className="mob-hero-img" alt="" />
+          ) : (
+            <BeforeAfterSlider slides={portfolio[type]} />
+          )}
         </div>
       </div>
     </>

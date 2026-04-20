@@ -8,38 +8,9 @@ import useInViewAnimation from "@/Hooks/useInViewAnimation";
 import { presentationDispatch } from "@/store/action";
 import { useDispatch, useSelector } from "react-redux";
 import { PresentationContent, PresentationType } from "@/constant";
+import { useRouter } from "next/router";
 
 const GoogleSlides = ({ data, type }) => {
-  console.log("data", data);
-  const ref = useRef();
-  const cardRef = useRef();
-  const PresetationState = useSelector(
-    (state) => state && state.presetatIonReducer.presentation
-  );
-  console.log("PresetationState", PresetationState);
-  const portfolio = [
-    {
-      tittle: "Mobile app development",
-      year: "© 2023",
-      image: portfolio1,
-    },
-    {
-      tittle: "Mobile app development",
-      year: "© 2023",
-      image: portfolio1,
-    },
-    {
-      tittle: "Mobile app development",
-      year: "© 2023",
-      image: portfolio1,
-    },
-    {
-      tittle: "Mobile app development",
-      year: "© 2023",
-      image: portfolio1,
-    },
-  ];
-  const { elementRef, mainControls } = useInViewAnimation();
 
   const itemsPerRow = 2;
   const numRows = Math.ceil(data?.length / itemsPerRow);
@@ -67,7 +38,12 @@ const GoogleSlides = ({ data, type }) => {
                     showHoverButton={true}
                     hoverButtonText="Click to view "
                     onHoverButtonClick={(id, image) => {
-                      // Handle button click
+                      // Handle bu
+                      // tton click
+                      if(item.link){
+                        window.open(item.link, '_blank');
+                      }
+
                       console.log('Button clicked for item:', id);
                     }}
                   />

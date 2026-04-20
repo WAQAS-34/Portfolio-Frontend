@@ -1,21 +1,15 @@
 import React from "react";
 import hero from "../../assets/images/hero.svg";
-import profile1 from "../../assets/images/client.svg";
-import profile3 from "../../assets/images/profile3.svg";
 import { motion } from "framer-motion";
-import profile2 from "../../assets/images/profile2.svg";
-import realProjects from "../../assets/images/realProjects.svg";
-import Link from "next/link";
 import { useSelector } from "react-redux";
 import { whatsappURL } from "@/utils/whatsAppurl";
 import { useRouter } from "next/router";
 import { Video } from "../HeroSectionVideo/HeroSectionVideo";
+import MoreProjects from "./MoreProjects";
+import { EXTERNAL_LINKS } from "@/constant";
 
 const HeroSection = () => {
-  const router = useRouter()
-  const testimonialState = useSelector(
-    (state) => state && state.testmonialReducer.testimonial
-  );
+  const router = useRouter();
   const clinetsPic = [
     "/images/testimonial/Aneisha Byrd.jpg",
     "/images/testimonial/Chris Poole.png",
@@ -63,7 +57,7 @@ const HeroSection = () => {
             >
               Lets Talk
             </motion.button>
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }} // Initial opacity set to 0 and y-position set to 50px (downwards)
               animate={{ opacity: 1 }} // Final opacity set to 1 (fully visible) and y-position set to 0px (original position)
               transition={{
@@ -71,22 +65,13 @@ const HeroSection = () => {
                 type: "easeIn",
                 delay: 0.7
               }}
-              className="more-projects"
-            >
-              <div className="client-profile-box">
-                {clinetsPic.map((item, ind) => {
-                  return <img key={ind} className={ind == 1 ? "prfile2" : ind == 2 ? `prfile3` : ''} src={item} alt="" />
-                })}
-                {/* <img  src={profile3.src} alt="" />
-                <img className="prfile3" src={profile2.src} alt="" />
-                 */}
-              </div>
-              <div className="position-relative ">
-                <p className="p1 text-white">1000+ Projects</p>
-                <p className="smalltext texthoverglow" > <Link href={"/#testmonial"}> Read testimonial </Link></p>
-                <img src={realProjects.src} className="real-project" alt="" />
-              </div>
-            </motion.div>
+            > */}
+              <MoreProjects
+                clientPics={clinetsPic}
+                linkHref={EXTERNAL_LINKS.testimonial}
+                linkText="Read testimonial"
+              />
+            {/* </motion.div> */}
           </div>
           <Video />
     

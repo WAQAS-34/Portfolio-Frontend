@@ -12,7 +12,8 @@ import { motion } from "framer-motion";
 import useInViewAnimation from "@/Hooks/useInViewAnimation";
 import { useDispatch, useSelector } from "react-redux";
 import { testimonailDispatch } from "@/store/action";
-import testimonialState from "@/db/testimonial.json"
+import testimonialState from "@/db/testimonial.json";
+import MoreProjects from "../HeroSection/MoreProjects";
 const Testimonial = () => {
 
   const ref = useRef();
@@ -142,7 +143,6 @@ const Testimonial = () => {
               })}
           </Slider>
         </motion.div>
-    
       </div>
     </div>
   );
