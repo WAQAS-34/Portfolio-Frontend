@@ -22,7 +22,7 @@ const SocialIcon = () => {
       <img
         className="social-icon"
         src="/images/fiverr.png"
-        onClick={() => handleDirect("https://www.fiverr.com/s/EgPZDb9")
+        onClick={() => handleDirect("https://www.fiverr.com/s/8zkYZDg")
 
         }
         style={{ width: "60px", marginRight: "5px" }}

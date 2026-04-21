@@ -38,7 +38,7 @@ const WhyChooseUs = ({ type }) => {
     {
       icon: "/images/service-icon/f-l-d.svg",
       title: "Full Stack Developer",
-      description: "React Native, API integration, and Node.js backend.",
+      description: "React Native (CLI & Expo), Typescript, Node.js, Firebase, Supabase, Appwrite, and Rest API integration.",
     },
     {
       // icon: "/images/service-icon/delivery.svg",

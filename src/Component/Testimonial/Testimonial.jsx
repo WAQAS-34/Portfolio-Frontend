@@ -15,21 +15,19 @@ import { testimonailDispatch } from "@/store/action";
 import testimonialState from "@/db/testimonial.json";
 import MoreProjects from "../HeroSection/MoreProjects";
 const Testimonial = () => {
-
   const ref = useRef();
   const SliderRef = useRef();
   const { elementRef, mainControls } = useInViewAnimation();
   const [activeSlide, setActiveSlide] = useState(0);
-  const remainingSlides =  (testimonialState?.length +1) - (activeSlide + 3);
-  
+  const remainingSlides = testimonialState?.length + 1 - (activeSlide + 3);
 
   const settings = {
     dots: false,
     infinite: true,
-    
+
     arrows: false,
-    speed: 1500,
-    centerMode:false,
+    speed: 2000,
+    centerMode: false,
     slidesToShow: 2,
     draggable: true,
     slidesToScroll: 1,
@@ -40,7 +38,6 @@ const Testimonial = () => {
     // autoplay: false,
     autoplaySpeed: 4000,
     responsive: [
-   
       {
         breakpoint: 1400,
         settings: {
@@ -70,6 +67,17 @@ const Testimonial = () => {
   const handleNext = () => {
     SliderRef.current.slickNext();
   };
+
+  const ArrowButton = ({ direction, onClick }) => (
+
+      <img
+      onClick={onClick}
+        src={direction === "prev" ? "images/left-slider-arrow.svg" : "images/right-slider-arrow.svg"}
+        alt={`${direction} arrow`}
+      />
+
+  );
+
   const testimonila = [
     {
       tittle: "Pegasuseagel",
@@ -142,6 +150,11 @@ const Testimonial = () => {
                 );
               })}
           </Slider>
+          <div className="slider-button-container">
+            {" "}
+            <ArrowButton direction="prev" onClick={handlePrev} />
+            <ArrowButton direction="next" onClick={handleNext} />
+          </div>
         </motion.div>
       </div>
     </div>
